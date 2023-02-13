@@ -21,3 +21,8 @@ Homework challenges:
 - Activated the AWS cost allocation tags.
 - Investigated my costs through cost explorer.
 - Checked out the Free tier services and juxtaposed them against the trial services.
+- Created a new User following with CLI privileges. The user is configured with MFA, Access keys and access policies.
+- Configured Gitpod and also set the theme to dark mode.
+
+NB: aws --cli-auto-prompt
+    aws sts get-caller-identity
