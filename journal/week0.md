@@ -14,3 +14,5 @@ to get all the information necessary to start architecting.
 
 We were tasked with completing the homework challenges for the week.
 
+Homework challenges:
+2/13/2023 - Created the Cruddur conceptual diagram and the Week 0 - Architecting and Billing napkin design.
