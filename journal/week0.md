@@ -15,4 +15,9 @@ to get all the information necessary to start architecting.
 We were tasked with completing the homework challenges for the week.
 
 Homework challenges:
-2/13/2023 - Created the Cruddur conceptual diagram and the Week 0 - Architecting and Billing napkin design.
+2/13/2023 Monday
+- Created the Cruddur conceptual diagram and the Week 0 - Architecting and Billing napkin design.
+- Created a Budget to track  my spend and put a fixed amount of 10$. 
+- Activated the AWS cost allocation tags.
+- Investigated my costs through cost explorer.
+- Checked out the Free tier services and juxtaposed them against the trial services.
