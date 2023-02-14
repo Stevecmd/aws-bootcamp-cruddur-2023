@@ -6,13 +6,13 @@ course and the deliverables, expectations that need to be achieved on a weekly b
 into the project considering there is a lot of scope in the underlying architecture but the instructions remain relatively simple to accomodate all skill 
 levels. 
 
-We set up accounts on the lucid app and were shown how to get resources and come up with logical architecture.
-![Logical Architecture](TargetUrl)
+We set up accounts on the lucid app and were shown how to get resources and come up with Conceptual architecture.
+![Conceptual Architecture](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/Cruddur%20-%20Conceptual%20Diagram.jpeg)
 
 Chris Williams (@mistwire) took us through the process of coming up with the architecture. We were also introduced to the napkin / tissue method of 
 coming up with architecture which is basically drawing out your architecture at a high level but in a way whose conceptual flow makes sense.
 
-![Napkin design](TargetUrl)
+![Napkin design](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/Cruddur%20-%20Napkin%20design%20main.jpeg)
 
 Margaret (@Margaretvaltie) went through the Project outline and gave a presentation of the flow of a customer engagement when you are tasked with assisting a client. It involved a presentation mimicking a typical interaction with a client and how to lead the conversation so as 
 to get all the information necessary to start architecting.
@@ -23,7 +23,7 @@ Homework challenges: 2/13/2023 Monday.
 Watched and completed the tasks in the video: Week 0 - Generate credentials, AWS CLI, Budget and Billing Alarm via CLI.
 Tasks:
 - Created the Cruddur conceptual diagram and the Week 0 - Architecting and Billing napkin design.
-![Cruddur conceptual design](TargetUrl)
+![Cruddur conceptual design]([TargetUrl](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/Cruddur%20-%20Conceptual%20Diagram.jpeg))
 - Created a Budget to track  my spend and put a fixed amount of 10$. 
 - Activated the AWS cost allocation tags.
 - Investigated my costs through cost explorer.
