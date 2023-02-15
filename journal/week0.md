@@ -41,5 +41,5 @@ Tasks:
 - Enabled Billing and created a billing alarm via CLI.
 - Created a tag and pushed it to GitHub post commit.
 
-NB: aws --cli-auto-prompt
-    aws sts get-caller-identity
+NB: "aws --cli-auto-prompt" and 
+    "aws sts get-caller-identity" which came in handy.
