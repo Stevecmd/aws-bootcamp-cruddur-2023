@@ -12,7 +12,7 @@ We set up accounts on the lucid app and were shown how to get resources and come
 Chris Williams (@mistwire) took us through the process of coming up with the architecture. We were also introduced to the napkin / tissue method of 
 coming up with architecture which is basically drawing out your architecture at a high level but in a way whose conceptual flow makes sense.
 
-![Napkin design](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/Cruddur%20-%20Napkin%20design%20main.jpeg)
+![Napkin design](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/Cruddur%20-%20Napkin%20design%20main.JPG)
 
 Margaret (@Margaretvaltie) went through the Project outline and gave a presentation of the flow of a customer engagement when you are tasked with assisting a client. It involved a presentation mimicking a typical interaction with a client and how to lead the conversation so as 
 to get all the information necessary to start architecting.
