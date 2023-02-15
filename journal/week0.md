@@ -6,8 +6,8 @@ course and the deliverables, expectations that need to be achieved on a weekly b
 into the project considering there is a lot of scope in the underlying architecture but the instructions remain relatively simple to accomodate all skill 
 levels. 
 
-We set up accounts on the lucid app and were shown how to get resources and come up with Conceptual architecture.
-![Conceptual Architecture](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/Cruddur%20-%20Conceptual%20Diagram.jpeg)
+We set up accounts on the lucid app and were shown how to get resources and come up with the Logical diagram.
+![Logical Architectural Diagram](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/Cruddur%20-%20Conceptual%20Diagram.jpeg)
 
 Chris Williams (@mistwire) took us through the process of coming up with the architecture. We were also introduced to the napkin / tissue method of 
 coming up with architecture which is basically drawing out your architecture at a high level but in a way whose conceptual flow makes sense.
