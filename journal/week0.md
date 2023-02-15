@@ -32,14 +32,14 @@ Tasks:
 - Activated the AWS cost allocation tags.
 - Investigated my costs through cost explorer.
 - Checked out the Free tier services and juxtaposed them against the trial services.
-- Created a new User following with CLI privileges. The user is configured with MFA, Access keys and access policies.
+- Created a new User with CLI privileges. The user is configured with MFA, Access keys and access policies.
 - Configured Gitpod and also set the theme to dark mode.
 - Configured Env vars in Gitpod; every time the gitpod environment starts, it will automatically set up a new environment with my 
     preconfigured credentails.
-- Confirmed that the AWS CLI is working and it is indeed bringing the expected user.
+- Confirmed that the AWS CLI is working and it is indeed displaying the expected user.
 - Created an AWS Budget via the CLI.
 - Enabled Billing and created a billing alarm via CLI.
-- Created a tag and pushed it to GitHub post commit.
+- Created a tag via the CLI.
 
 NB: "aws --cli-auto-prompt" and 
     "aws sts get-caller-identity" which came in handy.
