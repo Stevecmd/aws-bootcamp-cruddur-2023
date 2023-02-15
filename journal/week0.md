@@ -1,5 +1,4 @@
 # Week 0 — Billing and Architecture
-***
 
 First session on Saturday 2/11/2023 (9.00pm - 10.00pm EAT)
 We had the first session where the course insctructors introduced themselves and Andrew (@andrewbrown) gave a high level overview of the learning outcomes of the 
@@ -29,7 +28,7 @@ We were tasked with completing the homework challenges for the week.
 Watched and completed the tasks in the video: Week 0 - Generate credentials, AWS CLI, Budget and Billing Alarm via CLI.
 Tasks:
 - Created the Cruddur conceptual diagram and the Week 0 - Architecting and Billing napkin design.
-- Created a Budget to track  my spend and put a fixed amount of **Bold 10$ **. 
+- Created a Budget to track  my spend and put a fixed amount of $${\color{green}$10}$$. 
 - Activated the AWS cost allocation tags.
 - Investigated my costs through cost explorer.
 - Checked out the Free tier services and juxtaposed them against the trial services.
