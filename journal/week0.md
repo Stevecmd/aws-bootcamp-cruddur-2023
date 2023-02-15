@@ -8,6 +8,7 @@ levels.
 
 We set up accounts on the lucid app and were shown how to get resources and come up with the Logical diagram.
 ![Logical Architectural Diagram](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/Cruddur%20-%20Conceptual%20Diagram.jpeg)
+- [Live Logical Diagram on Lucid chart](https://lucid.app/lucidchart/cd526c7d-0a59-4b3a-b61a-ef5e019293fe/edit?page=0_0&invitationId=inv_5ba96d4e-22e1-4db8-84b5-5fbef5a1739c#)
 
 Chris Williams (@mistwire) took us through the process of coming up with the architecture. We were also introduced to the napkin / tissue method of 
 coming up with architecture which is basically drawing out your architecture at a high level but in a way whose conceptual flow makes sense.
