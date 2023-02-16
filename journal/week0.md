@@ -33,6 +33,7 @@ Tasks:
 - Activated the AWS cost allocation tags.
 - Investigated my costs through cost explorer.
 ![Cost explorer](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/Cost%20explorer.JPG)
+> Note: It cost me $3.48 dollars to buy my domain via Route 53 and an additional $0.50 dollars for Route 53 Hosted zones. 
 - Checked out the Free tier services and compared them to the trial services.
 - Created a new User with CLI priviledges. The user is configured with MFA, Access keys and access policies.
 ![New User with CLI priviledge](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/CLIPriviledgesAccesskey.jpg)
