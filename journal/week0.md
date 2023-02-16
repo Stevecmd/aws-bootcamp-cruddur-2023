@@ -48,5 +48,4 @@ Tasks:
 - Installed aws auto-prompt on the cli
   ![Proof of aws auto-prompt](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/aws%20cli%20autoprompt.JPG)
 
-NB: "aws --cli-auto-prompt" and 
-    "aws sts get-caller-identity" which came in handy.
+
