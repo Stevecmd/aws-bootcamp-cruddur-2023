@@ -29,10 +29,13 @@ Watched and completed the tasks in the video: Week 0 - Generate credentials, AWS
 Tasks:
 - Created the Cruddur Logical Architectural diagram and napkin design.
 - Created a Budget to track my spend and put a fixed amount of $10. 
+![$10 dollar Budget](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/Budget.JPG)
 - Activated the AWS cost allocation tags.
 - Investigated my costs through cost explorer.
+![Cost explorer](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/Cost%20explorer.JPG)
 - Checked out the Free tier services and compared them to the trial services.
-- Created a new User with CLI privileges. The user is configured with MFA, Access keys and access policies.
+- Created a new User with CLI priviledges. The user is configured with MFA, Access keys and access policies.
+![New User with CLI priviledge](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/CLIPriviledgesAccesskey.jpg)
 - Configured Gitpod Env vars; every time the gitpod environment starts, it will automatically set up a new environment with my 
     preconfigured credentails..
     ![Proof GitPod account](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/Gitpod.JPG)
