@@ -36,7 +36,7 @@ Tasks:
 > Note: It cost me $3.48 dollars to buy my domain via Route 53 and an additional $0.50 dollars for Route 53 Hosted zones. 
 - Checked out the Free tier services and compared them to the trial services.
 - Created a new User with CLI priviledges. The user is configured with MFA, Access keys and access policies.
-![New User with CLI priviledge](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/CLIPriviledgesAccesskey.jpg)
+![New User with CLI privilege](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/CLIPriviledgesAccesskey.jpg)
 - Configured Gitpod Env vars; every time the gitpod environment starts, it will automatically set up a new environment with my 
     preconfigured credentails..
     ![Proof GitPod account](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/Gitpod.JPG)
@@ -45,7 +45,7 @@ Tasks:
     ![Proof of aws cli](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/proof%20of%20aws%20cli.JPG)
 - Created an AWS Budget via the CLI.
 - Enabled Billing and created a billing alarm via CLI.
-    ![Proof Billing alarm](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/proof%20of%20aws%20cli.JPG)
+    ![Proof Billing alarm on the console](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/Budget%20alerts.JPG)
 
 - Created a tag via the CLI.
 - Installed aws auto-prompt on the cli
