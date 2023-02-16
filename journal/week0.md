@@ -31,12 +31,12 @@ Tasks:
 - Created a Budget to track my spend and put a fixed amount of $10. 
 - Activated the AWS cost allocation tags.
 - Investigated my costs through cost explorer.
-- Checked out the Free tier services and juxtaposed them against the trial services.
+- Checked out the Free tier services and compared them to the trial services.
 - Created a new User with CLI privileges. The user is configured with MFA, Access keys and access policies.
 - Configured Gitpod Env vars; every time the gitpod environment starts, it will automatically set up a new environment with my 
     preconfigured credentails..
     ![Proof GitPod account](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/Gitpod.JPG)
-- Confirmed that the AWS CLI is working and it is indeed displaying the expected user.
+- Confirmed that the AWS CLI is working and it is indeed displaying the expected user. [Instructions to instal AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
     ![Proof of aws cli](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/proof%20of%20aws%20cli.JPG)
 - Created an AWS Budget via the CLI.
 - Enabled Billing and created a billing alarm via CLI.
