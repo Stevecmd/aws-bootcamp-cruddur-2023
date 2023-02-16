@@ -36,7 +36,8 @@ Tasks:
 - Configured Gitpod Env vars; every time the gitpod environment starts, it will automatically set up a new environment with my 
     preconfigured credentails..
     ![Proof GitPod account](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/Gitpod.JPG)
-- Confirmed that the AWS CLI is working and it is indeed displaying the expected user. [Instructions to instal AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+- Confirmed that the AWS CLI is working and it is indeed displaying the expected user. 
+    [Instructions to install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
     ![Proof of aws cli](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/proof%20of%20aws%20cli.JPG)
 - Created an AWS Budget via the CLI.
 - Enabled Billing and created a billing alarm via CLI.
