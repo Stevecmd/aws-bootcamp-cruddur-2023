@@ -1,9 +1,9 @@
 {
     "BudgetLimit": {
-        "Amount": "1",
+        "Amount": "10",
         "Unit": "USD"
     },
-    "BudgetName": "Budget for 1 dollars",
+    "BudgetName": "My AWS Bootcamp Budget",
     "BudgetType": "COST",
     "CostFilters": {
         "TagKeyValue": [

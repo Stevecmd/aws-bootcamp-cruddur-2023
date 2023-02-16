@@ -45,6 +45,8 @@ Tasks:
     ![Proof of aws cli](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/proof%20of%20aws%20cli.JPG)
 - Created an AWS Budget via the CLI.
 - Enabled Billing and created a billing alarm via CLI.
+    ![Proof Billing alarm](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/proof%20of%20aws%20cli.JPG)
+
 - Created a tag via the CLI.
 - Installed aws auto-prompt on the cli
   ![Proof of aws auto-prompt](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%200/aws%20cli%20autoprompt.JPG)
