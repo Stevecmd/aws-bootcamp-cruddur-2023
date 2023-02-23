@@ -92,6 +92,8 @@ Run in background
 docker container run --rm -p 4567:4567 -d backend-flask
 ```
 
+![Docker build confirmation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/docker%20build%20confirmation.JPG)
+
 Return the container id into an Env Vat
 ```sh
 CONTAINER_ID=$(docker run --rm -p 4567:4567 -d backend-flask)
