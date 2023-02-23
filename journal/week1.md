@@ -1,7 +1,7 @@
 # Week 1 — App Containerization
 This was the second week of the Bootcamp. It was quite intense as I wasted several days trying to
 figure out what was causing the 404 error as shown below. 
-
+>>404 Error Page not found
 ![404 Not Found](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/404%20error%20after%20docker%20run.JPG)
 
 In the end, I was victorious! Here's how I did it.
@@ -12,7 +12,7 @@ guide me.
 ## References
 
 The referenced article below came in handy.  
->>>Good Article for Debugging Connection Refused
+>>Good Article for Debugging Connection Refused
 https://pythonspeed.com/articles/docker-connection-refused/
 
 Below is a step by step break down of my work.
