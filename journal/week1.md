@@ -107,7 +107,8 @@ CONTAINER_ID=$(docker run --rm -p 4567:4567 -d backend-flask)
 docker ps
 docker images
 ```
-
+![Getting the container image ID's via CLI - docker ps](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/docker%20ps.JPG)
+![Getting the container image ID's via CLI - docker ps -a](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/docker%20ps-a.JPG)
 
 ### Send Curl to Test Server
 
