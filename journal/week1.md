@@ -6,8 +6,9 @@ figure out what was causing the 404 error as shown below.
 
 In the end, I was victorious! Here's how I did it.
 
-I just had to get my front end to communicate with the back end. I used the below referenced article to
+>>>>I just had to get my front end to communicate with the back end. I used the below referenced article to
 guide me.
+
 ## References
 
 The referenced article below came in handy.  
