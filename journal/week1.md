@@ -67,6 +67,8 @@ CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]
 
 ### Build Container
 
+![Build container](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/build%20container.JPG)
+
 ```sh
 docker build -t  backend-flask ./backend-flask
 ```
