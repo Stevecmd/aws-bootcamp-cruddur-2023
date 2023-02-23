@@ -3,24 +3,25 @@ This was the second week of the Bootcamp. It was quite intense as I wasted sever
 figure out what was causing the 404 error as shown below. 
 >>404 Error Page not found
 ![404 Not Found](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/404%20error%20after%20docker%20run.JPG)
-
+---
 In the end, I was victorious! Here's how I did it.
 
 >>>NB: I just had to get my front end to communicate with the back end. I used the below referenced article to
 guide me.
-
+---
 ## References
 
 The referenced article below came in handy.  
 >>Good Article for Debugging Connection Refused
 https://pythonspeed.com/articles/docker-connection-refused/
-
+---
 >>>**Below is a step by step break down of my work.**
 
 
 ## VSCode Docker Extension
 
-Docker for VSCode makes it easy to work with Docker
+I used Docker for VSCode which makes it easy to work with Docker
+**NB**I was using the VSCode application running on **GitPod**
 
 https://code.visualstudio.com/docs/containers/overview
 
@@ -95,8 +96,11 @@ Run in background
 ```sh
 docker container run --rm -p 4567:4567 -d backend-flask
 ```
+#### Attach Shell
 ![Attach shell](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Attach%20shell.png)
+#### Docker Run Container
 ![Docker Run container](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/container%20run%201.JPG)
+#### Docker Running container on Specific ports
 ![Docker Running container on Specific ports](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/container%20run%202.JPG)
 
 Return the container id into an Env Vat
@@ -112,8 +116,11 @@ CONTAINER_ID=$(docker run --rm -p 4567:4567 -d backend-flask)
 docker ps
 docker images
 ```
+#### Getting the container image ID's via CLI - docker ps
 ![Getting the container image ID's via CLI - docker ps](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/docker%20ps.JPG)
+#### Getting the container image ID's via CLI - docker ps -a
 ![Getting the container image ID's via CLI - docker ps -a](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/docker%20ps-a.JPG)
+#### Getting the docker images
 ![Getting the docker images](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/docker%20images.JPG)
 
 ### Send Curl to Test Server
@@ -160,21 +167,28 @@ docker image rm backend-flask --force
 
 > There are some cases where you need to use the --force
 
+
 ### Overriding Ports
 
 ```sh
 FLASK_ENV=production PORT=8080 docker run -p 4567:4567 -it backend-flask
 ```
+#### Overriding ports
 ![Overriding ports](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Unsetting%20URL's.JPG)
 
 > Look at Dockerfile to see how ${PORT} is interpolated
 
+#### Unset Backend and Front End ports
 ![Unset Backend and Front End ports](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Unset%20backend%20and%20frontend.JPG)
 
+#### Unset Backend and Front End URL's
 ![Unset Backend and Front End URL's](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Unsetting%20URL's.JPG)
 
+#### Unset the necessary ports for the app to work
 ![Unset the necessary ports for the app to work](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Unlocked%20ports.JPG)
+
 ## Containerize Frontend
+---
 
 ## Run NPM Install
 
@@ -327,7 +341,14 @@ volumes:
     driver: local
 
 ```
+#### Working App - Backend (Terminal)
 ![Working App - Backend (Terminal)](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Running%20app%20on%20terminal.JPG)
+
+#### Working App - Backend
 ![Working App - Backend](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Working%20app%201.JPG)
+
+#### Working App - Port 3000
 ![Working App - Port 3000](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Working%20application%20on%20port%203000.JPG)
+
+#### Final image showing correct ports are running
 ![Final image showing correct ports are running](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/final%20correct%20ports%20are%20running.JPG)
