@@ -24,7 +24,7 @@ Docker for VSCode makes it easy to work with Docker
 
 https://code.visualstudio.com/docs/containers/overview
 
-> Gitpod is preinstalled with theis extension
+> Gitpod is preinstalled with this extension
 
 ## Containerize Backend
 
@@ -95,6 +95,7 @@ Run in background
 ```sh
 docker container run --rm -p 4567:4567 -d backend-flask
 ```
+![Attach shell](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Attach%20shell.png)
 ![Docker Run container](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/container%20run%201.JPG)
 ![Docker Running container on Specific ports](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/container%20run%202.JPG)
 
@@ -182,6 +183,7 @@ We have to run NPM Install before building the container since it needs to copy 
 cd frontend-react-js
 npm i
 ```
+![NPM Install](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/npm%20install%20in%20frontendreact.JPG)
 
 ### Create Docker File
 
