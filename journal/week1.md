@@ -6,7 +6,7 @@ figure out what was causing the 404 error as shown below.
 
 In the end, I was victorious! Here's how I did it.
 
->>>>I just had to get my front end to communicate with the back end. I used the below referenced article to
+>>>NB: I just had to get my front end to communicate with the back end. I used the below referenced article to
 guide me.
 
 ## References
@@ -15,7 +15,7 @@ The referenced article below came in handy.
 >>Good Article for Debugging Connection Refused
 https://pythonspeed.com/articles/docker-connection-refused/
 
-Below is a step by step break down of my work.
+>>>**Below is a step by step break down of my work.**
 
 
 ## VSCode Docker Extension
