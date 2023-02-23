@@ -163,6 +163,11 @@ FLASK_ENV=production PORT=8080 docker run -p 4567:4567 -it backend-flask
 
 > Look at Dockerfile to see how ${PORT} is interpolated
 
+![Unset Backend and Front End ports](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Unset%20backend%20and%20frontend.JPG)
+
+![Unset Backend and Front End URL's](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Unsetting%20URL's.JPG)
+
+![Unset the necessary ports for the app to work](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Unlocked%20ports.JPG)
 ## Containerize Frontend
 
 ## Run NPM Install
@@ -313,3 +318,7 @@ volumes:
 volumes:
   db:
     driver: local
+
+```
+![Working App - Backend (Terminal)](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Running%20app%20on%20terminal.JPG)
+![Working App - Backend](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Working%20app%201.JPG)
