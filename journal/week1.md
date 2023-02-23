@@ -114,6 +114,7 @@ docker images
 ```
 ![Getting the container image ID's via CLI - docker ps](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/docker%20ps.JPG)
 ![Getting the container image ID's via CLI - docker ps -a](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/docker%20ps-a.JPG)
+![Getting the docker images](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/docker%20images.JPG)
 
 ### Send Curl to Test Server
 
