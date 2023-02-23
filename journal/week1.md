@@ -72,6 +72,7 @@ CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]
 ```sh
 docker build -t  backend-flask ./backend-flask
 ```
+![Build container](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/build%20container.JPG)
 
 ### Run Container
 
@@ -87,12 +88,15 @@ unset FRONTEND_URL="*"
 unset BACKEND_URL="*"
 ```
 
+![Build Container](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/build%20container.JPG)
+![Docker build confirmation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/docker%20build%20confirmation.JPG)
+
 Run in background
 ```sh
 docker container run --rm -p 4567:4567 -d backend-flask
 ```
-
-![Docker build confirmation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/docker%20build%20confirmation.JPG)
+![Docker Run container](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/container%20run%201.JPG)
+![Docker Running container on Specific ports](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/container%20run%202.JPG)
 
 Return the container id into an Env Vat
 ```sh
