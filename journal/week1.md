@@ -17,8 +17,8 @@ https://pythonspeed.com/articles/docker-connection-refused/
 ---
 >>**Below is a step by step break down of my work.**
 Todo Checklist:
-- [x] ![Watch How to Ask for Technical Help](https://www.youtube.com/watch?v=tDPqmwKMP7Y&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=29)
-- [x] ![Watch Grading Homework Summaries](https://www.youtube.com/watch?v=FKAScachFgk&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=25)
+- [x] [Watch How to Ask for Technical Help](https://www.youtube.com/watch?v=tDPqmwKMP7Y&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=29)
+- [x] [Watch Grading Homework Summaries](https://www.youtube.com/watch?v=FKAScachFgk&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=25)
 - [x] ![Watch Week 1 - Live Streamed Video]()
 - [x] ![Remember to Commit Your Code]()
 - [x] ![Watcked Chirag's Week 1 - Spending Considerations]()
