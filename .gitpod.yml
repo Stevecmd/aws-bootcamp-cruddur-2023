@@ -9,7 +9,7 @@ tasks:
       sudo ./aws/install
       cd $THEIA_WORKSPACE_ROOT
 
-#PostGreSQL is the database we will use for the bootcamp.
+#PostGreSQL is the database we will use for the bootcamp. This is the code to install the client.
   - name: postgres
     init: |
       curl -fsSL https://www.postgresql.org/media/keys/ACCC4CF8.asc|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/postgresql.gpg
