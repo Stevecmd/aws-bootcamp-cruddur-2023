@@ -331,6 +331,8 @@ Example of using DynamoDB local
 https://github.com/100DaysOfCloud/challenge-dynamodb-local
 
 ![Using DynamoDB local](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/TestingDynamoDB.JPG)
+![Create a table in DynamoDB](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/DynamoDB%20testSQL.JPG)
+![DynamoDB Create table](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/DynamoDB%20success.JPG)
 
 ## Volumes
 
