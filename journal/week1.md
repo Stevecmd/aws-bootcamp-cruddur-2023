@@ -41,6 +41,7 @@ I used Docker for VSCode which makes it easy to work with Docker
 https://code.visualstudio.com/docs/containers/overview
 
 > Gitpod is preinstalled with this extension
+<hr/>
 
 ## Containerize Backend
 
@@ -59,7 +60,7 @@ cd ..
 - append to the url to `/api/activities/home`
 - you should get back json
 
-
+<hr/>
 
 ### Add Dockerfile
 
@@ -80,6 +81,7 @@ ENV FLASK_ENV=development
 EXPOSE ${PORT}
 CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]
 ```
+<hr/>
 
 ### Build Container
 
@@ -89,6 +91,8 @@ CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]
 docker build -t  backend-flask ./backend-flask
 ```
 ![Build container](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/build%20container.JPG)
+
+<hr/>
 
 ### Run Container
 
@@ -105,18 +109,31 @@ unset BACKEND_URL="*"
 ```
 
 ![Build Container](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/build%20container.JPG)
+
+<hr/>
+
 ![Docker build confirmation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/docker%20build%20confirmation.JPG)
 
 Run in background
 ```sh
 docker container run --rm -p 4567:4567 -d backend-flask
 ```
+<hr/>
+
 #### Attach Shell
 ![Attach shell](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Attach%20shell.png)
+
+<hr/>
+
 #### Docker Run Container
 ![Docker Run container](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/container%20run%201.JPG)
+
+<hr/>
+
 #### Docker Running container on Specific ports
 ![Docker Running container on Specific ports](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/container%20run%202.JPG)
+
+<hr/>
 
 Return the container id into an Env Vat
 ```sh
@@ -133,8 +150,14 @@ docker images
 ```
 #### Getting the container image ID's via CLI - docker ps
 ![Getting the container image ID's via CLI - docker ps](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/docker%20ps.JPG)
+
+<hr/>
+
 #### Getting the container image ID's via CLI - docker ps -a
 ![Getting the container image ID's via CLI - docker ps -a](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/docker%20ps-a.JPG)
+
+<hr/>
+
 #### Getting the docker images
 ![Getting the docker images](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/docker%20images.JPG)
 
@@ -158,11 +181,13 @@ docker logs $CONTAINER_ID -f
 docker run --rm -it curlimages/curl "-X GET http://localhost:4567/api/activities/home -H \"Accept: application/json\" -H \"Content-Type: application/json\""
 ```
 
-busybosy is often used for debugging since it install a bunch of thing
+busybosy is often used for debugging since it installs a bunch of things
 
 ```sh
 docker run --rm -it busybosy
 ```
+
+<hr/>
 
 ### Gain Access to a Container
 
@@ -171,6 +196,8 @@ docker exec CONTAINER_ID -it /bin/bash
 ```
 
 > You can just right click a container and see logs in VSCode with Docker extension
+
+<hr/>
 
 ### Delete an Image
 
@@ -182,6 +209,7 @@ docker image rm backend-flask --force
 
 > There are some cases where you need to use the --force
 
+<hr/>
 
 ### Overriding Ports
 
@@ -196,16 +224,22 @@ FLASK_ENV=production PORT=8080 docker run -p 4567:4567 -it backend-flask
 #### Unset Backend and Front End ports
 ![Unset Backend and Front End ports](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Unset%20backend%20and%20frontend.JPG)
 
+<hr/>
+
 #### Unset Backend and Front End URL's
 ![Unset Backend and Front End URL's](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Unsetting%20URL's.JPG)
+
+<hr/>
 
 #### Unset the necessary ports for the app to work
 ![Unset the necessary ports for the app to work](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Unlocked%20ports.JPG)
 
+<hr/>
+
 ## Containerize Frontend
 ---
 
-## Run NPM Install
+### Run NPM Install
 
 We have to run NPM Install before building the container since it needs to copy the contents of node_modules
 
@@ -215,8 +249,12 @@ npm i
 ```
 ![NPM Install](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/npm%20install%20in%20frontendreact.JPG)
 
+<hr/>
+
 This is tyring to do on startup, decided to automate the process.
 ![NPM Install Automation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/automating%20npm%20install%20on%20startup.JPG)
+
+<hr/>
 
 ### Create Docker File
 
@@ -234,17 +272,23 @@ EXPOSE ${PORT}
 CMD ["npm", "start"]
 ```
 
+<hr/>
+
 ### Build Container
 
 ```sh
 docker build -t frontend-react-js ./frontend-react-js
 ```
 
+<hr/>
+
 ### Run Container
 
 ```sh
 docker run -p 3000:3000 -d frontend-react-js
 ```
+
+<hr/>
 
 ## Multiple Containers
 
@@ -283,6 +327,8 @@ networks:
 
 ![Docker Compose Images](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/docker%20images.JPG)
 
+<hr/>
+
 ## Adding DynamoDB Local and Postgres
 
 We are going to use Postgres and DynamoDB local in future labs
@@ -311,7 +357,11 @@ volumes:
 
 ![PostGres and DynamoDB install](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Added%20DynamoDB%20and%20Postgres.JPG)
 
+<hr/>
+
 ![Current running ports](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Opening%20all%20the%20ports.JPG)
+
+<hr/>
 
 To install the postgres client into Gitpod
 
@@ -323,6 +373,8 @@ To install the postgres client into Gitpod
       sudo apt update
       sudo apt install -y postgresql-client-13 libpq-dev
 ```
+
+<hr/>
 
 ### DynamoDB Local
 
@@ -342,18 +394,46 @@ services:
     working_dir: /home/dynamodblocal
 ```
 
+<hr/>
+
 Example of using DynamoDB local
 https://github.com/100DaysOfCloud/challenge-dynamodb-local
 
 ![Using DynamoDB local](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/TestingDynamoDB.JPG)
+
+<hr/>
+
 ![Create a table in DynamoDB-SQL](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/DynamoDB%20testSQL.JPG)
+
+<hr/>
+
 ![DynamoDB Create table](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/DynamoDB%20success.JPG)
+
+<hr/>
+
 ![DynamoDB Create Item](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/createitem.JPG)
+
+<hr/>
+
 ![DynamoDB Create Item in action](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/createitemMain.JPG)
+
+<hr/>
+
 ![Code for DynamoDB List Tables](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/List%20tables.JPG)
+
+<hr/>
+
 ![DynamoDB List Tables in action](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/List%20Tables%20Main.JPG)
+
+<hr/>
+
 ![DynamoDB List Tables backend](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/List%20tables.JPG)
+
+<hr/>
+
 ![Get Records](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/getRecordsMain.JPG)
+
+<hr/>
 
 ## Volumes
 
@@ -375,18 +455,37 @@ volumes:
     driver: local
 
 ```
+<hr/>
+
 ### PostGres Install and configuration
 ![PostGres DB configuration](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/postgresDB%20connection.JPG)
+
+<hr/>
+
 ![PostGres DB Success](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/postgresdbsuccessful%20connection.JPG)
+
+<hr/>
 
 #### Working App - Backend (Terminal)
 ![Working App - Backend (Terminal)](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Running%20app%20on%20terminal.JPG)
 
+<hr/>
+
 #### Working App - Backend
 ![Working App - Backend](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Working%20app%201.JPG)
+
+<hr/>
 
 #### Working App - Port 3000
 ![Working App - Port 3000](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Working%20application%20on%20port%203000.JPG)
 
+<hr/>
+
 #### Final image showing correct ports are running
 ![Final image showing correct ports are running](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/final%20correct%20ports%20are%20running.JPG)
+
+<hr/>
+<span style="color:green;font-weight:700;font-size:20px">
+The End!
+</span>
+<hr/>
