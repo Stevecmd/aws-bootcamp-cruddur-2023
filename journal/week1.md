@@ -15,8 +15,8 @@ The referenced article below came in handy.
 >>Good Article for Debugging Connection Refused
 https://pythonspeed.com/articles/docker-connection-refused/
 ---
->>**Below is a step by step break down of my work.**
-Todo Checklist:
+
+**Todo Checklist:**
 - [x] [Watch How to Ask for Technical Help](https://www.youtube.com/watch?v=tDPqmwKMP7Y&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=29)
 - [x] [Watch Grading Homework Summaries](https://www.youtube.com/watch?v=FKAScachFgk&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=25)
 - [x] [Watch Week 1 - Live Streamed Video](https://www.youtube.com/watch?v=zJnNe5Nv4tE&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=22)
@@ -32,6 +32,8 @@ Todo Checklist:
 - [x] Complete 100% of the tasks
 
 <hr/>
+
+>>**Below is a step by step break down of my work.**
 
 ![Build container](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/build%20container.JPG)
 
