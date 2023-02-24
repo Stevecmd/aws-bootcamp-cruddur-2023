@@ -59,7 +59,7 @@ cd ..
 - append to the url to `/api/activities/home`
 - you should get back json
 
-![containerize backend](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Working%20container%20from%20docker%20image.JPG)
+![Containerize Backend](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Working%20container%20from%20docker%20image.JPG)
 
 <hr/>
 
@@ -82,6 +82,8 @@ ENV FLASK_ENV=development
 EXPOSE ${PORT}
 CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0", "--port=4567"]
 ```
+![Add Dockerfile](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/docker%20ps.JPG)
+
 <hr/>
 
 ### Build Container
