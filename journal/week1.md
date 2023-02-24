@@ -110,7 +110,7 @@ unset FRONTEND_URL="*"
 unset BACKEND_URL="*"
 ```
 
-![Build Container](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/build%20container.JPG)
+![Run Container](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/docker%20ps-a.JPG)
 
 <hr/>
 
