@@ -32,8 +32,6 @@ https://pythonspeed.com/articles/docker-connection-refused/
 
 >>**Below is a step by step break down of my work.**
 
-![Build container](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/build%20container.JPG)
-
 ## VSCode Docker Extension
 
 I used Docker for VSCode which makes it easy to work with Docker
