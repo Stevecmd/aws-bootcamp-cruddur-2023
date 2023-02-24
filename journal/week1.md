@@ -1,5 +1,5 @@
 # Week 1 — App Containerization
-This was the second week of the Bootcamp. It was quite intense as I wasted several days trying to
+This was the second week of the Bootcamp. In the end, I was succesful but it was quite intense as I wasted several days trying to
 figure out what was causing the 404 error as shown below. 
 >>404 Error Page not found
 ![404 Not Found](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/404%20error%20after%20docker%20run.JPG)
