@@ -1,3 +1,4 @@
 ## Frontend React JS
 
-Update me!
+This is the main repo for front end of the Cruddur social media app.
+We are using React.
