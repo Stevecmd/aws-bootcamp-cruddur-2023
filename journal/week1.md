@@ -31,8 +31,10 @@ Todo Checklist:
 - [x] [Run Postgres Container and ensure it works](https://www.youtube.com/watch?v=CbQNMaa6zTg&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=28)
 - [x] Complete 100% of the tasks
 
-![Build container](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/build%20container.JPG)
 <hr/>
+
+![Build container](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/build%20container.JPG)
+
 ## VSCode Docker Extension
 
 I used Docker for VSCode which makes it easy to work with Docker
@@ -113,6 +115,8 @@ unset BACKEND_URL="*"
 <hr/>
 
 ![Docker build confirmation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/docker%20build%20confirmation.JPG)
+
+<hr/>
 
 Run in background
 ```sh
@@ -485,7 +489,6 @@ volumes:
 ![Final image showing correct ports are running](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/final%20correct%20ports%20are%20running.JPG)
 
 <hr/>
-<span style="color:green;font-weight:700;font-size:20px">
-The End!
-</span>
+<green>The End!</green>
+
 <hr/>
