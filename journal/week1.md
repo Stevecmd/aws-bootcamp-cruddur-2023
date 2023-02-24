@@ -334,6 +334,8 @@ https://github.com/100DaysOfCloud/challenge-dynamodb-local
 ![Create a table in DynamoDB-SQL](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/DynamoDB%20testSQL.JPG)
 ![DynamoDB Create table](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/DynamoDB%20success.JPG)
 ![DynamoDB Create Item](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/createitem.JPG)
+![DynamoDB Create Item in action](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/createitemMain.JPG)
+![DynamoDB List Tables](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/List%20Tables%20Main.JPG)
 
 ## Volumes
 
