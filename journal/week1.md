@@ -4,7 +4,7 @@ figure out what was causing the 404 error as shown below.
 >>404 Error Page not found
 ![404 Not Found](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/404%20error%20after%20docker%20run.JPG)
 ---
-In the end, I was victorious! Here's how I did it.
+**In the end, I was victorious! Here's how I did it.**
 
 >>**NB**: I just had to get my front end to communicate with the back end. I used the below referenced article to
 guide me.
@@ -29,10 +29,10 @@ Todo Checklist:
 - [x] [Write a React Page for Notifications](https://www.youtube.com/watch?v=k-_o0cCpksk&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=27)
 - [x] [Run DynamoDB Local Container and ensure it works](https://www.youtube.com/watch?v=CbQNMaa6zTg&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=28)
 - [x] [Run Postgres Container and ensure it works](https://www.youtube.com/watch?v=CbQNMaa6zTg&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=28)
-- [x] [Complete 100% of the tasks]()
+- [x] Complete 100% of the tasks
 
 ![Build container](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/build%20container.JPG)
-
+<hr/>
 ## VSCode Docker Extension
 
 I used Docker for VSCode which makes it easy to work with Docker
