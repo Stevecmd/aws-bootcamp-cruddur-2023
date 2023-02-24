@@ -54,7 +54,7 @@ Table of contents
      * [Public](#public)
 <!--te-->
 
-## === VSCode Docker Extension
+## VSCode Docker Extension
 
 I used Docker for VSCode which makes it easy to work with Docker
 **NB**I was using the VSCode application running on **GitPod**
@@ -64,7 +64,7 @@ https://code.visualstudio.com/docs/containers/overview
 > Gitpod is preinstalled with this extension
 <hr/>
 
-## === Containerize Backend
+## Containerize Backend
 
 ### Run Python
 
