@@ -59,6 +59,8 @@ cd ..
 - append to the url to `/api/activities/home`
 - you should get back json
 
+![containerize backend](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Working%20container%20from%20docker%20image.JPG)
+
 <hr/>
 
 ### Add Dockerfile
