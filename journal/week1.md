@@ -255,7 +255,7 @@ npm i
 
 <hr/>
 
-This is tyring to do on startup, decided to automate the process.
+`Npm i` on startup is tyring to repeat, decided to automate the process.
 ![NPM Install Automation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/automating%20npm%20install%20on%20startup.JPG)
 
 <hr/>
