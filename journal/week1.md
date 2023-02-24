@@ -489,8 +489,8 @@ volumes:
 ![Final image showing correct ports are running](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/final%20correct%20ports%20are%20running.JPG)
 
 <hr/>
-<span style="color:green;font-weight:700;font-size:20px">
-+ The End
-</span>
+<p><red> 
+The End
+</red>
 
 <hr/>
