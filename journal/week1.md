@@ -30,7 +30,7 @@ https://pythonspeed.com/articles/docker-connection-refused/
 
 <hr/>
 
->>**Below is a step by step break down of my work.**
+>>**Below is a step by step break down of my work. Use the Table of contents to jump to specific sections**
 
 Table of contents
 =================
