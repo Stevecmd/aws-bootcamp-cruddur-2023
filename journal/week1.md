@@ -200,6 +200,9 @@ npm i
 ```
 ![NPM Install](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/npm%20install%20in%20frontendreact.JPG)
 
+This is trying to do on startup, decided to automate the process.
+![NPM Install Automation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/automating%20npm%20install%20on%20startup.JPG)
+
 ### Create Docker File
 
 Create a file here: `frontend-react-js/Dockerfile`
