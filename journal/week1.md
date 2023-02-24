@@ -174,7 +174,7 @@ docker image rm backend-flask --force
 FLASK_ENV=production PORT=8080 docker run -p 4567:4567 -it backend-flask
 ```
 #### Overriding ports
-![Overriding ports](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Unsetting%20URL's.JPG)
+!(https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Unsetting%20URL's.JPG)
 
 > Look at Dockerfile to see how ${PORT} is interpolated
 
