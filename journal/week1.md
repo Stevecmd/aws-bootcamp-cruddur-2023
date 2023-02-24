@@ -8,11 +8,8 @@ figure out what was causing the 404 error as shown below.
 
 >>**NB**: I just had to get my front end to communicate with the back end. I used the below referenced article to
 guide me.
----
-## References
 
-The referenced article below came in handy.  
->>Good Article for Debugging Connection Refused
+>>Article on Debugging Connection Refused
 https://pythonspeed.com/articles/docker-connection-refused/
 ---
 
