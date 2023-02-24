@@ -338,6 +338,7 @@ https://github.com/100DaysOfCloud/challenge-dynamodb-local
 ![Code for DynamoDB List Tables](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/List%20tables.JPG)
 ![DynamoDB List Tables in action](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/List%20Tables%20Main.JPG)
 ![DynamoDB List Tables backend](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/List%20tables.JPG)
+![Get Records](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/getRecordsMain.JPG)
 
 ## Volumes
 
