@@ -16,6 +16,20 @@ The referenced article below came in handy.
 https://pythonspeed.com/articles/docker-connection-refused/
 ---
 >>**Below is a step by step break down of my work.**
+Todo Checklist:
+- [x] Watch How to Ask for Technical Help
+- [x] Watch Grading Homework Summaries
+- [x] Watched Week 1 - Live Streamed Video
+- [x] Remember to Commit Your Code
+- [x] Watcked Chirag's Week 1 - Spending Considerations
+- [x] Watched Ashish's Week 1 - Container Security Considerations
+- [x] Containerize Application (Dockerfiles, Docker Compose)
+- [x] Document the Notification Endpoint for the OpenAI Document
+- [x] Write a Flask Backend Endpoint for Notifications
+- [x] Write a React Page for Notifications
+- [x] Run DynamoDB Local Container and ensure it works
+- [x] Run Postgres Container and ensure it works
+- [x] Complete 100% of the tasks
 
 
 ## VSCode Docker Extension
