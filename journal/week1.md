@@ -32,6 +32,28 @@ https://pythonspeed.com/articles/docker-connection-refused/
 
 >>**Below is a step by step break down of my work.**
 
+Table of contents
+=================
+
+<!--ts-->
+   * [Todo Checklist](#TodoChecklist)
+   * [VSCode Docker Extension](#VSCodeDockerExtension)
+   * [Containerize Backend](#ContainerizeBackend)
+      * [Run Python](#RunPython)
+      * [Add Dockerfile](#AddDockerfile)
+      * [Remote files](#remote-files)
+      * [Multiple files](#multiple-files)
+      * [Combo](#combo)
+      * [Auto insert and update TOC](#auto-insert-and-update-toc)
+      * [GitHub token](#github-token)
+      * [TOC generation with Github Actions](#toc-generation-with-github-actions)
+   * [Tests](#tests)
+   * [Dependency](#dependency)
+   * [Docker](#docker)
+     * [Local](#local)
+     * [Public](#public)
+<!--te-->
+
 ## VSCode Docker Extension
 
 I used Docker for VSCode which makes it easy to work with Docker
