@@ -266,6 +266,8 @@ networks:
     name: cruddur
 ```
 
+![Docker Compose Images](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/docker%20images.JPG)
+
 ## Adding DynamoDB Local and Postgres
 
 We are going to use Postgres and DynamoDB local in future labs
