@@ -360,6 +360,9 @@ volumes:
     driver: local
 
 ```
+### PostGres Install and configuration
+![PostGres DB configuration](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/postgresDB%20connection.JPG)
+
 #### Working App - Backend (Terminal)
 ![Working App - Backend (Terminal)](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Running%20app%20on%20terminal.JPG)
 
