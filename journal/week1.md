@@ -294,6 +294,8 @@ volumes:
     driver: local
 ```
 
+![PostGres and DynamoDB install](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Added%20DynamoDB%20and%20Postgres.JPG)
+
 To install the postgres client into Gitpod
 
 ```sh
