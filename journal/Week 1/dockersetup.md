@@ -45,6 +45,6 @@ This made the images available on docker hub for use wherever I want eg on an ec
 4. To verify that the containers were running I ran `docker ps`
 
 NB: The default format is: 
-   > **Tagging**: `docker tag <image-id> <docker-hub-username>/<image-name>:<tag>`
-   > **Pushing**: `docker push <docker-hub-username>/<image-name>:<tag>`
-   > **Pulling**: `docker pull <image-name>:<tag>`
+   > Tagging: `docker tag <image-id> <docker-hub-username>/<image-name>:<tag>`
+   > Pushing: `docker push <docker-hub-username>/<image-name>:<tag>`
+   > Pulling: `docker pull <image-name>:<tag>`
