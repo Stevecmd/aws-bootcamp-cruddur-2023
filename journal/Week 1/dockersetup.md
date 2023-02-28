@@ -18,9 +18,9 @@ had to undertake the following steps to upload my containers onto dockerhub:
 This made the images available on docker hub for use wherever I want eg on an ec2 instance.
 4. I then had to login into docker using `docker login`
 
-## EC2 instance
+## EC2 instance:
 1. After creating the EC2 instance; to install docker via the ec2 instance user data, run: 
-    >>        ```
+      ```
         #! /bin/sh
         yum update -y
         amazon-linux-extras install docker
@@ -29,7 +29,7 @@ This made the images available on docker hub for use wherever I want eg on an ec
         chkconfig docker on```
   
   Alternatively **SSH** into it and run:
-  >> ``` $ sudo yum update -y
+  ``` $ sudo yum update -y
    $ sudo amazon-linux-extras install docker
    $ sudo service docker start
    $ sudo usermod -a -G docker ec2-user ```
