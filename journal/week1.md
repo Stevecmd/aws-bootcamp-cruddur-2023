@@ -524,5 +524,6 @@ volumes:
 
 [My EC2 Docker setup instructions](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/dockersetup.md)
 <hr/>
+
 $${\color{red}The End}$$
 
