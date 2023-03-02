@@ -19,12 +19,12 @@ tasks:
       exit
 
 #Automating the running of npm to each time the container is started.
-  - name: npm-install
+  - name: react-js
     init: |
       cd /workspace/aws-bootcamp-cruddur-2023/frontend-react-js
       npm i
       exit
-
+  
 vscode:
   extensions:
     - 42Crunch.vscode-openapi
