@@ -49,7 +49,7 @@ Table of contents
 
 
 ## Setting up the HoneyComb API Key
-<img src="https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%202/Honeycomb%20API%20Key%20set.JPG" alt="HoneyComb API Key" width="700" height="500" />
+![HoneyComb API Key](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%202/Honeycomb%20API%20Key%20set.JPG)
 
 
 ## Backend Logs
