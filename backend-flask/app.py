@@ -150,3 +150,5 @@ def data_activities_reply(activity_uuid):
 
 if __name__ == "__main__":
   app.run(debug=True)
+  FlaskInstrumentor().instrument_app(app)
+  RequestsInstrumentor().instrument()
