@@ -1,7 +1,7 @@
 # Week 2 — Distributed Tracing
 This was the third week of the Bootcamp. 
 
-**Todo Checklist:**
+**Todo Checklist:** - (The Hyperlinks link to the training videos)
 - [x] [Create your Free HoneyComb.io account](https://www.youtube.com/watch?v=7IwtVLfSD0o&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=10)
 - [x] [Create your Free RollBar account](https://www.youtube.com/watch?v=Lpm6oAP3Fb0&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=11)
 - [x] [Watch Week 2 Live-Stream Video](https://www.youtube.com/watch?v=2GD9xCzRId4&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=30)
