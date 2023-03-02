@@ -20,5 +20,5 @@ Table of contents
 =================
 
 <!--ts-->
-   * [Todo Checklist](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week1.md#vscode-docker-extension)
+
 <!--te-->
