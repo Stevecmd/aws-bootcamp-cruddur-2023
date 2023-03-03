@@ -1,5 +1,5 @@
 # Week 2 — Distributed Tracing
-This was the third week of the Bootcamp. 
+This was technically the third week of the Bootcamp. 
 
 (The Hyperlinks in the table below link to the training videos)
 <hr/>
