@@ -113,7 +113,7 @@ Table of contents
 ![API endpoint](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%202/api%20endpoint%20sample%201.JPG)
 
 
-## Succesfull connection - JSON data
+## Successful connection - JSON data
 ![JSON data](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%202/backend%20json%20data.JPG)
 
 
@@ -229,4 +229,3 @@ Table of contents
 ![Rollbar error report specifics](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%202/Rollbar%20error%20log.JPG)
 <hr/>
 
-$${\color{red}The End}$$
