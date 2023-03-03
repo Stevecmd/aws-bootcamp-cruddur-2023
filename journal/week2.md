@@ -36,11 +36,41 @@ Table of contents
    * [Cruddur returning API endpoint](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#cruddur-returning-api-endpoint)
    * [API endpoint on terminal](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#api-endpoint-on-terminal)
    * [Succesfull connection - JSON data](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#succesfull-connection---json-data)
-   ***** [Instrument Honeycomb with OTEL](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#instrument-honeycomb-with-otel)
-   * [Open Telemetry (OTEL) installation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#open-telemetry-otel-installation)
-   * [Updating App.py to include HoneyComb configuration](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#updating-apppy-to-include-honeycomb-configuration)
-   * [HoneyComb instrumentation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#honeycomb-instrumentation)
-   * [Adding additional ports for the x-ray daemon](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#honeycomb-instrumentation-1)
+   * [Whoami-glitch.me](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#whoami-glitchme)
+   * [OTEL configuration](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#otel-configuration)
+   * [Working HoneyComb Queries](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#working-honeycomb-queries)
+   * [HoneyComb Traces](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#honeycomb-traces)
+   * [HoneyComb Trace Review](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#honeycomb-trace-review)
+   * [Adding a span in homeactivities](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#adding-a-span-in-homeactivitiespy)
+   * [HoneyComb trace of the New Span](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#honeycomb-trace-of-the-new-span)
+   * [Creating a custom Span](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#creating-a-custom-span)
+   * [Creating a query on HoneyComb](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#creating-a-query-on-honeycomb)
+   * [Running Traces on HoneyComb](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#running-traces-on-honeycomb)
+   * [Traces report on mock data](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#traces-report-on-mock-data)
+   * [Custom Trace](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#custom-trace)
+   * [New Query](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#new-query)
+   * [Query duration heatmap](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#query-duration-heatmap)
+   * [Magnifying the Query results](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#magnifying-the-query-results)
+   * [X-Ray](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#x-ray)
+   * [Adding X-Ray to requirements](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#adding-x-ray-to-requirements)
+   * [Additional ports -> x-ray daemon](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#additional-ports---x-ray-daemon)
+   * [X-Ray Install](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#x-ray-install)
+   * [X-Ray Group ARN on AWS](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#x-ray-group-arn-on-aws)
+   * [RollBar](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#rollbar)
+   * [Rollbar account creation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#rollbar-account-creation)
+   * [Selecting Flask as the app type in Rollbar](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#selecting-flask-as-the-app-type-in-rollbar)
+   * [Adding Rollbar support - Blinker](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#adding-rollbar-support---blinker)
+   * [Creating a Logger on the backend](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#creating-a-logger-on-the-backend)
+   * [Testing access to the Rollbar page](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#testing-access-to-the-rollbar-page)
+   * [Setting the Rollbar Access token](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#setting-the-rollbar-access-token)
+   * [Setting the Rollbar Access token in Docker](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#setting-the-rollbar-access-token-in-docker)
+   * [Accessing the test Rollbar webpage](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#accessing-the-test-rollbar-webpage)
+   * [Rollbar Logs Success](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#rollbar-logs-success)
+   * [Rollbar Report](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#rollbar-report)
+   * [Rollbar Logged occurences](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#rollbar-logged-occurences)
+   * [Rollbar Error Report](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#rollbar-error-report)
+   * [Rollbar Error Report Specifics](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#rollbar-error-report-specifics)
+   
 <!--te-->
 
 
@@ -107,7 +137,7 @@ Table of contents
 ![Sample recent traces on HoneyComb](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%202/review%20trace.JPG)
 
 
-## Adding a span in homeactivities.py
+## Adding a span in homeactivities
 ![Span creation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%202/adding%20a%20span.JPG)
 
 
