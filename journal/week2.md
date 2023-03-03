@@ -228,4 +228,5 @@ Table of contents
 ## Rollbar Error Report Specifics
 ![Rollbar error report specifics](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%202/Rollbar%20error%20log.JPG)
 <hr/>
+
 $${\color{green}The End}$$
