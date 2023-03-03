@@ -235,6 +235,6 @@ Table of contents
 | [Updating App.py to include HoneyComb configuration](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#updating-apppy-to-include-honeycomb-configuration) | [HoneyComb instrumentation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#honeycomb-instrumentation) | [Setting up the HoneyComb API Key](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#setting-up-the-honeycomb-api-key) |
 | [Backend Logs](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#backend-logs) | [Automating of the opening of backend ports](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#automating-of-the-opening-of-backend-ports) |   |
 
-| Table of Contents ||
+| Table of Contents ||------------------------------------------|
 | [Honeycomb environment](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#honeycomb-environment) | [Instrument Honeycomb with OTEL](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#instrument-honeycomb-with-otel)
 | `git diff` | Show file differences that **haven't been** staged |
