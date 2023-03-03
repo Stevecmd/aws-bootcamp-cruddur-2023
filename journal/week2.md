@@ -14,6 +14,22 @@ This was the third week of the Bootcamp.
 
 <hr/>
 
+| Homework      | Completed     | Not Completed  |
+| ------------- |:-------------:| -----:|
+| [Create your Free HoneyComb.io account](https://www.youtube.com/watch?v=7IwtVLfSD0o&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=10)   | ✔ |  |
+|[Create your Free RollBar account](https://www.youtube.com/watch?v=Lpm6oAP3Fb0&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=11)  | ✔     |    |
+| Watched Week 1 - Live Streamed Video | ✔      |   |
+|Remember to Commit Your Code|✔      |   |
+|Watcked Chirag's Week 1 - Spending Considerations|✔      |   |
+| Watched Ashish's Week 1 - Container Security Considerations|    ✔  |   |
+| Containerize Application (Dockerfiles, Docker Compose)  | ✔   |   |
+| Document the Notification Endpoint for the OpenAI Document |✔      |   |
+| 	Write a Flask Backend Endpoint for Notifications| ✔   |   |
+| Write a React Page for Notifications | ✔      |   |
+|Run DynamoDB Local Container and ensure it works  | ✔  |   |
+| 	Run Postgres Container and ensure it works | ✔  |   |
+
+
 >>**Below is a step by step break down of my work. Use the Table of contents to jump to specific sections**
 
 Table of contents
