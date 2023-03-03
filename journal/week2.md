@@ -19,8 +19,10 @@ This was the third week of the Bootcamp.
 Table of contents
 =================
 
+
+
 <!--ts-->
-   * [Todo Checklist](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#week-2--distributed-tracing)
+   * [Distributed Tracing](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#week-2--distributed-tracing)
    * [Honeycomb environment](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#honeycomb-environment)
    * [Instrument Honeycomb with OTEL](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#instrument-honeycomb-with-otel)
    * [Open Telemetry (OTEL) installation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week2.md#open-telemetry-otel-installation)
