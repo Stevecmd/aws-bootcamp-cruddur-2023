@@ -158,3 +158,43 @@ Table of contents
 
 ## X-Ray Group ARN on AWS
 ![X-Ray Group / Permissions on AWS](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%202/x-ray%20create%20group.JPG)
+
+# RollBar
+## Creating a Logger on the backend
+![Logger for Rollbar](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%202/Logger.JPG)
+
+## Rollbar account creation
+![Rollbar Account](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%202/Rollbar%20account%20creation.JPG)
+
+## Selecting Flask as the app type in Rollbar
+![Flask selection](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%202/selecting%20flask%20sdk%20in%20rollbar.JPG)
+
+## Adding Rollbar support - Blinker
+![Blinker](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%202/install%20requirements%20blinker.JPG)
+
+## Testing access to the Rollbar page
+![Rollbar working webpage](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%202/Rollbar%20test.JPG)
+
+## Setting the Rollbar Access token
+![Rollbar tokens in backend flask](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%202/Setting%20Rollbar.JPG)
+
+## Setting the Rollbar Access token in Docker 
+![Rollbar tokens in Docker compose](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%202/setting%20rollbar%20access%20token%20in%20docker%20compose.JPG)
+
+## Accessing the test Rollbar webpage 
+![Test page - Rollbar](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%202/Rollbar%20test%202.JPG)
+
+## Rollbar Logs Success
+![Rollbar Logs](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%202/rollbar%20success.JPG)
+
+## Rollbar Report
+![Rollbar report](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%202/rollbar%20report.JPG)
+
+## Rollbar Logged occurences
+![Logged occurences](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%202/rollbar%20occurences.JPG)
+
+## Rollbar Error Report
+![Rollbar error report](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%202/Error%20logged%20on%20RollBar.JPG)
+
+## Rollbar Error Report Specifics
+![Rollbar error report specifics](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%202/Rollbar%20error%20log.JPG)
