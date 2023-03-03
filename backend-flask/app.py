@@ -94,12 +94,13 @@ cors = CORS(
 
 # RollBar -------
 rollbar_access_token = os.getenv('ROLLBAR_ACCESS_TOKEN')
+
 @app.before_first_request
 def init_rollbar():
     """init rollbar module"""
     rollbar.init(
         # access token
-        rollbar_access_token,
+        ROLLBAR_ACCESS_TOKEN,
         # environment name
         'production',
         # server root directory, makes tracebacks prettier
