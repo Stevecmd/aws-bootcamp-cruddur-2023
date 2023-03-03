@@ -17,7 +17,7 @@ This was technically the third week of the Bootcamp.
 | [Integrate Rollbar and capture and error](https://www.youtube.com/watch?v=xMBDAb5SEU4&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=35)| ✔   |   |
 
 
->>**Below is a step by step break down of my work. Use the Table below to jump to specific sections**
+>**Below is a step by step break down of my work. Use the Table below to jump to specific sections.**
 
 
 |    | Table of Contents                                                                                                                                                                          |    |                                                                                                                                                                             |
