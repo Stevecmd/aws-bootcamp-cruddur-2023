@@ -17,17 +17,14 @@ This was the third week of the Bootcamp.
 | Homework      | Completed     | Not Completed  |
 | ------------- |:-------------:| -----:|
 | [Create your Free HoneyComb.io account](https://www.youtube.com/watch?v=7IwtVLfSD0o&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=10)   | ✔ |  |
-|[Create your Free RollBar account](https://www.youtube.com/watch?v=Lpm6oAP3Fb0&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=11)  | ✔     |    |
-| Watched Week 1 - Live Streamed Video | ✔      |   |
-|Remember to Commit Your Code|✔      |   |
-|Watcked Chirag's Week 1 - Spending Considerations|✔      |   |
-| Watched Ashish's Week 1 - Container Security Considerations|    ✔  |   |
-| Containerize Application (Dockerfiles, Docker Compose)  | ✔   |   |
-| Document the Notification Endpoint for the OpenAI Document |✔      |   |
-| 	Write a Flask Backend Endpoint for Notifications| ✔   |   |
-| Write a React Page for Notifications | ✔      |   |
-|Run DynamoDB Local Container and ensure it works  | ✔  |   |
-| 	Run Postgres Container and ensure it works | ✔  |   |
+| [Create your Free RollBar account](https://www.youtube.com/watch?v=Lpm6oAP3Fb0&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=11)  | ✔     |    |
+| [Watch Week 2 Live-Stream Video](https://www.youtube.com/watch?v=2GD9xCzRId4&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=30) | ✔      |   |
+| [Watch Chirag Week 2 - Spending Considerations (Coming Soon)](https://www.youtube.com/watch?v=2W3KeqCjtDY )|✔      |   |
+| [Watched Ashish's Week 2 - Observability Security Considerations](https://www.youtube.com/watch?v=bOf4ITxAcXc&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=31)|✔      |   |
+| [Instrument Honeycomb with OTEL](https://www.youtube.com/watch?v=2GD9xCzRId4&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=30)|    ✔  |   |
+| [Instrument AWS X-Ray](https://www.youtube.com/watch?v=n2DTsuBrD_A&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=32)  | ✔   |   |
+| [Configure custom logger to send to CloudWatch Logs](https://www.youtube.com/watch?v=ipdFizZjOF4&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=33) |✔      |   |
+| [Integrate Rollbar and capture and error](https://www.youtube.com/watch?v=xMBDAb5SEU4&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=35)| ✔   |   |
 
 
 >>**Below is a step by step break down of my work. Use the Table of contents to jump to specific sections**
