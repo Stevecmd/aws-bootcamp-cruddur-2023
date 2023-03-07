@@ -15,9 +15,13 @@ export default function RecoverPage() {
 
   const onsubmit_send_code = async (event) => {
     event.preventDefault();
-    console.log('onsubmit_send_code')
+    setErrors('')
+    Auth.forgotPassword(username)
+    .then((data) => setFormState('confirm_code') )
+    .catch((err) => setErrors(err.message) );
     return false
   }
+  
   const onsubmit_confirm_code = async (event) => {
     event.preventDefault();
     console.log('onsubmit_confirm_code')
