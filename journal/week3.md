@@ -30,7 +30,7 @@ This was technically the fourth week of the Bootcamp.
 | 6  | [Log in invalid user test](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#testing-the-log-in-button-behaviour-for-a-response)                           |
 | 7  | [Test User creation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito---setup-test-user-via-console)                                              |
 | 8  | [Sign in options](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito---review-test-user-configuration-via-console)                                  |
-| 9  | [MFA](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito---username-and-password-sent-to-email)                                                     |
+| 9  | [Temporary password email sent](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito---username-and-password-sent-to-email)                                                     |
 | 10 | [Required attributes](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito---setting-preferred-username-via-console)                                  |
 | 11 | [Configure message delivery](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#user-confirmation-email)                                                    |
 | 12 | [Userpool name](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#confirmed-users-account-status-changes-to-confirmed)                                     |
