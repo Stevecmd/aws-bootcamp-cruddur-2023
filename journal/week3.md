@@ -28,7 +28,7 @@ This was technically the fourth week of the Bootcamp.
 ![Configuring and Installing AWS amplify](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%203/Install%20aws%20amplify.JPG)
 
 
-## AWS Amplify import
+## AWS Amplify import configuration     
 
 ![Importing AWS Amplify](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%203/aws%20amplify%20import.JPG)
 
@@ -38,17 +38,17 @@ This was technically the fourth week of the Bootcamp.
 ![Port startup configuration](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%203/Update%20to%20gitpod%20yaml%20public%20ports.JPG)
 
 
-## Updating the AWS Cognito environment
+## Updating the Backend AWS Cognito environment
 
 ![Cognito Backend fixes](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%203/Cognito%20backend%20fixes.JPG)
 
 
-## Configuring Submit button behaviour
+## Configuring Login button behaviour
 
 ![Submit Button fix](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%203/editing%20on%20submit.JPG)
 
 
-## Testing the Log in with invalid credentials
+## Testing the Log in button behaviour for a response
 
 ![Log in invalid user test](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%203/Incorrect%20username%20or%20password.JPG)
 
@@ -98,11 +98,6 @@ This was technically the fourth week of the Bootcamp.
 ![User attributes](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%203/user%20attributes.JPG)
 
 
-## Cognito Userpool review
-
-![Userpool review](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%203/Userpool%20review.jpg)
-
-
 ## Cognito User pool created
 
 ![Final User pool](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%203/userpool.JPG)
@@ -111,6 +106,10 @@ This was technically the fourth week of the Bootcamp.
 ## Cognito - confirming email via terminal
 
 ![Force email confirmation in terminal](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%203/confirming%20email%20via%20terminal.JPG)
+
+## Email status changed to confirmed
+
+![Email status chnaged](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%203/Userpool%20review.jpg)
 
 
 ## Cognito user pool dashboard
