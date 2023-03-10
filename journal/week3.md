@@ -20,7 +20,11 @@ This was technically the fourth week of the Bootcamp.
 
 <hr/>
 
-<centre>
+<style>
+table {
+  margin: 0 auto;
+}
+</style>
 
 |     Homework    |   Completed   | Not Completed |
 |:--------------:|:-------------:|:-------------:|
@@ -36,7 +40,6 @@ This was technically the fourth week of the Bootcamp.
 | Cognito JWT Server side Verify |       ✔       |               |
 | Improving UI Contrast and Implementing CSS Variables for Theming |               |       ✔       |
 
-</centre>
 <hr/>
 
 |    | Table of contents - Steps taken to complete Week 3 assignments                                                                                                                                                                         |
