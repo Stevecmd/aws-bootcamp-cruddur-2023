@@ -121,7 +121,7 @@ This was technically the fourth week of the Bootcamp.
 ![Cognito setup - backend env](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%203/Backend%20cognito%20setup.JPG)
 
 
-## Signed in user - Cruddur App
+## Signed in user - Working Cruddur App Login
 
 ![User signed in](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%203/Working%20app%20showing%20logged%20in%20user.JPG)
 
