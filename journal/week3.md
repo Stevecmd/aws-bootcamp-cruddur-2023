@@ -82,12 +82,6 @@ This was technically the fourth week of the Bootcamp.
 
 ![Users account status changes to confirmed after responding to email](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%203/Status%20change%20pending%20to%20confirmed.JPG)
 
-
-## Signed in user - Cruddur App
-
-![User signed in](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%203/Working%20app%20showing%20logged%20in%20user.JPG)
-
-
 ## Userpool creation
 
 ![Userpool creation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%203/userpool%20creation.JPG)
@@ -125,6 +119,11 @@ This was technically the fourth week of the Bootcamp.
 ## Backend Cognito setup
 
 ![Cognito setup - backend env](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%203/Backend%20cognito%20setup.JPG)
+
+
+## Signed in user - Cruddur App
+
+![User signed in](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%203/Working%20app%20showing%20logged%20in%20user.JPG)
 
 
 
