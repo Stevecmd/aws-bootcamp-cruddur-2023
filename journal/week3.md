@@ -20,6 +20,25 @@ This was technically the fourth week of the Bootcamp.
 
 <hr/>
 
+<div style="text-align:center">
+
+|     Homework    |   Completed   | Not Completed |
+|:--------------:|:-------------:|:-------------:|
+| Decentralized Authentication |       ✔       |               |
+| Ashish's - Decentralized Authentication |       ✔       |               |
+| Setup Cognito User Pool |       ✔       |               |
+| Implement Custom Signin Page |       ✔       |               |
+| Implement Custom Signup Page |       ✔       |               |
+| Watched Ashish's Week 2 - Observability Security Considerations |       ✔       |               |
+| Implement Custom Confirmation Page |       ✔       |               |
+| Implement Custom Recovery Page |       ✔       |               |
+| Different approaches to verifying JWTs |       ✔       |               |
+| Cognito JWT Server side Verify |       ✔       |               |
+| Improving UI Contrast and Implementing CSS Variables for Theming |               |       ✔       |
+
+</div>
+<hr/>
+
 |    | Table of contents - Steps taken to complete Week 3 assignments                                                                                                                                                                         |
 |----|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1  | [Configuring and Installing AWS amplify](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#aws-amplify-install-in-env-vars)                                |
