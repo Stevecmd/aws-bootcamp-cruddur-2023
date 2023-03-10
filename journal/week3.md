@@ -16,7 +16,7 @@ This was technically the fourth week of the Bootcamp.
 | [Implement Custom Recovery Page](https://www.youtube.com/watch?v=T4X4yIzejTc&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=41)  | ✔   |   |
 | [Different approaches to verifying JWTs](https://www.youtube.com/watch?v=nJjbI4BbasU&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=43) |✔      |   |
 | [Cognito JWT Server side Verify](https://youtu.be/d079jccoG-M)| ✔   |   |
-| [Improving UI Contrast and Implementing CSS Variables for Theming](https://youtu.be/m9V4SmJWoJU)| ✔   |   |
+| [Improving UI Contrast and Implementing CSS Variables for Theming](https://youtu.be/m9V4SmJWoJU)|   | ✔  |
 
 <hr/>
 
