@@ -117,11 +117,14 @@ This was technically the fourth week of the Bootcamp.
 ![User pool dashboard](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%203/Cognito%20user%20pool.JPG)
 
 
+## Cognito client ID
+
+![Client ID](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%203/Cognito%20client%20ID.JPG)
+
+
 ## Backend Cognito setup
 
 ![Cognito setup - backend env](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%203/Backend%20cognito%20setup.JPG)
 
 
-## Cognito client ID
 
-![Client ID](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%203/Cognito%20client%20ID.JPG)
