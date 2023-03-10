@@ -5,6 +5,9 @@
 	"features": {
 		"ghcr.io/devcontainers/features/aws-cli:1": {}
 	},
+	"remoteEnv": {
+		"AWS_CLI_AUTO_PROMPT": "on-partial"
+	},
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -12,9 +15,6 @@
 				"ms-python.python",
 				"vscodevim.vim"
 			],
-			"remoteEnv": {
-				"AWS_CLI_AUTO_PROMPT": "on-partial"
-			},
 			"settings": {
 				"workbench.colorTheme": "Default Dark+ Experimental"
 			}
