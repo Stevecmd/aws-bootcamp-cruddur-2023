@@ -18,8 +18,32 @@ This was technically the fourth week of the Bootcamp.
 | [Cognito JWT Server side Verify](https://youtu.be/d079jccoG-M)| ✔   |   |
 | [Improving UI Contrast and Implementing CSS Variables for Theming](https://youtu.be/m9V4SmJWoJU)| ✔   |   |
 
+<hr/>
 
-
+|    | Table of contents                                                                                                                                                                         |
+|----|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1  | [Configuring and Installing AWS amplify](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#aws-amplify-install-in-env-vars)                                |
+| 2  | [Importing AWS Amplify](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#aws-amplify-import-configuration)                                                |
+| 3  | [Port startup configuration](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#updating-port-startup-public)                                               |
+| 4  | [Cognito Backend fixes](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#updating-the-backend-aws-cognito-environment)                                    |
+| 5  | [Submit Button fix](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#configuring-login-button-behaviour)                                                  |
+| 6  | [Log in invalid user test](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#testing-the-log-in-button-behaviour-for-a-response)                           |
+| 7  | [Test User creation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito---setup-test-user-via-console)                                              |
+| 8  | [Sign in options](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito---review-test-user-configuration-via-console)                                  |
+| 9  | [MFA](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito---username-and-password-sent-to-email)                                                     |
+| 10 | [Required attributes](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito---setting-preferred-username-via-console)                                  |
+| 11 | [Configure message delivery](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#user-confirmation-email)                                                    |
+| 12 | [Userpool name](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#confirmed-users-account-status-changes-to-confirmed)                                     |
+| 13 | [Advanced app client settings](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#userpool-creation)                                                        |
+| 14 | [User attributes](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito---user-attributes)                                                             |
+| 15 | [Final User pool](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito-user-pool-created)                                                             |
+| 16 | [Force email confirmation in terminal](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito---confirming-email-via-terminal)                          |
+| 17 | [Users account status changes to confirmed after responding to email](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#email-status-changed-to-confirmed) |
+| 18 | [Userpool creation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito-user-pool-dashboard)                                                         |
+| 19 | [Cognito client ID](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito-client-id)                                                                   |
+| 20 | [Backend Cognito setup](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#backend-cognito-setup)                                                           |
+| 21 | [User signed in](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#signed-in-user---working-cruddur-app-login)                                             |
+                                                                                                                                       
 
 
 
@@ -124,31 +148,3 @@ This was technically the fourth week of the Bootcamp.
 ## Signed in user - Working Cruddur App Login
 
 ![User signed in](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%203/Working%20app%20showing%20logged%20in%20user.JPG)
-
-
-
-|    | Table of contents                                                                                                                                                                         |
-|----|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1  | [Configuring and Installing AWS amplify](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#aws-amplify-install-in-env-vars)                                |
-| 2  | [Importing AWS Amplify](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#aws-amplify-import-configuration)                                                |
-| 3  | [Port startup configuration](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#updating-port-startup-public)                                               |
-| 4  | [Cognito Backend fixes](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#updating-the-backend-aws-cognito-environment)                                    |
-| 5  | [Submit Button fix](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#configuring-login-button-behaviour)                                                  |
-| 6  | [Log in invalid user test](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#testing-the-log-in-button-behaviour-for-a-response)                           |
-| 7  | [Test User creation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito---setup-test-user-via-console)                                              |
-| 8  | [Sign in options](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito---review-test-user-configuration-via-console)                                  |
-| 9  | [MFA](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito---username-and-password-sent-to-email)                                                     |
-| 10 | [Required attributes](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito---setting-preferred-username-via-console)                                  |
-| 11 | [Configure message delivery](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#user-confirmation-email)                                                    |
-| 12 | [Userpool name](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#confirmed-users-account-status-changes-to-confirmed)                                     |
-| 13 | [Advanced app client settings](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#userpool-creation)                                                        |
-| 14 | [User attributes](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito---user-attributes)                                                             |
-| 15 | [Final User pool](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito-user-pool-created)                                                             |
-| 16 | [Force email confirmation in terminal](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito---confirming-email-via-terminal)                          |
-| 17 | [Users account status changes to confirmed after responding to email](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#email-status-changed-to-confirmed) |
-| 18 | [Userpool creation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito-user-pool-dashboard)                                                         |
-| 19 | [Cognito client ID](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito-client-id)                                                                   |
-| 20 | [Backend Cognito setup](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#backend-cognito-setup)                                                           |
-| 21 | [User signed in](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#signed-in-user---working-cruddur-app-login)                                             |
-|    |                                                                                                                                                                                           |
-|    |                                                                                                                                        
