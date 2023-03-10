@@ -20,55 +20,6 @@ This was technically the fourth week of the Bootcamp.
 
 <hr/>
 
-<p align="center">
-  <table>
-    <tr>
-      <th>Homework</th>
-      <th>Completed</th>
-      <th>Not Completed</th>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/watch?v=9obl7rVgzJw&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=41">Decentralized Authentication</a></td>
-      <td>✔</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/watch?v=tEJIeII66pY&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=39">Ashish's - Decentralized Authentication</a></td>
-      <td>✔</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/watch?v=9obl7rVgzJw&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=40">Setup Cognito User Pool</a></td>
-      <td>✔</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/watch?v=9obl7rVgzJw&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=40">Implement Custom Signin Page</a></td>
-      <td>✔</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/watch?v=T4X4yIzejTc&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=41">Implement Custom Signup Page</a></td>
-      <td>✔</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/watch?v=bOf4ITxAcXc&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=31">Watched Ashish's Week 2 - Observability Security Considerations</a></td>
-      <td>✔</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/watch?v=T4X4yIzejTc&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=41">Implement Custom Confirmation Page</a></td>
-      <td>✔</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><a href="https://www.youtube.com/watch?v=T4X4yIzejTc&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=41">Implement Custom Recovery Page</a></td>
-      <td>✔</td>
-      <td></
-
-<hr/>
-
 |    | Table of contents - Steps taken to complete Week 3 assignments                                                                                                                                                                         |
 |----|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1  | [Configuring and Installing AWS amplify](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#aws-amplify-install-in-env-vars)                                |
