@@ -20,7 +20,7 @@ This was technically the fourth week of the Bootcamp.
 
 <hr/>
 
-|    | Table of contents - Steps Taken to complete Week 3 assignments                                                                                                                                                                         |
+|    | Table of contents - Steps taken to complete Week 3 assignments                                                                                                                                                                         |
 |----|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1  | [Configuring and Installing AWS amplify](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#aws-amplify-install-in-env-vars)                                |
 | 2  | [Importing AWS Amplify](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#aws-amplify-import-configuration)                                                |
