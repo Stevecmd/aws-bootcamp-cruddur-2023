@@ -21,11 +21,11 @@ This was technically the fourth week of the Bootcamp.
 <hr/>
 
 <style>
-table {
+div {
   margin: 0 auto;
 }
 </style>
-
+<div>
 |     Homework    |   Completed   | Not Completed |
 |:--------------:|:-------------:|:-------------:|
 | Decentralized Authentication |       ✔       |               |
@@ -39,7 +39,7 @@ table {
 | Different approaches to verifying JWTs |       ✔       |               |
 | Cognito JWT Server side Verify |       ✔       |               |
 | Improving UI Contrast and Implementing CSS Variables for Theming |               |       ✔       |
-
+</div>
 <hr/>
 
 |    | Table of contents - Steps taken to complete Week 3 assignments                                                                                                                                                                         |
