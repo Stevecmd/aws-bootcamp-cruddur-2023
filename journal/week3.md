@@ -23,7 +23,7 @@ This was technically the fourth week of the Bootcamp.
 
 
 
-## AWS Amplify
+## AWS Amplify install in env vars
 
 ![Configuring and Installing AWS amplify](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%203/Install%20aws%20amplify.JPG)
 
