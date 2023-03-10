@@ -42,7 +42,7 @@ This was technically the fourth week of the Bootcamp.
 | 18 | [Userpool creation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito-user-pool-dashboard)                                                         |
 | 19 | [Cognito client ID](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito-client-id)                                                                   |
 | 20 | [Backend Cognito setup](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#backend-cognito-setup)                                                           |
-| 21 | [User signed in](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#signed-in-user---working-cruddur-app-login)                                             |
+| 21 | [Working Cruddur App - User signed in](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#signed-in-user---working-cruddur-app-login)                                             |
                                                                                                                                        
 
 
