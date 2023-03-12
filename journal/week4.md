@@ -1,1 +1,1 @@
-# Week 4 — Postgres and RDS
+# Week 4 — Databases: Postgres, RDS and SQL
