@@ -29,32 +29,32 @@ This was technically the fifth week of the Bootcamp.
 
 |    | Table of contents - Steps taken to complete Week 4 assignments                                                                                                                                                                         |
 |----|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1  | [Console - Lambda initial setup 1](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#aws-amplify-install-in-env-vars)                                |
-| 2  | [Console - Lambda initial setup 2](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#aws-amplify-import-configuration)                                                |
-| 3  | [Console - Lambda initial setup 3](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#updating-port-startup-public)                                               |
-| 4  | [Console - Lambda creation success](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#updating-the-backend-aws-cognito-environment)                                    |
-| 5  | [RDS database creation commands](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#configuring-login-button-behaviour)                                                  |
-| 6  | [Database creation success](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#testing-the-log-in-button-behaviour-for-a-response)                           |
-| 7  | [Temporarily stopping RDS](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito---setup-test-user-via-console)                                              |
-| 8  | [Initial Postgres Connection](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito---review-test-user-configuration-via-console)                                  |
-| 9  | [Creating the Cruddur Database](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito---username-and-password-sent-to-email)                                                     |
-| 10 | [Running SQL script to load the DB schema](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito---setting-preferred-username-via-console)                                  |
-| 11 | [Exporting PSQL connection URL](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#user-confirmation-email)                                                    |
-| 12 | [Creation of Database Binary files](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#confirmed-users-account-status-changes-to-confirmed)                                     |
-| 13 | [Modifying Binary file permissions](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#userpool-creation)                                                        |
-| 14 | [Dropping the database](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito---user-attributes)                                                             |
-| 15 | [Database creation script](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito-user-pool-created)                                                             |
-| 16 | [Setting the Database schema path](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito---confirming-email-via-terminal)                          |
-| 17 | [Loading the Database schema](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#email-status-changed-to-confirmed) |
-| 18 | [Changing modes and running in production mode](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito-user-pool-dashboard)                                                         |
-| 19 | [Implementing colored responses](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#cognito-client-id)                                                                   |
-| 20 | [Successful table creation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#backend-cognito-setup)                                                           |
-| 21 | [Setting the PSQL database connection variable](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#signed-in-user---working-cruddur-app-login)                                             |
-| 22 | [View created tables](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#backend-cognito-setup)                                                           |
-| 23 | [Database creation and loading the database schema](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#backend-cognito-setup)                                                           |
-| 24 | [Setting the production database variables](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#backend-cognito-setup)                                                           |
-| 25 | [Setting Database credentials as enviromental variables](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#backend-cognito-setup)                                                           |
-| 26 | [Successful psql connection](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week3.md#backend-cognito-setup)                                                           |                                                                                                                                       
+| 1  | [Console - Lambda initial setup 1](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#console---lambda-initial-setup-1)                                |
+| 2  | [Console - Lambda initial setup 2](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#console---lambda-initial-setup-2)                                                |
+| 3  | [Console - Lambda initial setup 3](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#console---lambda-initial-setup-3)                                               |
+| 4  | [Console - Lambda creation success](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#console---lambda-creation-success)                                    |
+| 5  | [RDS database creation commands](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#rds-database-creation-commands)                                                  |
+| 6  | [Database creation success](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#database-creation-success)                           |
+| 7  | [Temporarily stopping RDS](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#temporarily-stopping-rds)                                              |
+| 8  | [Initial Postgres Connection](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#initial-postgres-connection)                                  |
+| 9  | [Creating the Cruddur Database](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#creating-the-cruddur-database)                                                     |
+| 10 | [Running SQL script to load the DB schema](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#running-sql-script-to-load-the-db-schema)                                  |
+| 11 | [Exporting PSQL connection URL](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#exporting-psql-connection-url)                                                    |
+| 12 | [Creation of Database Binary files](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#creation-of-database-binary-files)                                     |
+| 13 | [Modifying Binary file permissions](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#modifying-binary-file-permissions)                                                        |
+| 14 | [Dropping the database](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#dropping-the-database)                                                             |
+| 15 | [Database creation script](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#database-creation-script)                                                             |
+| 16 | [Setting the Database schema path](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#setting-the-database-schema-path)                          |
+| 17 | [Loading the Database schema](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#loading-the-database-schema) |
+| 18 | [Changing modes and running in production mode](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#changing-modes-and-running-in-production-mode)                                                         |
+| 19 | [Implementing colored responses](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#implementing-colored-responses)                                                                   |
+| 20 | [Successful table creation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#successful-table-creation)                                                           |
+| 21 | [Setting the PSQL database connection variable](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#setting-the-psql-database-connection-variable)                                             |
+| 22 | [View created tables](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#view-created-tables)                                                           |
+| 23 | [Database creation and loading the database schema](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#database-creation-and-loading-the-database-schema)                                                           |
+| 24 | [Setting the production database variables](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#setting-the-production-database-variables)                                                           |
+| 25 | [Setting Database credentials as enviromental variables](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#setting-database-credentials-as-enviromental-variables)                                                           |
+| 26 | [Successful psql connection](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week4.md#successful-psql-connection)                                                           |                                                                                                                                       
 
 
 
