@@ -39,7 +39,7 @@ class Db:
     cyan = '\033[96m'
     no_color = '\033[0m'
     print(f'{cyan} SQL STATEMENT-[{title}]------{no_color}')
-    print(sql,params)
+    print(sql,params) # Get richer data when we print out the values
   def query_commit(self,sql,params={}):
     self.print_sql('commit with returning',sql,params)
 
@@ -87,7 +87,7 @@ class Db:
     with self.pool.connection() as conn:
       with conn.cursor() as cur:
         cur.execute(sql,params)
-        json = cur.fetchone()
+        json = cur.fetchone() # Runs execute and fetch only one item from the DB
         return json[0]
   def query_wrap_object(self,template):
     sql = f"""
