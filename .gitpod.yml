@@ -29,7 +29,7 @@ tasks:
       exit
   - name: flask
     commmand: |
-      cd backend-flask
+      cd /workspace/aws-bootcamp-cruddur-2023/backend-flask
       pip install -r requirements.txt 
   
 vscode:
