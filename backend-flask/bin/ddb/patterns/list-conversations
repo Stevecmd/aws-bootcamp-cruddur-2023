@@ -22,18 +22,17 @@ if len(sys.argv) == 2:
 ddb = boto3.client('dynamodb',**attrs)
 table_name = 'cruddur-messages'
 def get_my_user_uuid():
-    sql = """
-        SELECT 
-          users.uuid,
-        FROM users
-        WHERE
-          users.handle =%(handle)s,
-            )
-    """
-    uuid = db.query_value(sql,{
-      'handle':  'andrewbrown',
-    })
-    return uuid
+  sql = """
+    SELECT 
+      users.uuid
+    FROM users
+    WHERE
+      users.handle =%(handle)s
+  """
+  uuid = db.query_value(sql,{
+    'handle':  'andrewbrown'
+  })
+  return uuid
 
 my_user_uuid = get_my_user_uuid()
 print(f"my-uuid: {my_user_uuid}")
