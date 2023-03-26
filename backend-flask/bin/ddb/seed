@@ -46,13 +46,13 @@ def get_user_uuids():
     }
     print('get_user_uuids')
     print(results)
-    return(results)
+    return(results) #enables us to call the results later in the code
 
 def create_message_group(client,message_group_uuid, my_user_uuid, last_message_at=None, message=None, other_user_uuid=None, other_user_display_name=None, other_user_handle=None):
   table_name = 'cruddur-messages'
   record = {
-    'pk':   {'S': f"GRP#{my_user_uuid}"},
-    'sk':   {'S': last_message_at},
+    'pk':   {'S': f"GRP#{my_user_uuid}"}, #pk is partition key, S signifies these are strings
+    'sk':   {'S': last_message_at}, #sk is sort key
     'message_group_uuid': {'S': message_group_uuid},
     'message':  {'S': message},
     'user_uuid': {'S': other_user_uuid},
@@ -84,7 +84,7 @@ def create_message(client,message_group_uuid, created_at, message, my_user_uuid,
   # print the response
   print(response)
 
-message_group_uuid = "5ae290ed-55d1-47a0-bc6d-fe2bc2700399" #str(uuid.uuid4())
+message_group_uuid = "5ae290ed-55d1-47a0-bc6d-fe2bc2700399" #str(uuid.uuid4()) - one can generate their own generic UUID here in the given format
 now = datetime.now(timezone.utc).astimezone()
 users = get_user_uuids()
 
@@ -217,8 +217,8 @@ Person 1: And Zathras was just one example of that. He was a small but important
 Person 2: Definitely. I think his character is a great example of the show's ability to balance humor and heart, and to create memorable and beloved characters that fans will cherish for years to come.
 """
 
-lines = conversation.lstrip('\n').rstrip('\n').split('\n')
-for i in range(len(lines)):
+lines = conversation.lstrip('\n').rstrip('\n').split('\n') #Breaks out the dummy conversation into an array with each line as a cell
+for i in range(len(lines)): #iterating through the dummy conversation
   if lines[i].startswith('Person 1: '):
     key = 'my_user'
     message = lines[i].replace('Person 1: ', '')
@@ -227,7 +227,7 @@ for i in range(len(lines)):
     message = lines[i].replace('Person 2: ', '')
   else:
     print(lines[i])
-    raise 'invalid line'
+    raise 'invalid line' # Good practice to catch errors
   
   created_at = (now + timedelta(minutes=i)).isoformat()
   

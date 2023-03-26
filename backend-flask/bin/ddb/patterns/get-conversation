@@ -31,7 +31,7 @@ query_params = {
     ':year': {'S': '2023'},
     # ":start_date": { "S": "2023-03-01T00:00:00.000000+00:00" },
     # ":end_date": { "S": "2023-03-19T23:59:59.999999+00:00" },
-    ':pk': {'S': f"MSG#{message_group_uuid}"},
+    ':pk': {'S': f"MSG#{message_group_uuid}"},  #MSG = message_group_uuid
   },
 }
 
@@ -39,7 +39,7 @@ query_params = {
 response = dynamodb.query(**query_params)
 
 # print the items returned by the query
-print(json.dumps(response, sort_keys=True, indent=2))
+print(json.dumps(response, sort_keys=True, indent=2)) #json dumps make the print response prettier
 
 # print the consumed capacity
 print(json.dumps(response['ConsumedCapacity'], sort_keys=True, indent=2))
@@ -47,7 +47,7 @@ print(json.dumps(response['ConsumedCapacity'], sort_keys=True, indent=2))
 items = response['Items']
 reversed_array = items[::-1]
 
-for item in items:
+for item in reversed_array:
   sender_handle = item['user_handle']['S']
   message       = item['message']['S']
   timestamp     = item['sk']['S']
