@@ -26,9 +26,9 @@ tasks:
     init: |
       cd /workspace/aws-bootcamp-cruddur-2023/frontend-react-js
       npm i
-      
+      exit
   - name: flask
-    commmand: |
+    init: |
       cd /workspace/aws-bootcamp-cruddur-2023/backend-flask
       pip install -r requirements.txt 
   
