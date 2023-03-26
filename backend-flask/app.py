@@ -197,14 +197,14 @@ def data_create_message():
         message_group_uuid=message_group_uuid,
         cognito_user_id=cognito_user_id
       )
-  if model['errors'] is not None:
-    return model['errors'], 422
-  else:
-    return model['data'], 200
-except TokenVerifyError as e:
-  #unauthenticated request
-  app.logger.debug('e')
-  return {}, 401
+    if model['errors'] is not None:
+      return model['errors'], 422
+    else:
+      return model['data'], 200
+  except TokenVerifyError as e:
+    #unauthenticated request
+    app.logger.debug('e')
+    return {}, 401
 
 
 @app.route("/api/activities/home", methods=['GET'])
