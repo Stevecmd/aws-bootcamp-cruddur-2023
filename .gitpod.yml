@@ -20,10 +20,6 @@ tasks:
     command: |
       export GITPOD_IP=$(curl ifconfig.me)
       source "$THEIA_WORKSPACE_ROOT/backend-flask/bin/rds-update-sg-rule"
-  - name: flask
-    commmand: |
-      cd backend-flask
-      pip install -r requirements.txt    
 
 #Automating the running of npm to each time the container is started.
   - name: react-js
@@ -31,6 +27,10 @@ tasks:
       cd /workspace/aws-bootcamp-cruddur-2023/frontend-react-js
       npm i
       exit
+  - name: flask
+    commmand: |
+      cd backend-flask
+      pip install -r requirements.txt 
   
 vscode:
   extensions:
