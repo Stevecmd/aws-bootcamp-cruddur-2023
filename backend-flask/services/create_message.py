@@ -15,7 +15,6 @@ class CreateMessage:
       if message_group_uuid == None or len(message_group_uuid) < 1:
         model['errors'] = ['message_group_uuid_blank']
 
-
     if cognito_user_id == None or len(cognito_user_id) < 1:
       model['errors'] = ['cognito_user_id_blank']
 
