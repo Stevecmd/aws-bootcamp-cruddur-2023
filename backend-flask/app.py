@@ -16,6 +16,7 @@ from services.create_message import *
 from services.show_activity import *
 from services.notifications_activities import *
 from services.show_activity import *
+from services.users_short import *
 
 from lib.cognito_jwt_token import CognitoJwtToken, extract_access_token, TokenVerifyError
 
@@ -229,6 +230,11 @@ def data_home():
 def data_notifications():
     data = NotificationsActivities.run()
     return data, 200
+
+@app.route("/api/users/@<string:handle>/short", methods=['GET'])
+def data_users_short(handle):
+  data = UsersShort.run(handle)
+  return data, 200
 
 @app.route("/api/activities/@<string:handle>", methods=['GET'])
 def data_handle(handle):
