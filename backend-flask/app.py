@@ -80,6 +80,8 @@ cognito_jwt_token = CognitoJwtToken(
 
 # X-RAY -------------
 # XRayMiddleware(app, xray_recorder)
+#xray_url = os.getenv("AWS_XRAY_URL")
+#xray_recorder.configure(service='backend-flask', dynamic_naming=xray_url)
 
 #HoneyComb ----------
 # Initialize automatic instrumentation with Flask  
@@ -230,11 +232,6 @@ def data_home():
 def data_notifications():
     data = NotificationsActivities.run()
     return data, 200
-
-@app.route("/api/users/@<string:handle>/short", methods=['GET'])
-def data_users_short(handle):
-  data = UsersShort.run(handle)
-  return data, 200
 
 @app.route("/api/activities/@<string:handle>", methods=['GET'])
 def data_handle(handle):

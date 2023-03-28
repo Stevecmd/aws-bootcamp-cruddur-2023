@@ -5,7 +5,7 @@ import uuid
 import os
 import botocore.exceptions
 
-class Ddb: #stateless class - easier to debug
+class Ddb:
   def client():
     endpoint_url = os.getenv("AWS_ENDPOINT_URL")
     if endpoint_url:
@@ -13,29 +13,26 @@ class Ddb: #stateless class - easier to debug
     else:
       attrs = {}
     dynamodb = boto3.client('dynamodb',**attrs)
-    return dynamodb  
+    return dynamodb
   def list_message_groups(client,my_user_uuid):
-    current_year = str(datetime.now().year)
-    table_name = 'cruddur-messages' #Hard coded table name
+    year = str(datetime.now().year)
+    table_name = 'cruddur-messages'
     query_params = {
       'TableName': table_name,
       'KeyConditionExpression': 'pk = :pk AND begins_with(sk,:year)',
-      ':year': {'S': str(current_year) },
       'ScanIndexForward': False,
       'Limit': 20,
       'ExpressionAttributeValues': {
-        ':year': {'S': str(current_year) },
+        ':year': {'S': year },
         ':pk': {'S': f"GRP#{my_user_uuid}"}
       }
     }
-    print('query-params')
+    print('query-params:',query_params)
     print(query_params)
-    print('client')
-    print(client)
-
     # query the table
     response = client.query(**query_params)
     items = response['Items']
+
 
     results = []
     for item in items:
@@ -48,9 +45,8 @@ class Ddb: #stateless class - easier to debug
         'created_at': last_sent_at
       })
     return results
-  
   def list_messages(client,message_group_uuid):
-    current_year = str(datetime.now().year)
+    year = str(datetime.now().year)
     table_name = 'cruddur-messages'
     query_params = {
       'TableName': table_name,
@@ -58,14 +54,14 @@ class Ddb: #stateless class - easier to debug
       'ScanIndexForward': False,
       'Limit': 20,
       'ExpressionAttributeValues': {
-        ':year': {'S': str(current_year) },
+        ':year': {'S': year },
         ':pk': {'S': f"MSG#{message_group_uuid}"}
       }
     }
 
     response = client.query(**query_params)
     items = response['Items']
-    items.reverse() #returning the messages in the right order
+    items.reverse()
     results = []
     for item in items:
       created_at = item['sk']['S']
@@ -80,7 +76,7 @@ class Ddb: #stateless class - easier to debug
   def create_message(client,message_group_uuid, message, my_user_uuid, my_user_display_name, my_user_handle):
     now = datetime.now(timezone.utc).astimezone().isoformat()
     created_at = now
-    message_uuid = str(uuid.uuid4()) #Generating the User ID manually because DDB doesnt do it
+    message_uuid = str(uuid.uuid4())
 
     record = {
       'pk':   {'S': f"MSG#{message_group_uuid}"},

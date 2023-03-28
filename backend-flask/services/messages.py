@@ -9,10 +9,10 @@ class Messages:
       'data': None
     }
 
-    sql = db.template('users','uuid_from_cognito_user_id') #find the handle from the uuid
+    sql = db.template('users','uuid_from_cognito_user_id')
     my_user_uuid = db.query_value(sql,{
       'cognito_user_id': cognito_user_id
-      }) # query value that returns a single uuid
+    })
 
     print(f"UUID: {my_user_uuid}")
 
