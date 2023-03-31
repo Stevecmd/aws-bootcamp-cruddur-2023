@@ -6,7 +6,7 @@ import sys
 from datetime import datetime, timedelta, timezone
 import uuid
 
-current_path = os.path.dirname(os.path.abspath(__file__))
+current_path = os.path.dirname(os.path.abspath(__file__)) #current path and parent path arebeing used to declare the path of lib.db on line 12
 parent_path = os.path.abspath(os.path.join(current_path, '..', '..'))
 sys.path.append(parent_path)
 from lib.db import db
@@ -217,13 +217,13 @@ Person 1: And Zathras was just one example of that. He was a small but important
 Person 2: Definitely. I think his character is a great example of the show's ability to balance humor and heart, and to create memorable and beloved characters that fans will cherish for years to come.
 """
 
-lines = conversation.lstrip('\n').rstrip('\n').split('\n') #Breaks out the dummy conversation into an array with each line as a cell
+lines = conversation.lstrip('\n').rstrip('\n').split('\n') #Breaks out the dummy conversation into an array with each line as a cell and also splits each new line
 for i in range(len(lines)): #iterating through the dummy conversation
   if lines[i].startswith('Person 1: '):
-    key = 'my_user'
+    key = 'my_user' #Person 1
     message = lines[i].replace('Person 1: ', '')
   elif lines[i].startswith('Person 2: '):
-    key = 'other_user'
+    key = 'other_user' #Person 2
     message = lines[i].replace('Person 2: ', '')
   else:
     print(lines[i])
