@@ -5,7 +5,7 @@ import os
 import sys
 
 print("== db-update-cognito-user-ids")
-
+#scripts below are used to import lib.db based on the file structure
 current_path = os.path.dirname(os.path.abspath(__file__))
 parent_path = os.path.abspath(os.path.join(current_path, '..', '..'))
 sys.path.append(parent_path)
@@ -18,7 +18,7 @@ def update_users_with_cognito_user_id(handle,sub):
     WHERE
       users.handle = %(handle)s;
   """
-  db.query_commit(sql,{
+  db.query_commit(sql,{ #commiting the data received from 'update_users_with_cognito_user_id'
     'handle' : handle,
     'sub' : sub
   })
@@ -45,7 +45,7 @@ def get_cognito_user_ids():
 
 users = get_cognito_user_ids()
 
-for handle, sub in users.items():
+for handle, sub in users.items(): #iterating through the data received  to update the list of fields
   print('----',handle,sub)
   update_users_with_cognito_user_id(
     handle=handle,

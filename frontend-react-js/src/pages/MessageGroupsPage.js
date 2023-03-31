@@ -61,8 +61,8 @@ export default function MessageGroupsPage() {
     if (dataFetchedRef.current) return;
     dataFetchedRef.current = true;
 
-    loadMessageGroupsData();
-    loadMessageGroupData();
+    // loadMessageGroupData();
+    loadData();
     checkAuth(setUser);
   }, [])
   return (
