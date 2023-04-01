@@ -7,7 +7,8 @@ class CreateActivity:
   def run(message, user_handle, ttl):
     model = {
       'errors': None,
-      'data': None
+      'data': None,
+      'message': message
     }
 
     now = datetime.now(timezone.utc).astimezone()

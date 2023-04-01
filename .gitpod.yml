@@ -19,7 +19,7 @@ tasks:
     #Automatically setting the Gitpod ID and exporting it
     command: |
       export GITPOD_IP=$(curl ifconfig.me)
-      source "$THEIA_WORKSPACE_ROOT/backend-flask/bin/rds-update-sg-rule"
+      source "$THEIA_WORKSPACE_ROOT/backend-flask/bin/rds/update-sg-rule"
 #Automating the running of npm to each time the container is started.
   - name: react-js
     init: |
