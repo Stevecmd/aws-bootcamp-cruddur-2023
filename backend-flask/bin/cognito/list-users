@@ -13,7 +13,7 @@ params = {
       'sub'
   ]
 }
-response = client.list_users(**params)
+response = client.list_users(params)
 users = response['Users'] #response from cognito
 
 print(json.dumps(users, sort_keys=True, indent=2, default=str))
