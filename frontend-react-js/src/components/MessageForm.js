@@ -29,12 +29,11 @@ export default function ActivityForm(props) {
       const res = await fetch(backend_url, {
         method: "POST",
         headers: {
+          'Authorization': `Bearer ${localStorage.getItem("access_token")}`,
           'Accept': 'application/json',
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${localStorage.getItem("access_token")}`
+          'Content-Type': 'application/json'
         },
-        body: JSON.stringify(json)({
-        }),
+        body: JSON.stringify(json)
       });
       let data = await res.json();
       if (res.status === 200) {

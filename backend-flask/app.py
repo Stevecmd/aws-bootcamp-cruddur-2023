@@ -25,7 +25,7 @@ from opentelemetry import trace
 from opentelemetry.instrumentation.flask import FlaskInstrumentor
 from opentelemetry.instrumentation.requests import RequestsInstrumentor
 from opentelemetry.exporter.otlp.proto.http.trace_exporter import OTLPSpanExporter
-from opentelemetry.sdk.trace import TracerProvider
+# from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.trace.export import BatchSpanProcessor
 from opentelemetry.sdk.trace.export import ConsoleSpanExporter, SimpleSpanProcessor
 
@@ -55,9 +55,9 @@ from flask import got_request_exception
 
 #HoneyComb ----------
 # Initialize tracing and an exporter that can send data to Honeycomb
-# provider = TracerProvider()
-# processor = BatchSpanProcessor(OTLPSpanExporter())
-# provider.add_span_processor(processor)
+provider = TracerProvider()
+processor = BatchSpanProcessor(OTLPSpanExporter())
+provider.add_span_processor(processor)
 
 # X-RAY -------------
 # xray_url = os.getenv("AWS_XRAY_URL")
@@ -174,8 +174,8 @@ def data_messages(message_group_uuid):
 @app.route("/api/messages", methods=['POST','OPTIONS'])
 @cross_origin()
 def data_create_message():
-  message_group_uuid   = request.json.get('message_group_uuid',None)
-  user_receiver_handle = request.json.get('handle',None)
+  message_group_uuid = request.json.get('message_group_uuid',None),
+  user_receiver_handle = request.json.get('handle',None),
   message = request.json['message']
   access_token = extract_access_token(request.headers)
   try:

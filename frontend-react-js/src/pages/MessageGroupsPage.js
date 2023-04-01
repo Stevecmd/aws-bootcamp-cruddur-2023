@@ -16,7 +16,7 @@ export default function MessageGroupsPage() {
   const dataFetchedRef = React.useRef(false);
   const params = useParams();
 
-  const loadMessageGroupsData = async () => {
+  const loadData = async () => {
     try {
       const backend_url = `${process.env.REACT_APP_BACKEND_URL}/api/message_groups`
       const res = await fetch(backend_url, {
