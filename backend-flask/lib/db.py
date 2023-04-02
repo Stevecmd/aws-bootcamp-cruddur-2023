@@ -4,7 +4,7 @@ import re
 import sys
 from flask import current_app as app
 
-class Db:
+class Db: #using a constructor to create an instance of the class
   def __init__(self):
     self.init_pool()
 
