@@ -25,52 +25,101 @@ This was technically the sixth week of the Bootcamp.
 <hr/>
 
 
-|    | Table of contents - Steps taken to complete Week 4 assignments                                                                                                                                                                         |
+|    | Table of contents - Steps taken to complete Week 5 assignments                                                                                                                                                                         |
 |----|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1  | []()                                |
-| 2  | []()                                                |
-| 3  | []()                                               |
-| 4  | []()                                    |
-| 5  | []()                                                  |
-| 6  | []()                           |
-| 7  | []()                                              |
-| 8  | []()                                  |
-| 9  | []()                                                     |
+| 1  | [Activating PostGres env]()                                |
+| 2  | [Automating the startup of Flask by adding it to Gitpod requirements]()                                                |
+| 3  | [Making my scripts executable]()                                               |
+| 4  | [Seeding DynamoDB]()                                    |
+| 5  | [Using Discord resources to debug my app - fixing the chat]()                                                  |
+| 6  | [Listing Cognito users via terminal]()                           |
+| 7  | [Updating cognito user ID's via terminal]()                                              |
+| 8  | [Creating the Postgres Database]()                                  |
+| 9  | [Viewing the users in the Postgres Database]()                                                     |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
 | 10 | []()                                  |
                                                                                                                                
 
 ## Item 1
 ![Item 1](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%204/Lambda%20setup%201.JPG)
 
-## Item 1
-![Item 1](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%204/Lambda%20setup%201.JPG)
+## Item 2
+![]()
 
-## Item 1
-![Item 1](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%204/Lambda%20setup%201.JPG)
+## Item 3
+![]()
 
-## Item 1
-![Item 1](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%204/Lambda%20setup%201.JPG)
+## Item 4
+![]()
 
-## Item 1
-![Item 1](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%204/Lambda%20setup%201.JPG)
+## Item 5
+![]()
 
-## Item 1
-![Item 1](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%204/Lambda%20setup%201.JPG)
+## Item 6
+![]()
 
-## Item 1
-![Item 1](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%204/Lambda%20setup%201.JPG)
+## Item 7
+![]()
 
-## Item 1
-![Item 1](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%204/Lambda%20setup%201.JPG)
+## Item 8
+![]()
 
-## Item 1
-![Item 1](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%204/Lambda%20setup%201.JPG)
+## Item 9
+![]()
 
-## Item 1
-![Item 1](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%204/Lambda%20setup%201.JPG)
+## Item 10
+![]()
 
-## Item 1
-![Item 1](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%204/Lambda%20setup%201.JPG)
+## Item 11
+![]()
+
+## Item 12
+![]()
+
+## Item 13
+![]()
+
+## Item 14
+![]()
+
+## Item 15
+![]()
+
+## Item 16
+![]()
+
+## Item 17
+![]()
+
+## Item 18
+![]()
+
+## Item 19
+![]()
+
+## Item 20
+![]()
 
 Make sure to implement last 5 min of Week 5 DynamoDb Utility Scripts: https://www.youtube.com/watch?v=pIGi_9E_GwA
 
