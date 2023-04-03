@@ -29,30 +29,30 @@ This was technically the sixth week of the Bootcamp.
 |----|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1  | [Refactoring my files for better structure](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#refactoring-my-files-for-better-structure)                                |
 | 2  | [Updating schema load](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/Updating%20schema-load.JPG)                                                |
-| 3  | [Dynamo DB refactor List tables](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/list%20tables.JPG)                                               |
-| 4  | [DynamoDB - Schema load](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/schema%20load.JPG)                                    |
-| 5  | [List loaded table via CLI](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/list-tables%202.JPG)                                                  |
-| 6  | [Create Database](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/create%20DB.JPG)                           |
-| 7  | [Schema - load on the DB](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/schema%20load%202.JPG)                                              |
-| 8  | [Seeding the Database](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/seed.JPG)                                  |
-| 9  | [Dynamo DB seed](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/ddb%20seed.JPG)                                                     |
-| 10 | [Dynamo DB List tables](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/list%20tables.JPG)                                  |
-| 10 | [Dynamo DB scan operation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/scan.JPG)                                  |
-| 10 | [Dynamo DB - get conversation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/get-conversation.JPG)                                  |
-| 10 | [Show all users](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DB%20select%20all%20users.JPG)                                  |
-| 10 | [Dynamo DB - list conversations](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/list%20conversations.JPG)                                  |
-| 10 | [Setting up Flask to run on startup](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/Adding%20flask%20to%20gitpod%20requirements.JPG)                                  |
-| 10 | [Seeding Dynamo DB](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/seed%20ddb.JPG)                                  |
-| 10 | [Dynamo DB schema laod and list tables](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/schema%20load%20and%20list%20tables.JPG)                                  |
-| 10 | [Dynamo DB seed](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/bin%20ddb%20seed.JPG)                                  |
-| 10 | [Listing registered users from Database](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/showing%20users%20in%20db.JPG)                                  |
-| 10 | [Listing Cognito registered users](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/cognito%20list%20users.JPG)                                  |
-| 10 | [Testing Database Setup](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/run%20db%20setup.JPG)                                  |
-| 10 | [Confirmation that all scripts are executable](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/all%20scripts%20executable.JPG)                                  |
-| 10 | [Activating POSTGres DB and deactivating Production DB (Dynamo DB)](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/activate%20postgres%20disable%20prod.JPG)                                  |
-| 10 | [Running in Developer mode (POSTGres DB)](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/running%20in%20dev%20mode%20now.JPG)                                  |
-| 10 | [List of registered Cognito User ID's](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/cognito%20user%20ids%20search.JPG)                                  |
-| 10 | [Logging in](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/login%20attempt.JPG)                                  |
+| 3  | [Dynamo DB refactor List tables](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#dynamo-db-refactor-list-tables)                                               |
+| 4  | [DynamoDB - Schema load](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#dynamodb---schema-load)                                    |
+| 5  | [List loaded table via CLI](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#list-loaded-table-via-cli)                                                  |
+| 6  | [Create Database](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#create-database)                           |
+| 7  | [Schema - load on the DB](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#schema---load-on-the-db)                                              |
+| 8  | [Seeding the Database](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#seeding-the-database)                                  |
+| 9  | [Dynamo DB seed](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#dynamo-db-seed)                                                     |
+| 10 | [Dynamo DB List tables](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#dynamo-db-list-tables)                                  |
+| 10 | [Dynamo DB scan operation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#dynamo-db-scan-operation)                                  |
+| 10 | [Dynamo DB - get conversation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#dynamo-db---get-conversation)                                  |
+| 10 | [Show all users](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#show-all-users)                                  |
+| 10 | [Dynamo DB - list conversations](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#dynamo-db---list-conversation)                                  |
+| 10 | [Setting up Flask to run on startup](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#setting-up-flask-to-run-on-startup)                                  |
+| 10 | [Seeding Dynamo DB](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#seeding-dynamo-db)                                  |
+| 10 | [Dynamo DB schema load and list tables](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#dynamo-db-schema-laod-and-list-tables)                                  |
+| 10 | [Dynamo DB seed](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#dynamo-db-seed-1)                                  |
+| 10 | [Listing registered users from Database](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#listing-registered-users-from-database)                                  |
+| 10 | [Listing Cognito registered users](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#listing-registered-users-from-database)                                  |
+| 10 | [Testing Database Setup](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#testing-database-setup)                                  |
+| 10 | [Confirmation that all scripts are executable](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#confirmation-that-all-scripts-are-executable)                                  |
+| 10 | [Activating POSTGres DB and deactivating Production DB (Dynamo DB)](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#activating-postgres-db-and-deactivating-production-db-dynamo-db)                                  |
+| 10 | [Running in Developer mode (POSTGres DB)](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#running-in-developer-mode-postgres-db)                                  |
+| 10 | [List of registered Cognito User ID's](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#list-of-registered-cognito-user-ids)                                  |
+| 10 | [Logging in](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#logging-in)                                  |
 | 10 | [Successfull login](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/succesfull%20login.JPG)                                  |
 | 10 | [Messages page before seeding data](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/messages%20page%20loads.JPG)                                  |
 | 10 | [Successfull Cognito UUID update in terminal](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/updated%20cognito%20uuid%20in%20terminal.JPG)                                  |
@@ -217,7 +217,3 @@ This was technically the sixth week of the Bootcamp.
 
 ## Item 20
 ![]()
-
-Make sure to implement last 5 min of Week 5 DynamoDb Utility Scripts: https://www.youtube.com/watch?v=pIGi_9E_GwA
-
-git tag -a Week-5 fe7022f
