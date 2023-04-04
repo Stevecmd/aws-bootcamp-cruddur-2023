@@ -28,7 +28,7 @@ This was technically the sixth week of the Bootcamp.
 |    | Table of contents - Steps taken to complete Week 5 assignments                                                                                                                                                                         |
 |----|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1  | [Refactoring my files for better structure](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#refactoring-my-files-for-better-structure)                                |
-| 2  | [Updating schema load](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/Updating%20schema-load.JPG)                                                |
+| 2  | [Updating schema load](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#updating-schema-load)                                                |
 | 3  | [Dynamo DB refactor List tables](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#dynamo-db-refactor-list-tables)                                               |
 | 4  | [DynamoDB - Schema load](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#dynamodb---schema-load)                                    |
 | 5  | [List loaded table via CLI](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#list-loaded-table-via-cli)                                                  |
