@@ -21,32 +21,31 @@ if len(sys.argv) == 2:
 ddb = boto3.client('dynamodb',**attrs)
 
 def get_user_uuids():
-    sql = """
-        SELECT 
-        users.uuid,
-        users.display_name,
-        users.handle
-        FROM users
-        WHERE
-        users.handle IN(
-            %(my_handle)s,
-            %(other_handle)s
-            )
-    """
-
-    users = db.query_array_json(sql,{
-        'my_handle':  'stevecmd',
-        'other_handle': 'andrewbrown'
-    })
-    my_user    = next((item for item in users if item["handle"] == 'stevecmd'), None)
-    other_user = next((item for item in users if item["handle"] == 'andrewbrown'), None)
-    results = {
+  sql = """
+    SELECT 
+      users.uuid,
+      users.display_name,
+      users.handle
+    FROM users
+    WHERE
+      users.handle IN(
+        %(my_handle)s,
+        %(other_handle)s
+        )
+  """
+  users = db.query_array_json(sql,{
+    'my_handle':  'stevecmd',
+    'other_handle': 'andrewbrown'
+  })
+  my_user    = next((item for item in users if item["handle"] == 'stevecmd'), None)
+  other_user = next((item for item in users if item["handle"] == 'andrewbrown'), None)
+  results = {
     'my_user': my_user,
     'other_user': other_user
-    }
-    print('get_user_uuids')
-    print(results)
-    return(results) #enables us to call the results later in the code
+  }
+  print('get_user_uuids')
+  print(results)
+  return(results) #enables us to call the results later in the code
 
 def create_message_group(client,message_group_uuid, my_user_uuid, last_message_at=None, message=None, other_user_uuid=None, other_user_display_name=None, other_user_handle=None):
   table_name = 'cruddur-messages'
@@ -65,6 +64,7 @@ def create_message_group(client,message_group_uuid, my_user_uuid, last_message_a
     Item=record
   )
   print(response)
+
 def create_message(client,message_group_uuid, created_at, message, my_user_uuid, my_user_display_name, my_user_handle):
   record = {
     'pk':   {'S': f"MSG#{message_group_uuid}"},
