@@ -37,47 +37,29 @@ This was technically the sixth week of the Bootcamp.
 | 8  | [Seeding the Database](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#seeding-the-database)                                  |
 | 9  | [Dynamo DB seed](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#dynamo-db-seed)                                                     |
 | 10 | [Dynamo DB List tables](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#dynamo-db-list-tables)                                  |
-| 10 | [Dynamo DB scan operation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#dynamo-db-scan-operation)                                  |
-| 10 | [Dynamo DB - get conversation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#dynamo-db---get-conversation)                                  |
-| 10 | [Show all users](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#show-all-users)                                  |
-| 10 | [Dynamo DB - list conversations](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#dynamo-db---list-conversation)                                  |
-| 10 | [Setting up Flask to run on startup](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#setting-up-flask-to-run-on-startup)                                  |
-| 10 | [Seeding Dynamo DB](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#seeding-dynamo-db)                                  |
-| 10 | [Dynamo DB schema load and list tables](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#dynamo-db-schema-laod-and-list-tables)                                  |
-| 10 | [Dynamo DB seed](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#dynamo-db-seed-1)                                  |
-| 10 | [Listing registered users from Database](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#listing-registered-users-from-database)                                  |
-| 10 | [Listing Cognito registered users](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#listing-registered-users-from-database)                                  |
-| 10 | [Testing Database Setup](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#testing-database-setup)                                  |
-| 10 | [Confirmation that all scripts are executable](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#confirmation-that-all-scripts-are-executable)                                  |
-| 10 | [Activating POSTGres DB and deactivating Production DB (Dynamo DB)](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#activating-postgres-db-and-deactivating-production-db-dynamo-db)                                  |
-| 10 | [Running in Developer mode (POSTGres DB)](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#running-in-developer-mode-postgres-db)                                  |
-| 10 | [List of registered Cognito User ID's](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#list-of-registered-cognito-user-ids)                                  |
-| 10 | [Logging in](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#logging-in)                                  |
-| 10 | [Successfull login](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/succesfull%20login.JPG)                                  |
-| 10 | [Messages page before seeding data](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/messages%20page%20loads.JPG)                                  |
-| 10 | [Successfull Cognito UUID update in terminal](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/updated%20cognito%20uuid%20in%20terminal.JPG)                                  |
-| 10 | [Debugging why no messages were showing - Not resolved yet](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/chatfix1.JPG)                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |                                                                                                                              
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
+| 11 | [Dynamo DB scan operation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#dynamo-db-scan-operation)                                  |
+| 12 | [Dynamo DB - get conversation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#dynamo-db---get-conversation)                                  |
+| 13 | [Show all users](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#show-all-users)                                  |
+| 14 | [Dynamo DB - list conversations](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#dynamo-db---list-conversation)                                  |
+| 15 | [Setting up Flask to run on startup](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#setting-up-flask-to-run-on-startup)                                  |
+| 16 | [Seeding Dynamo DB](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#seeding-dynamo-db)                                  |
+| 17 | [Dynamo DB schema load and list tables](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#dynamo-db-schema-laod-and-list-tables)                                  |
+| 18 | [Dynamo DB seed](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#dynamo-db-seed-1)                                  |
+| 19 | [Listing registered users from Database](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#listing-registered-users-from-database)                                  |
+| 20 | [Listing Cognito registered users](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#listing-registered-users-from-database)                                  |
+| 21 | [Testing Database Setup](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#testing-database-setup)                                  |
+| 22 | [Confirmation that all scripts are executable](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#confirmation-that-all-scripts-are-executable)                                  |
+| 23 | [Activating POSTGres DB and deactivating Production DB (Dynamo DB)](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#activating-postgres-db-and-deactivating-production-db-dynamo-db)                                  |
+| 24 | [Running in Developer mode (POSTGres DB)](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#running-in-developer-mode-postgres-db)                                  |
+| 25 | [List of registered Cognito User ID's](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#list-of-registered-cognito-user-ids)                                  |
+| 26 | [Logging in](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#logging-in)                                  |
+| 27 | [Successfull login](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/succesfull%20login.JPG)                                  |
+| 28 | [Messages page before seeding data](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/messages%20page%20loads.JPG)                                  |
+| 29 | [Successfull Cognito UUID update in terminal](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/updated%20cognito%20uuid%20in%20terminal.JPG)                                  |
+| 30 | [Debugging why no messages were showing - Not resolved yet](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/chatfix1.JPG)                                  |
+| 10 | [CORS issues](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/CORS%20errors.JPG)                                  |
+| 10 | [Success at last](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/Final%20Sucess.JPG)                                  |
+| 10 | [Successfully showing seeded data](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/Seed%20data.JPG)                                  |
 | 10 | []()                                  |
 
 ## Refactoring my files for better structure
