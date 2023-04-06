@@ -30,8 +30,8 @@ from lib.cognito_jwt_token import CognitoJwtToken, extract_access_token, TokenVe
 # from opentelemetry.sdk.trace.export import ConsoleSpanExporter, SimpleSpanProcessor
 
 # X-RAY -------------
-from aws_xray_sdk.core import xray_recorder
-from aws_xray_sdk.ext.flask.middleware import XRayMiddleware
+# from aws_xray_sdk.core import xray_recorder
+# from aws_xray_sdk.ext.flask.middleware import XRayMiddleware
 
 # Cloudwatch Logs ----
 # import watchtower
@@ -99,6 +99,10 @@ cors = CORS(
   methods="OPTIONS,GET,HEAD,POST"
 )
 
+@app.route('/api/health-check')
+def health_check():
+  return {'success': True}, 200
+
 # @app.after_request
 # def after_request(response):
 #    timestamp = strftime('[%Y-%b-%d %H:%M]')
@@ -125,10 +129,10 @@ def init_rollbar():
     got_request_exception.connect(rollbar.contrib.flask.report_exception, app)
 
 # RollBar test
-@app.route('/rollbar/test')
-def rollbar_test():
-    rollbar.report_message('Hello World!', 'warning')
-    return "Hello World!"
+# @app.route('/rollbar/test')
+# def rollbar_test():
+#     rollbar.report_message('Hello World!', 'warning')
+#     return "Hello World!"
 
 @app.route("/api/message_groups", methods=['GET'])
 def data_message_groups():
@@ -141,7 +145,7 @@ def data_message_groups():
     cognito_user_id = claims['sub']
     model = MessageGroups.run(
       cognito_user_id=cognito_user_id,
-      message_group_uuid=message_group_uuid
+      # message_group_uuid=message_group_uuid
       )
     if model['errors'] is not None:
       return model['errors'], 422
@@ -276,7 +280,7 @@ def data_show_activity(activity_uuid):
 @app.route("/api/activities/<string:activity_uuid>/reply", methods=['POST','OPTIONS'])
 @cross_origin()
 def data_activities_reply(activity_uuid):
-  user_handle  = 'andrewbrown'
+  user_handle  = 'stevecmd'
   message = request.json['message']
   model = CreateReply.run(message, user_handle, activity_uuid)
   if model['errors'] is not None:

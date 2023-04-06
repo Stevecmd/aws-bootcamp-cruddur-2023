@@ -152,50 +152,47 @@ This was technically the sixth week of the Bootcamp.
 ## Debugging why no messages were showing - Not resolved yet
 ![Debugging why no messages were showing - Not resolved yet](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/chatfix1.JPG)
 
-## Item 20
-![]()
+## CORS!
+![The dreaded errors](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/CORS%20errors.JPG)
+
+# DynamoDB Streams
+## Step 1
+![Step 1](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/Cruddur%20messages.JPG)
+
+## Step 2
+![Step 2](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/DynamoDB%20New%20Image.JPG)
+
+## Create endpoint
+![Create endpoint 1](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/endopint%201.JPG)
 
 ## Item 20
-![]()
+![Create endpoint 2](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/endpoint%202.JPG)
 
 ## Item 20
-![]()
+![Create endpoint 3](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/endpoint%203.JPG)
 
 ## Item 20
-![]()
+![Create endpoint - Success](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/endpoint%20success.JPG)
 
 ## Item 20
-![]()
+![Load DDB Table](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/load%20DDB%20table.JPG)
 
 ## Item 20
-![]()
+![Load Production DDB database](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/Load%20Prod%20DB.JPG)
+
+## Creating the Lambda function
+![Step 1](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/lambda/1.JPG)
+![Step 2](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/lambda/2.JPG)
+![Step 3](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/lambda/3.JPG)
+### Lambda creation part 2 - Messaging Stream
+![Homepage](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/lambda/function/1.JPG)
+![Lambda code](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/lambda/function/2.JPG)
+![Add necessary permissions to role](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/lambda/function/Add%20permissions.JPG)
+![Dynamo DB Production - Schema load](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/lambda/function/Creating%20Prod%20DDB%20table.JPG)
+![DynamoDB Trigger creation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/lambda/function/DDB%20Trigger.JPG)
+![Successfull DynamoDB table creation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/lambda/function/Succesfull%20DDB%20table%20creation.JPG)
 
 ## Item 20
-![]()
+![Changing the Env vars to use the production environment](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/Later/Using%20Prod%20env.JPG)
 
-## Item 20
-![]()
-
-## Item 20
-![]()
-
-## Item 20
-![]()
-
-## Item 20
-![]()
-
-## Item 20
-![]()
-
-## Item 20
-![]()
-
-## Item 20
-![]()
-
-## Item 20
-![]()
-
-## Item 20
-![]()
+> This was by far the most challenging week! Glad I made it through but I am not without battle scars! :fire: :alien: :sweat_drops:
