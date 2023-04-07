@@ -57,36 +57,21 @@ This was technically the sixth week of the Bootcamp.
 | 28 | [Messages page before seeding data](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/messages%20page%20loads.JPG)                                  |
 | 29 | [Successfull Cognito UUID update in terminal](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/updated%20cognito%20uuid%20in%20terminal.JPG)                                  |
 | 30 | [Debugging why no messages were showing - Not resolved yet](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/chatfix1.JPG)                                  |
-| 10 | [CORS issues](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/CORS%20errors.JPG)                                  |
+| 31 | [CORS issues](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/CORS%20errors.JPG)                                  |
 [DynamoDB Streams](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#dynamodb-streams)
->> | 10 | [Step 1](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#step-1)                                  |
->> | 10 | [Step 2](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#step-2)                                  |
-| 10 | [Create endpoint](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#create-endpoint)                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | [Success at last](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/Final%20Sucess.JPG)                                  |
-| 10 | [Successfully showing seeded data](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/Seed%20data.JPG)                                  |
+>> | 32 | [Step 1](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#step-1)                                  |
+>> | 33 | [Step 2](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#step-2)                                  |
+| 34 | [Create endpoint](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#create-endpoint)                                  |
+| 35 | [Create endpoint 2](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#create-endpoint-2)                                  |
+| 36 | [Create endpoint 3](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#create-endpoint-3)                                  |
+| 37 | [Create endpoint - Success](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#create-endpoint---success)                                  |
+| 38 | [Load DDB Table](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#load-ddb-table)                                  |
+| 39 | [Load Production DDB database](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#load-production-ddb-database)                                  |
+| 40 | [Creating the Lambda function](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#creating-the-lambda-function)                                  |
+| 41 | [Lambda creation part 2 - Messaging Stream](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#lambda-creation-part-2---messaging-stream)                                  |
+| 42 | [Changing the Env vars to use the production environment](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#changing-the-env-vars-to-use-the-production-environment)                                  |
+| 43 | [Success at last](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/Final%20Sucess.JPG)                                  |
+| 44 | [Successfully showing seeded data](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/Seed%20data.JPG)                                  |
 
 
 ## Refactoring my files for better structure
