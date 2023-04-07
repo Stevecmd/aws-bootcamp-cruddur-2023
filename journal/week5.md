@@ -58,9 +58,36 @@ This was technically the sixth week of the Bootcamp.
 | 29 | [Successfull Cognito UUID update in terminal](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/updated%20cognito%20uuid%20in%20terminal.JPG)                                  |
 | 30 | [Debugging why no messages were showing - Not resolved yet](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/chatfix1.JPG)                                  |
 | 10 | [CORS issues](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/CORS%20errors.JPG)                                  |
+[DynamoDB Streams](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#dynamodb-streams)
+>> | 10 | [Step 1](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#step-1)                                  |
+>> | 10 | [Step 2](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#step-2)                                  |
+| 10 | [Create endpoint](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#create-endpoint)                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
+| 10 | []()                                  |
 | 10 | [Success at last](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/Final%20Sucess.JPG)                                  |
 | 10 | [Successfully showing seeded data](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/Seed%20data.JPG)                                  |
-| 10 | []()                                  |
+
 
 ## Refactoring my files for better structure
 ![Refactoring my files for better structure](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/Refactoring%20files.JPG)
@@ -155,29 +182,29 @@ This was technically the sixth week of the Bootcamp.
 ## CORS!
 ![The dreaded errors](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/CORS%20errors.JPG)
 
-# DynamoDB Streams
-## Step 1
+## DynamoDB Streams
+### Step 1
 ![Step 1](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/Cruddur%20messages.JPG)
 
-## Step 2
+### Step 2
 ![Step 2](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/DynamoDB%20New%20Image.JPG)
 
 ## Create endpoint
 ![Create endpoint 1](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/endopint%201.JPG)
 
-## Item 20
+## Create endpoint 2
 ![Create endpoint 2](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/endpoint%202.JPG)
 
-## Item 20
+## Create endpoint 3
 ![Create endpoint 3](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/endpoint%203.JPG)
 
-## Item 20
+## Create endpoint - Success
 ![Create endpoint - Success](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/endpoint%20success.JPG)
 
-## Item 20
+## Load DDB Table
 ![Load DDB Table](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/load%20DDB%20table.JPG)
 
-## Item 20
+## Load Production DDB database
 ![Load Production DDB database](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/Load%20Prod%20DB.JPG)
 
 ## Creating the Lambda function
@@ -192,7 +219,7 @@ This was technically the sixth week of the Bootcamp.
 ![DynamoDB Trigger creation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/lambda/function/DDB%20Trigger.JPG)
 ![Successfull DynamoDB table creation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/lambda/function/Succesfull%20DDB%20table%20creation.JPG)
 
-## Item 20
+## Changing the Env vars to use the production environment
 ![Changing the Env vars to use the production environment](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/Later/Using%20Prod%20env.JPG)
 
 > This was by far the most challenging week! Glad I made it through but I am not without battle scars! :fire: :alien: :sweat_drops:
