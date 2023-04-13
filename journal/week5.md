@@ -202,10 +202,15 @@ This was technically the sixth week of the Bootcamp.
 ![Step 3](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/lambda/3.JPG)
 ### Lambda creation part 2 - Messaging Stream
 ![Homepage](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/lambda/function/1.JPG)
+#### Lambda code
 ![Lambda code](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/lambda/function/2.JPG)
+#### Add necessary permissions to role
 ![Add necessary permissions to role](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/lambda/function/Add%20permissions.JPG)
+#### Dynamo DB Production - Schema load
 ![Dynamo DB Production - Schema load](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/lambda/function/Creating%20Prod%20DDB%20table.JPG)
+#### DynamoDB Trigger creation
 ![DynamoDB Trigger creation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/lambda/function/DDB%20Trigger.JPG)
+#### Successfull DynamoDB table creation
 ![Successfull DynamoDB table creation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/DDB%20streams/lambda/function/Succesfull%20DDB%20table%20creation.JPG)
 
 ## Changing the Env vars to use the production environment
@@ -214,14 +219,14 @@ This was technically the sixth week of the Bootcamp.
 # Week 5 Final fixes and evidence of complete tasks.
 
 ### Imported Conversation data (seed)
-![Imported Conversation data (seed)](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/Week%205%20fixes/imported%20seed%20data%20conversation.JPG)
+![Imported Conversation data (seed)](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#imported-conversation-data-seed)
 ### Messages appear on the profile page
-![Messages appear on the profile page](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/Week%205%20fixes/message%20appearing%20in%20profile.JPG)
+![Messages appear on the profile page](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#messages-appear-on-the-profile-page)
 ### Quick messages highlights on Homepage
-![Quick messages highlights on Homepage](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/Week%205%20fixes/message%20appearing%20in%20Home.JPG)
+![Quick messages highlights on Homepage](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#quick-messages-highlights-on-homepage)
 ### Message groupings by conversation
-![Message groupings by conversation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/Week%205%20fixes/Messages%20trail.JPG)
+![Message groupings by conversation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#message-groupings-by-conversation)
 ### Message Thread
-![Thread of a message](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%205/Week%205%20fixes/Message%20appearing%20in%20messages.JPG)
+![Thread of a message](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week5.md#message-thread)
 
 > This was by far the most challenging week! Glad I made it through but I am not without battle scars! :fire: :alien: :sweat_drops:
