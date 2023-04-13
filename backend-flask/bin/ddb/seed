@@ -99,16 +99,16 @@ create_message_group(
   message="this is a filler message"
 )
 
-create_message_group(
-  client=ddb,
-  message_group_uuid=message_group_uuid,
-  my_user_uuid=users['other_user']['uuid'],
-  other_user_uuid=users['my_user']['uuid'],
-  other_user_handle=users['my_user']['handle'],
-  other_user_display_name=users['my_user']['display_name'],
-  last_message_at=now.isoformat(),
-  message="this is a filler message"
-)
+# create_message_group(
+#   client=ddb,
+#   message_group_uuid=message_group_uuid,
+#   my_user_uuid=users['other_user']['uuid'],
+#   other_user_uuid=users['my_user']['uuid'],
+#   other_user_handle=users['my_user']['handle'],
+#   other_user_display_name=users['my_user']['display_name'],
+#   last_message_at=now.isoformat(),
+#   message="this is a filler message"
+# )
 
 conversation = """
 Person 1: Have you ever watched Babylon 5? It's one of my favorite TV shows!
@@ -229,7 +229,8 @@ for i in range(len(lines)): #iterating through the dummy conversation
     print(lines[i])
     raise 'invalid line' # Good practice to catch errors
   
-  created_at = (now + timedelta(minutes=i)).isoformat()
+  # created_at = (now + timedelta(minutes=i)).isoformat()
+  created_at = (now + timedelta(hours=-3) + timedelta(minutes=i)).isoformat()
   
   create_message(
     client=ddb,
