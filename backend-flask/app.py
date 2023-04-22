@@ -103,6 +103,7 @@ cors = CORS(
 def health_check():
   return {'success': True}, 200
 
+#Cloudwatch Logs
 # @app.after_request
 # def after_request(response):
 #    timestamp = strftime('[%Y-%b-%d %H:%M]')
