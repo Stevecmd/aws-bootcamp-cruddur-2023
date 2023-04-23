@@ -17,6 +17,7 @@
         ]
       }
   },
+  
   "propagateTags": "SERVICE",
   "serviceName": "backend-flask",
   "taskDefinition": "backend-flask",
