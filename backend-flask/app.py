@@ -99,10 +99,6 @@ cors = CORS(
   methods="OPTIONS,GET,HEAD,POST"
 )
 
-@app.route('/api/health-check')
-def health_check():
-  return {'success': True}, 200
-
 #Cloudwatch Logs
 # @app.after_request
 # def after_request(response):
