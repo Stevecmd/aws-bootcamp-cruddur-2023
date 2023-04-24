@@ -1,4 +1,5 @@
 FROM 652162945585.dkr.ecr.us-east-1.amazonaws.com/cruddur-python:3.10-slim-buster
+
 ENV PORT=4567 
 #Inside container
 #make a new folder inside container
