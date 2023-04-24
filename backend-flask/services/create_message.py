@@ -20,7 +20,7 @@ class CreateMessage:
 
     if (mode == "create"):
       if user_receiver_handle == None or len(user_receiver_handle) < 1:
-        model['errors'] = ['user_reciever_handle_blank']
+        model['errors'] = ['user_receiver_handle_blank']
 
     if message == None or len(message) < 1:
       model['errors'] = ['message_blank'] 
@@ -31,7 +31,7 @@ class CreateMessage:
       # return what we provided
       model['data'] = {
         'display_name': 'Andrew Brown',
-        'handle':  cognito_user_id, #Was previously user_sender_handle but kept giving errors
+        'handle':  user_sender_handle, #Was previously user_sender_handle but kept giving errors
         'message': message
       }
     else:

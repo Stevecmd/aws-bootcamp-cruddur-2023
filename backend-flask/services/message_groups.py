@@ -20,7 +20,7 @@ class MessageGroups:
 
     ddb = Ddb.client() #create a new client
     data = Ddb.list_message_groups(ddb, my_user_uuid) #list out message groups while passing in uuid
-    print("list_message_groups:",data)
+    print("list_message_groups: ",data)
 
     #MomentoCounter.reset(f"msgs/{user_handle}")
     model['data'] = data
