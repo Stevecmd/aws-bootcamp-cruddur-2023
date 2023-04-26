@@ -12,8 +12,6 @@
       {
         "name": "backend-flask",
         "image": "652162945585.dkr.ecr.us-east-1.amazonaws.com/backend-flask",
-        "cpu": 256,
-        "memory": 512,
         "essential": true,
         "healthCheck": {
           "command": [
