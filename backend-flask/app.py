@@ -21,22 +21,22 @@ from services.users_short import *
 from lib.cognito_jwt_token import CognitoJwtToken, extract_access_token, TokenVerifyError
 
 #HoneyComb OTEL -------
-# from opentelemetry import trace
-# from opentelemetry.instrumentation.flask import FlaskInstrumentor
-# from opentelemetry.instrumentation.requests import RequestsInstrumentor
-# from opentelemetry.exporter.otlp.proto.http.trace_exporter import OTLPSpanExporter
-# # from opentelemetry.sdk.trace import TracerProvider
-# from opentelemetry.sdk.trace.export import BatchSpanProcessor
-# from opentelemetry.sdk.trace.export import ConsoleSpanExporter, SimpleSpanProcessor
+from opentelemetry import trace
+from opentelemetry.instrumentation.flask import FlaskInstrumentor
+from opentelemetry.instrumentation.requests import RequestsInstrumentor
+from opentelemetry.exporter.otlp.proto.http.trace_exporter import OTLPSpanExporter
+# from opentelemetry.sdk.trace import TracerProvider
+from opentelemetry.sdk.trace.export import BatchSpanProcessor
+from opentelemetry.sdk.trace.export import ConsoleSpanExporter, SimpleSpanProcessor
 
 # X-RAY -------------
 # from aws_xray_sdk.core import xray_recorder
 # from aws_xray_sdk.ext.flask.middleware import XRayMiddleware
 
 # Cloudwatch Logs ----
-# import watchtower
-# import logging
-# from time import strftime
+import watchtower
+import logging
+from time import strftime
 
 # RollBar ----
 import os
@@ -56,12 +56,12 @@ from flask import got_request_exception
 #HoneyComb ----------
 # Initialize tracing and an exporter that can send data to Honeycomb
 # provider = TracerProvider()
-# processor = BatchSpanProcessor(OTLPSpanExporter())
+processor = BatchSpanProcessor(OTLPSpanExporter())
 # provider.add_span_processor(processor)
 
-# X-RAY -------------
+# X-RAY recorder -------------
 # xray_url = os.getenv("AWS_XRAY_URL")
-# xray_recorder.configure(servcie='backend-flask', dynamic_naming=xray_url)
+# xray_recorder.configure(service='backend-flask', dynamic_naming=xray_url)
 
 # Show this in the logs within the backend-flask app (STDOUT)
 # simple_processor = SimpleSpanProcessor(ConsoleSpanExporter())
@@ -85,8 +85,8 @@ cognito_jwt_token = CognitoJwtToken(
 
 #HoneyComb ----------
 # Initialize automatic instrumentation with Flask  
-# FlaskInstrumentor().instrument_app(app)
-# RequestsInstrumentor().instrument()
+FlaskInstrumentor().instrument_app(app)
+RequestsInstrumentor().instrument()
 
 frontend = os.getenv('FRONTEND_URL')
 backend = os.getenv('BACKEND_URL')
@@ -107,27 +107,26 @@ cors = CORS(
 #    return response
 
 # RollBar -------
-rollbar_access_token = os.getenv('ROLLBAR_ACCESS_TOKEN')
-
-@app.before_first_request
-def init_rollbar():
-    """initialize rollbar module"""
-    rollbar.init(
-        # access token
-        rollbar_access_token,
-        # environment name
-        'production',
-        # server root directory, makes tracebacks prettier
-        root=os.path.dirname(os.path.realpath(__file__)),
-        # flask already sets up logging
-        allow_logging_basic_config=False)
+# rollbar_access_token = os.getenv('ROLLBAR_ACCESS_TOKEN')
+# @app.before_first_request
+# def init_rollbar():
+#     """initialize rollbar module"""
+#     rollbar.init(
+#         # access token
+#         rollbar_access_token,
+#         # environment name
+#         'production',
+#         # server root directory, makes tracebacks prettier
+#         root=os.path.dirname(os.path.realpath(__file__)),
+#         # flask already sets up logging
+#         allow_logging_basic_config=False)
 
     # send exceptions from `app` to rollbar, using flask's signal system.
-    got_request_exception.connect(rollbar.contrib.flask.report_exception, app)
+    # got_request_exception.connect(rollbar.contrib.flask.report_exception, app)
 
 @app.route('/api/health-check')
 def health_check():
-  return {'success': True}, 200
+  return {'success': True, "ver": 1}, 200
 
 # RollBar test
 # @app.route('/rollbar/test')

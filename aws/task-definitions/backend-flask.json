@@ -1,14 +1,14 @@
 {
-    "family": "backend-flask",
-    "executionRoleArn": "arn:aws:iam::652162945585:role/CruddurServiceExecutionRole",
-    "taskRoleArn": "arn:aws:iam::652162945585:role/CruddurTaskRole",
-    "networkMode": "awsvpc",
-    "cpu": "256",
-    "memory": "512",
-    "requiresCompatibilities": [ 
-      "FARGATE" 
-    ],
-    "containerDefinitions": [
+  "family": "backend-flask",
+  "executionRoleArn": "arn:aws:iam::652162945585:role/CruddurServiceExecutionRole",
+  "taskRoleArn": "arn:aws:iam::652162945585:role/CruddurTaskRole",
+  "networkMode": "awsvpc",
+  "cpu": "256",
+  "memory": "512",
+  "requiresCompatibilities": [
+      "FARGATE"
+  ],
+  "containerDefinitions": [
       {
         "name": "backend-flask",
         "image": "652162945585.dkr.ecr.us-east-1.amazonaws.com/backend-flask",
@@ -56,5 +56,5 @@
           {"name": "OTEL_EXPORTER_OTLP_HEADERS" , "valueFrom": "arn:aws:ssm:AWS_REGION:652162945585:parameter/cruddur/backend-flask/OTEL_EXPORTER_OTLP_HEADERS" }
         ]
       }
-    ]
-  }
+  ]
+}
