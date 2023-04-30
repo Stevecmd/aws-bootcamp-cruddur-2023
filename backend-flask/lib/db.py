@@ -63,7 +63,7 @@ class Db: #using a constructor to create an instance of the class
 
     wrapped_sql = self.query_wrap_array(sql)
     with self.pool.connection() as conn:
-      with conn.cursor() as cur:
+      with conn.cursor() as cur:  
         cur.execute(wrapped_sql,params)
         json = cur.fetchone()
         return json[0]
@@ -80,6 +80,7 @@ class Db: #using a constructor to create an instance of the class
         json = cur.fetchone()
         if json == None:
           "{}"
+          return "{}"
         else:
           return json[0]
   def query_value(self,sql,params={}):
