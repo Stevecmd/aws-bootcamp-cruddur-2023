@@ -1,1 +1,3 @@
 aws/task-definitions/sample.json
+docker /**/*
+frontend-react-js/build/*
