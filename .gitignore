@@ -1,3 +1,6 @@
 aws/task-definitions/sample.json
 docker /**/*
 frontend-react-js/build/*
+awscliv2.zip
+aws/dist
+aws/install
