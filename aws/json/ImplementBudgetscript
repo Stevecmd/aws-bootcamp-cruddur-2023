@@ -4,6 +4,6 @@ aws budgets create-budget \
     --notifications-with-subscribers file://aws/json/budget-notifications-with-subscribers.json
 
 aws sns subscribe \ 
-    --topic-arn="arn:aws:sns:us-east-1:..." \
+    --topic-arn="arn:aws:sns:us-east-1:652162945585:My AWS Bootcamp Budget" \
     --protocol=email \ 
     --notification-endpoint=murimi101@gmail.com
