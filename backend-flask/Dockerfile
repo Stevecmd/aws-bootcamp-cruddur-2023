@@ -1,3 +1,6 @@
+# Using the python image provided by docker
+# FROM python:3.10-slim-buster
+# Using the python image stored in ECR
 FROM 652162945585.dkr.ecr.us-east-1.amazonaws.com/cruddur-python:3.10-slim-buster
 
 ENV PORT=4567 
@@ -14,7 +17,7 @@ COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 
 #outide container -> inside container
-# . means everything in the current directory
+# . means evrything in the current directory
 # first period . ~ /backend flask (outside container) 
 # second period . ~ /backend flask (inside container)
 COPY . .
