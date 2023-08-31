@@ -24,10 +24,8 @@
         },
         "portMappings": [
           {
-            "name": "frontend-react-js",
             "containerPort": 3000,
-            "protocol": "tcp", 
-            "appProtocol": "http"
+            "protocol": "tcp"
           }
         ],
   
