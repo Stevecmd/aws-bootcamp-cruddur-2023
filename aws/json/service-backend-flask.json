@@ -10,7 +10,7 @@
           "containerName": "backend-flask",
           "containerPort": 4567
       }
-  ],
+    ],
     "networkConfiguration": {
       "awsvpcConfiguration": {
         "assignPublicIp": "ENABLED",
