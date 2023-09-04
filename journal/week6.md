@@ -261,8 +261,8 @@ Tag Image
 Push Image
 `docker push $ECR_PYTHON_URL:3.10-slim-buster`
 
-![Item]
-(https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/compose%20up%20db%20and%20backend.JPG)
+https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/compose%20up%20db%20and%20backend.JPG
+
 `docker-compose up backend-flask db`
 
 ![Item 1](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%204/Lambda%20setup%201.JPG)
