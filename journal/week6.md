@@ -150,13 +150,24 @@ I had previously removed some of the resources so the first step is to redeploy 
 1. Make sure all your environmental requirements are installed:
 `pip install -r requirements.txt`
 NB: We are not using the RDS Database but one may enable it at the end to confirm everything is working
+Run the script located at: `backend-flask/bin/db/test`
+Ensure the script is executable by running:
+`chmod u+x backend-flask/bin/db/test`
 
 Install AWS CLI
-		`curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"`
-		`unzip awscliv2.zip`
-		`sudo ./aws/install`
+`curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"`
+`unzip awscliv2.zip`
+`sudo ./aws/install`
 
 2. Create a health check at app level(app.py),  
+```@app.route('/api/health-check')
+def health_check():
+  return {'success': True}, 200
+  ```
+Ensure the script is executable by running:
+`chmod u+x bin/flask/health-check`
+Run the script: `bin/flask/health-check`
+
 3. Create a health check at flask container level
 `chmod u+x ./bin/flask/health-check`
 4. Create cloudwatch log groups:
@@ -193,7 +204,7 @@ Login to ECR
 
 After login, we can now push the containers.
 
-Set URL
+Set URL of the Cruddur-python ecr repo created
 `export ECR_PYTHON_URL="$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/cruddur-python"`
 `echo $ECR_PYTHON_URL`
 
@@ -249,7 +260,7 @@ export DEFAULT_VPC_ID="vpc-<random id number of your vpc>"
 echo $DEFAULT_VPC_ID
 ```
 
-Pull Image
+Pull Image of python:3.10-slim-buster
 `docker pull python:3.10-slim-buster`
 
 Confirm image pulled
@@ -258,12 +269,22 @@ Confirm image pulled
 Tag Image
 `docker tag python:3.10-slim-buster $ECR_PYTHON_URL:3.10-slim-buster`
 
-Push Image
+Push Image to ECR
 `docker push $ECR_PYTHON_URL:3.10-slim-buster`
 
 ![Compose up db and backend](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/compose%20up%20db%20and%20backend.JPG)
 
 Or run `docker-compose up backend-flask db`
+
+from the dockerfile of backend-fask change the following line
+```FROM python:3.10-slim-buster
+
+ENV FLASK_ENV=development```
+
+replace your AWS account number below
+```FROM <AWS account number>.dkr.ecr.us-east-1.amazonaws.com/cruddur-python:3.10-slim-buster
+
+ENV PORT=4567 ```
 
 Create backend-flask Repo
 ```aws ecr create-repository \
@@ -271,7 +292,7 @@ Create backend-flask Repo
   --image-tag-mutability MUTABLE
   ```
 
-Set URL
+Set URL of backend-flask Repo
 `export ECR_BACKEND_FLASK_URL="$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/backend-flask"`
 `echo $ECR_BACKEND_FLASK_URL`
 
@@ -288,24 +309,75 @@ Push Image
 To create ECS task we should create tasks first
 ** task role is execution permissions while executionrole are used in execution
 
-
 Create Parameters in parameter store
 run:
 `export OTEL_EXPORTER_OTLP_HEADERS="x-honeycomb-team=${HONEYCOMB_API_KEY}"`
 `echo $OTEL_EXPORTER_OTLP_HEADERS`
 
 Create ExecutionRole then policy
+ROLE
 ```aws iam create-role \    
 --role-name CruddurServiceExecutionPolicy  \   
 --assume-role-policy-document file://aws/policies/service-assume-role-execution-policy.json
 ```
 
+POLICY
 ```aws iam put-role-policy \
   --policy-name CruddurServiceExecutionPolicy \
   --role-name CruddurServiceExecutionRole \
   --policy-document file://aws/policies/service-execution-policy.json
   ```
+create the new trust entities in the json file on this path aws/policies/service-assume-role-execution-policy.json
+```
+{
+  "Version":"2012-10-17",
+  "Statement":[{
+      "Action":["sts:AssumeRole"],
+      "Effect":"Allow",
+      "Principal":{
+        "Service":["ecs-tasks.amazonaws.com"]
+    }}]
+}
+```
+Create the service-execution-policy file under the path aws/policies/service-execution-policy.json
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "ecr:GetAuthorizationToken",
+                "ecr:BatchCheckLayerAvailability",
+                "ecr:GetDownloadUrlForLayer",
+                "ecr:BatchGetImage",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "ssm:GetParameters",
+                "ssm:GetParameter"
+            ],
+            "Resource": "arn:aws:ssm:eu-west-2:238967891447:parameter/cruddur/backend-flask/*"
+        }
+    ]
+}
+```
 
+Create the service execution policy then role then
+* replace POLICY_ARN
+`aws iam attach-role-policy --policy-arn POLICY_ARN --role-name CruddurServiceExecutionRole`
+then
+`aws iam attach-role-policy --policy-arn arn:aws:iam::aws:policy/CloudWatchFullAccess --role-name CruddurTaskRole`
+`aws iam attach-role-policy --policy-arn arn:aws:iam::aws:policy/AWSXRayDaemonWriteAccess --role-name CruddurTaskRole`
+
+Confirm on console: Full cloudwatch access to CruddurServiceExecutionRole
 
 Register Task Definitions
 Passing Senstive Data to Task Definition
@@ -318,29 +390,61 @@ aws ssm put-parameter --type "SecureString" --name "/cruddur/backend-flask/OTEL_
 Confirm parameters have been saved
 ![Saved parameters on console ](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/Confirm%20saved%20paramters.JPG)
 
+Create the taskrole
+```aws iam create-role \
+    --role-name CruddurTaskRole \
+    --assume-role-policy-document "{
+  \"Version\":\"2012-10-17\",
+  \"Statement\":[{
+    \"Action\":[\"sts:AssumeRole\"],
+    \"Effect\":\"Allow\",
+    \"Principal\":{
+      \"Service\":[\"ecs-tasks.amazonaws.com\"]
+    }
+  }]
+}" 
+```
 
-Create the service execution policy then role then
-* replace POLICY_ARN
-`aws iam attach-role-policy --policy-arn POLICY_ARN --role-name CruddurServiceExecutionRole`
-then
+attach the SSM access policy
+```
+aws iam put-role-policy \
+  --policy-name SSMAccessPolicy \
+  --role-name CruddurTaskRole \
+  --policy-document "{
+  \"Version\":\"2012-10-17\",
+  \"Statement\":[{
+    \"Action\":[
+      \"ssmmessages:CreateControlChannel\",
+      \"ssmmessages:CreateDataChannel\",
+      \"ssmmessages:OpenControlChannel\",
+      \"ssmmessages:OpenDataChannel\"
+    ],
+    \"Effect\":\"Allow\",
+    \"Resource\":\"*\"
+  }]
+}
+```
+
+give the cruddurtaskrole access to cloudwatch
 `aws iam attach-role-policy --policy-arn arn:aws:iam::aws:policy/CloudWatchFullAccess --role-name CruddurTaskRole`
+
+attach a policy to write to the xraydaemon
 `aws iam attach-role-policy --policy-arn arn:aws:iam::aws:policy/AWSXRayDaemonWriteAccess --role-name CruddurTaskRole`
 
-Confirm on console: Full cloudwatch access to CruddurServiceExecutionRole
-
-Create task definitions
+Create backend task definitions
 For backend then register: 
 `aws ecs register-task-definition --cli-input-json file://aws/task-definitions/backend-flask.json`
 
 
-*** edit the default subnets in the task definition
+*** edit the default vpc, security group, subnets, in the task definition
 
 Create service
-aws ecs create-service --cli-input-json file://aws/json/service-backend-flask.json
+`aws ecs create-service --cli-input-json file://aws/json/service-backend-flask.json`
 
 Connect to the backend-flask container
+*** Session manager must have been installed
 
-# edit task number below
+# edit task number below to connect to the backend flask service
 ```aws ecs execute-command \
 --region $AWS_DEFAULT_REGION \
 --cluster cruddur \
@@ -350,7 +454,44 @@ Connect to the backend-flask container
 --interactive
 ```
 
-check health check
+Ensure to have the following script in your gitpod.yml file
+```
+    before: |
+      cd /workspace
+      curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/ubuntu_64bit/session-manager-plugin.deb"
+      sudo dpkg -i session-manager-plugin.deb
+      cd $THEIA_WORKSPACE_ROOT
+      cd backend-flask
+```
+
+create a new folder ssm at the path /backend-flask/bin/ and create the new file connect-to-backend-flask and connect-to-frontend-react-js and apply execution permissions `chmod u+x` The basic format is as shown below
+```
+#! /usr/bin/bash
+
+if [ -z "$1" ]; then
+    echo "No TASK_ID argument supplied eg ./bin/ecs/connect-to service 291661114f174777aeeaff30522b972d backend-flask"
+    exit 1
+fi
+TASK_ID=$1
+
+if [ -z "$2" ]; then
+    echo "No CONTAINER_NAME argument supplied eg ./bin/ecs/connect-to service 291661114f174777aeeaff30522b972d backend-flask"
+    exit 2
+fi
+CONTAINER_NAME=$2
+
+
+aws ecs execute-command  \
+    --region $AWS_DEFAULT_REGION \
+    --cluster cruddur \
+    --task $TASK_ID \
+    --container $CONTAINER_NAME \
+    --command "/bin/bash" \
+    --interactive
+```
+
+check health checks
+
 Backend
 Run `./bin/flaskhealth-check`
 ![Healthcheck confirmation backend](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/backend%20health%20check%20running.JPG)
@@ -361,9 +502,71 @@ Frontend
 create LB
 1st SG 
 create TG
-Create LB
 
-Create service
+Create a load balancer
+
+add the following code on your service-backend-flask.json
+```
+    "loadBalancers": [
+      {
+          "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:<AWS Account ID>:targetgroup/cruddur-backend-flask-TG/<random TG ID>",
+          "containerName": "backend-flask",
+          "containerPort": 4567
+      }
+    ],
+```
+
+create the frontend task definition called frontend-react-js.json under /aws/task-definition
+```
+{
+    "family": "frontend-react-js",
+    "executionRoleArn": "arn:aws:iam::<AWS Account ID>:role/CruddurServiceExecutionRole",
+    "taskRoleArn": "arn:aws:iam::<AWS Account ID>:role/CruddurTaskRole",
+    "networkMode": "awsvpc",
+    "cpu": "256",
+    "memory": "512",
+    "requiresCompatibilities": [ 
+      "FARGATE" 
+    ],
+    "containerDefinitions": [
+      {
+        "name": "frontend-react-js",
+        "image": "<AWS Account ID>.dkr.ecr.us-east-1.amazonaws.com/frontend-react-js:latest",
+        "essential": true,
+        "healthCheck": {
+          "command": [
+            "CMD-SHELL",
+            "curl -f http://localhost:3000 || exit 1"
+          ],
+          "interval": 30,
+          "timeout": 5,
+          "retries": 3
+        },
+        "portMappings": [
+          {
+            "containerPort": 3000,
+            "protocol": "tcp"
+          }
+        ],
+  
+        "logConfiguration": {
+          "logDriver": "awslogs",
+          "options": {
+              "awslogs-group": "cruddur",
+              "awslogs-region": "us-east-1",
+              "awslogs-stream-prefix": "frontend-react-js"
+          }
+        }
+      }
+    ]
+  }
+```
+
+create the frontend task definition
+
+` aws ecs register-task-definition --cli-input-json file://aws/task-definitions/frontend-react-js.json `
+
+Create frontend service
 `aws ecs create-service --cli-input-json file://aws/json/service-frontend-react-js.json`
 
 * Create dockerfile.prod in frontend
@@ -425,14 +628,183 @@ If you want to run and test the image locally
 Register Task Definition
 `aws ecs register-task-definition --cli-input-json file://aws/task-definitions/frontend-react-js.json`
 
-		Install AWS CLI
-		```curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-		unzip awscliv2.zip
-		sudo ./aws/install
-        ```
-
 # Connecting to the frontend container once running: 
 `./bin/ecs/connect-to-frontend-react-js <task number>`
 
 # Connecting to the backend container once running: 
 ![Frontend container connection](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/succesfull%20connection%20to%20task.JPG)
+
+# Update dockerfile.prod with actual prod input
+```
+# Base Image ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FROM node:16.18 AS build
+
+ARG REACT_APP_BACKEND_URL
+ARG REACT_APP_AWS_PROJECT_REGION
+ARG REACT_APP_AWS_COGNITO_REGION
+ARG REACT_APP_AWS_USER_POOLS_ID
+ARG REACT_APP_CLIENT_ID
+
+ENV REACT_APP_BACKEND_URL=$REACT_APP_BACKEND_URL
+ENV REACT_APP_AWS_PROJECT_REGION=$REACT_APP_AWS_PROJECT_REGION
+ENV REACT_APP_AWS_COGNITO_REGION=$REACT_APP_AWS_COGNITO_REGION
+ENV REACT_APP_AWS_USER_POOLS_ID=$REACT_APP_AWS_USER_POOLS_ID
+ENV REACT_APP_CLIENT_ID=$REACT_APP_CLIENT_ID
+
+COPY . ./frontend-react-js
+WORKDIR /frontend-react-js
+RUN npm install
+RUN npm run build
+
+# New Base Image ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+FROM nginx:1.23.3-alpine
+
+# --from build is coming from the Base Image
+COPY --from=build /frontend-react-js/build /usr/share/nginx/html
+COPY --from=build /frontend-react-js/nginx.conf /etc/nginx/nginx.conf
+
+EXPOSE 3000
+```
+
+create a file called nginx.conf under the frontend-react-js
+```
+# Set the worker processes
+worker_processes 1;
+
+# Set the events module
+events {
+  worker_connections 1024;
+}
+
+# Set the http module
+http {
+  # Set the MIME types
+  include /etc/nginx/mime.types;
+  default_type application/octet-stream;
+
+  # Set the log format
+  log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+                    '$status $body_bytes_sent "$http_referer" '
+                    '"$http_user_agent" "$http_x_forwarded_for"';
+
+  # Set the access log
+  access_log  /var/log/nginx/access.log main;
+
+  # Set the error log
+  error_log /var/log/nginx/error.log;
+
+  # Set the server section
+  server {
+    # Set the listen port
+    listen 3000;
+
+    # Set the root directory for the app
+    root /usr/share/nginx/html;
+
+    # Set the default file to serve
+    index index.html;
+
+    location / {
+        # First attempt to serve request as file, then
+        # as directory, then fall back to redirecting to index.html
+        try_files $uri $uri/ $uri.html /index.html;
+    }
+
+    # Set the error page
+    error_page  404 /404.html;
+    location = /404.html {
+      internal;
+    }
+
+    # Set the error page for 500 errors
+    error_page  500 502 503 504  /50x.html;
+    location = /50x.html {
+      internal;
+    }
+  }
+}
+
+```
+
+from the folder frontend-react-js run the command to build
+
+`npm run build`
+
+run the following command to build the image pointing to the local env
+
+``` docker build \
+--build-arg REACT_APP_BACKEND_URL="https://${CODESPACE_NAME}-4567.${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN}" \
+--build-arg REACT_APP_AWS_PROJECT_REGION="$AWS_DEFAULT_REGION" \
+--build-arg REACT_APP_AWS_COGNITO_REGION="$AWS_DEFAULT_REGION" \
+--build-arg REACT_APP_AWS_USER_POOLS_ID="$AWS_USER_POOLS_ID" \
+--build-arg REACT_APP_CLIENT_ID="$APP_CLIENT_ID" \
+-t frontend-react-js \
+-f Dockerfile.prod \
+.
+```
+
+To point to the url of the load balancer
+
+```
+docker build \
+--build-arg REACT_APP_BACKEND_URL="http://cruddur-alb-<AWS Account ID>.<AWS_DEFAULT_REGION>.elb.amazonaws.com:4567" \
+--build-arg REACT_APP_AWS_PROJECT_REGION="$AWS_DEFAULT_REGION" \
+--build-arg REACT_APP_AWS_COGNITO_REGION="$AWS_DEFAULT_REGION" \
+--build-arg REACT_APP_AWS_USER_POOLS_ID="$AWS_USER_POOLS_ID" \
+--build-arg REACT_APP_CLIENT_ID="$APP_CLIENT_ID" \
+-t frontend-react-js \
+-f Dockerfile.prod \
+.
+```
+
+create the repo for the frontend ECR
+
+``` aws ecr create-repository \
+  --repository-name frontend-react-js \
+  --image-tag-mutability MUTABLE
+```
+
+and set the environment variables
+
+```export ECR_FRONTEND_REACT_URL="$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/frontend-react-js"
+echo $ECR_FRONTEND_REACT_URL
+```
+
+tag the production image
+
+`docker tag frontend-react-js:latest $ECR_FRONTEND_REACT_URL:latest`
+
+test locally
+
+`docker run --rm -p 3000:3000 -it frontend-react-js `
+
+push to the repo in ecr
+
+`docker push $ECR_FRONTEND_REACT_URL:latest`
+
+# Implement SSL and configure DNS from the Route 53 console
+* Create a hosted zone
+* Update name servers
+* Request public certificate under ACM
+* At previously created hosted zone, create CNAME records and point them to the load balancer
+port 3000 - frontend
+port 4567 - backend
+
+In the task definition of the backend, edit the following line:
+```
+   {"name": "FRONTEND_URL", "value": "https://example.com"},
+   {"name": "BACKEND_URL", "value": "https://api.example.com"},
+```
+
+once done, relaunch the task definition, recreate the image of the frontend repo and push it.
+```
+docker build \
+--build-arg REACT_APP_BACKEND_URL="https://example.com" \
+--build-arg REACT_APP_AWS_PROJECT_REGION="$AWS_DEFAULT_REGION" \
+--build-arg REACT_APP_AWS_COGNITO_REGION="$AWS_DEFAULT_REGION" \
+--build-arg REACT_APP_AWS_USER_POOLS_ID="$AWS_USER_POOLS_ID" \
+--build-arg REACT_APP_CLIENT_ID="$APP_CLIENT_ID" \
+-t frontend-react-js \
+-f Dockerfile.prod \
+.
+```
