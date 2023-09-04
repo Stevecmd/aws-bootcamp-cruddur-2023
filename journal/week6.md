@@ -31,7 +31,7 @@ This was technically the seventh week of the Bootcamp.
 <hr/>
 
 
-|    | Table of contents - Steps taken to complete Week 5 assignments                                                                                                                                                                         |
+|    | Table of contents - Steps taken to complete Week 6 assignments                                                                                                                                                                         |
 |----|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1  | []()                                  |
 | 2  | []()                                  |
@@ -261,9 +261,11 @@ Tag Image
 Push Image
 `docker push $ECR_PYTHON_URL:3.10-slim-buster`
 
-| 3  |[Test the backend image and db connection]
+| 3  |![Test the backend image and db connection]
 `docker-compose up backend-flask db`
 (https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/compose%20up%20db%20and%20backend.JPG)
+
+![Item 1](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%204/Lambda%20setup%201.JPG)
 
 Create backend-flask Repo
 ```aws ecr create-repository \
