@@ -261,7 +261,7 @@ Tag Image
 Push Image
 `docker push $ECR_PYTHON_URL:3.10-slim-buster`
 
-![Test the backend image and db connection]
+![Item]
 (https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/compose%20up%20db%20and%20backend.JPG)
 `docker-compose up backend-flask db`
 
