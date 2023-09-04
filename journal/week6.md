@@ -263,9 +263,7 @@ Push Image
 
 ![Compose up db and backend](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/compose%20up%20db%20and%20backend.JPG)
 
-`docker-compose up backend-flask db`
-
-![Item 1](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%204/Lambda%20setup%201.JPG)
+Or run `docker-compose up backend-flask db`
 
 Create backend-flask Repo
 ```aws ecr create-repository \
@@ -317,6 +315,9 @@ aws ssm put-parameter --type "SecureString" --name "/cruddur/backend-flask/CONNE
 aws ssm put-parameter --type "SecureString" --name "/cruddur/backend-flask/ROLLBAR_ACCESS_TOKEN" --value $ROLLBAR_ACCESS_TOKEN
 aws ssm put-parameter --type "SecureString" --name "/cruddur/backend-flask/OTEL_EXPORTER_OTLP_HEADERS" --value "x-honeycomb-team=$HONEYCOMB_API_KEY"
 ```
+Confirm parameters have been saved
+![Saved parameters on console ](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/Confirm%20saved%20paramters.JPG)
+
 
 Create the service execution policy then role then
 * replace POLICY_ARN
@@ -350,7 +351,12 @@ Connect to the backend-flask container
 ```
 
 check health check
-`./bin/flaskhealth-check`
+Backend
+Run `./bin/flaskhealth-check`
+![Healthcheck confirmation backend](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/backend%20health%20check%20running.JPG)
+
+Frontend
+![Healthcheck confirmation on browser](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/working%20health%20check%20docker%20image.JPG)
 
 create LB
 1st SG 
@@ -405,8 +411,10 @@ Build frontend image locally - must be in front end react folder
 -f Dockerfile.prod \
 .
 ```
+To build frontend image in prod
+![build frontend image in prod](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/npm%20run%20build%20on%20frontend.JPG)
 
-If you want to run and test it (one can do it locally)
+If you want to run and test the image locally
 
 `docker ps --to get <container id>`
 
@@ -426,3 +434,5 @@ Register Task Definition
 # Connecting to the frontend container once running: 
 `./bin/ecs/connect-to-frontend-react-js <task number>`
 
+# Connecting to the backend container once running: 
+![Frontend container connection](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/succesfull%20connection%20to%20task.JPG)
