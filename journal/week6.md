@@ -54,12 +54,12 @@ This was technically the seventh week of the Bootcamp.
 | 19 | [Create the service execution policy](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#create-the-service-execution-policy-then-role-then)                                  |
 | 20 | [Register Task Definitions](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#register-task-definitions)                                  |
 | 21 | [Confirm parameters have been saved](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#confirm-parameters-have-been-saved)                                  |
-| 22 | []()                                  |
-| 23 | []()                                  |
-| 24 | []()                                  |
-| 25 | []()                                  |
-| 26 | []()                                  |
-| 27 | []()                                  |
+| 22 | [Create the taskrole](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#create-the-taskrole)                                  |
+| 23 | [Give the cruddurtaskrole access to cloudwatch](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#give-the-cruddurtaskrole-access-to-cloudwatch)                                  |
+| 24 | [Attach a policy to write to the xraydaemon](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#attach-a-policy-to-write-to-the-xraydaemon)                                  |
+| 25 | [Create backend task definitions then register](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#create-backend-task-definitions-then-register)                                  |
+| 26 | [Create backend service](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#create-backend-service)                                  |
+| 27 | [Connect to the backend-flask container](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#connect-to-the-backend-flask-container)                                  |
 | 28 | []()                                  |
 | 29 | []()                                  |
 | 30 | []()                                  |
@@ -358,7 +358,8 @@ aws ssm put-parameter --type "SecureString" --name "/cruddur/backend-flask/ROLLB
 aws ssm put-parameter --type "SecureString" --name "/cruddur/backend-flask/OTEL_EXPORTER_OTLP_HEADERS" --value "x-honeycomb-team=$HONEYCOMB_API_KEY"
 ```
 ## Confirm parameters have been saved
-![Saved parameters on console ](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/Confirm%20saved%20paramters.JPG)
+![Saved parameters on console ](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/Confirm%20saved%20parameters.JPG)
+
 
 ## Create the taskrole
 ```aws iam create-role \
@@ -466,12 +467,12 @@ aws ecs execute-command  \
 
 *check <bold><i>health checks</i></bold>
 
-##  Backend
+##  Backend Healthcheck
 Run `./bin/flaskhealth-check`
 
 ![Healthcheck confirmation backend](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/backend%20health%20check%20running.JPG)
 
-##  Frontend
+##  Frontend Healthcheck
 ![Healthcheck confirmation on browser](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/working%20health%20check%20docker%20image.JPG)
 
 
