@@ -16,17 +16,17 @@ This was technically the seventh week of the Bootcamp.
 - [x] [Create an SSL cerificate via ACM](https://www.youtube.com/watch?v=HHmpZ5hqh1I&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=59 )
 - [x] [Setup a record set for naked domain to point to frontend-react-js](https://www.youtube.com/watch?v=HHmpZ5hqh1I&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=59 )
 - [x] [Setup a record set for api subdomain to point to the backend-flask](https://www.youtube.com/watch?v=HHmpZ5hqh1I&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=59 )
-- [] [Configure CORS to only permit traffic from our domain](https://www.youtube.com/watch?v=HHmpZ5hqh1I&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=59 )
-- [] [Secure Flask by not running in debug mode](https://www.youtube.com/watch?v=9OQZSBKzIgs&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=60 )
-- [] [Implement Refresh Token for Amazon Cognito](https://www.youtube.com/watch?v=LNLP2dxa5EQ&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=63 )
-- [] [Refactor bin directory to be top level](https://www.youtube.com/watch?v=HyJOjBjieb4&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=62 )
-- [] [Configure task defintions to contain x-ray and turn on Container Insights](https://www.youtube.com/watch?v=G_8_xtS2MsY&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=64 )
-- [] [Change Docker Compose to explicitly use a user-defined network](https://www.youtube.com/watch?v=G_8_xtS2MsY&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=64 )
-- [] [Create Dockerfile specfically for production use case](https://www.youtube.com/watch?v=G_8_xtS2MsY&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=64 )
-- [] [Using ruby generate out env dot files for docker using erb templates](https://www.youtube.com/watch?v=G_8_xtS2MsY&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=64 )
+- [x] [Configure CORS to only permit traffic from our domain](https://www.youtube.com/watch?v=HHmpZ5hqh1I&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=59 )
+- [x] [Secure Flask by not running in debug mode](https://www.youtube.com/watch?v=9OQZSBKzIgs&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=60 )
+- [x] [Implement Refresh Token for Amazon Cognito](https://www.youtube.com/watch?v=LNLP2dxa5EQ&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=63 )
+- [x] [Refactor bin directory to be top level](https://www.youtube.com/watch?v=HyJOjBjieb4&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=62 )
+- [x] [Configure task defintions to contain x-ray and turn on Container Insights](https://www.youtube.com/watch?v=G_8_xtS2MsY&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=64 )
+- [x] [Change Docker Compose to explicitly use a user-defined network](https://www.youtube.com/watch?v=G_8_xtS2MsY&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=64 )
+- [x] [Create Dockerfile specfically for production use case](https://www.youtube.com/watch?v=G_8_xtS2MsY&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=64 )
+- [x] [Using ruby generate out env dot files for docker using erb templates](https://www.youtube.com/watch?v=G_8_xtS2MsY&list=PLBfufR7vyJJ7k25byhRXJldB5AiwgNnWv&index=64 )
 
 
-- [] Complete 100% of the tasks
+- [x] Complete 100% of the tasks
 
 <hr/>
 
@@ -144,8 +144,6 @@ This was technically the seventh week of the Bootcamp.
 ![]()
 
 
-
-
 I had previously removed some of the resources so the first step is to redeploy them:
 1. Make sure all your environmental requirements are installed:
 `pip install -r requirements.txt`
@@ -154,7 +152,7 @@ Run the script located at: `backend-flask/bin/db/test`
 Ensure the script is executable by running:
 `chmod u+x backend-flask/bin/db/test`
 
-Install AWS CLI
+## Install AWS CLI
 
 `curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"`
 `unzip awscliv2.zip`
@@ -173,17 +171,17 @@ Ensure the script is executable by running:
 `chmod u+x bin/flask/health-check`
 Run the script: `bin/flask/health-check`
 
-![Health check](journal/Week 6/backend health check running.JPG)
+![Health check](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/backend%20health%20check%20running.JPG)
 
 3. Create a health check at flask container level
 `chmod u+x ./bin/flask/health-check`
 
 ![Frontend health check](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/working%20health%20check%20docker%20image.JPG)
 
-# Healthy target
+## Healthy target
 ![Check target health in console](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/part%202/Healthy%20target.JPG)
 
-# Inspecting Docker container
+## Inspecting Docker container
 ![Inspect using curl](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/part%202/Inspecting%20docker%20container%20locally%20curl.JPG)
 ![Locally inspect using docker inspect](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/part%202/Inspecting%20docker%20container%20locally.JPG)
 
@@ -200,39 +198,39 @@ Run the script: `bin/flask/health-check`
 `aws logs put-retention-policy --log-group-name "/cruddur/fargate-cluster" --retention-in-days 1`
 
 
-Create ECS cluster
+## Create ECS cluster
 ```aws ecs create-cluster \
 --cluster-name cruddur \
 --service-connect-defaults namespace=cruddur
 ```
 
-Create Cruddur-python ecr repo
+## Create Cruddur-python ecr repo
 ```aws ecr create-repository \
   --repository-name cruddur-python \
   --image-tag-mutability MUTABLE
   ```
 
-Install session manager plugin
+## Install session manager plugin
 
 `curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/ubuntu_64bit/session-manager-plugin.deb" -o "session-manager-plugin.deb" `
 `sudo dpkg -i session-manager-plugin.deb`
 
-Verify session manager is working:
+## Verify session manager is working:
 `session-manager-plugin`
 
-Login to ECR
+## Login to ECR
 
 ```aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin "$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com" ```
 
 After login, we can now push the containers.
 
-Set URL of the Cruddur-python ecr repo created
+## Set URL of the Cruddur-python ecr repo created
 
 `export ECR_PYTHON_URL="$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/cruddur-python"`
 `echo $ECR_PYTHON_URL`
 
 
-Create the Cruddur services Security Group
+## Create the Cruddur services Security Group
 
 ```export CRUD_SERVICE_SG=$(aws ec2 create-security-group \
   --group-name "crud-srv-sg" \
@@ -285,16 +283,16 @@ echo $DEFAULT_VPC_ID
 
 ![Cruudur Services Security group](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/part%202/ALB%20security%20group%20crud.srv.sg.JPG)
 
-Pull Image of python:3.10-slim-buster
+## Pull Image of python:3.10-slim-buster
 `docker pull python:3.10-slim-buster`
 
-Confirm image pulled
+## Confirm image pulled
 `docker images`
 
-Tag Image
+## Tag Image
 `docker tag python:3.10-slim-buster $ECR_PYTHON_URL:3.10-slim-buster`
 
-Push Image to ECR
+## Push Image to ECR
 `docker push $ECR_PYTHON_URL:3.10-slim-buster`
 
 ![Compose up db and backend](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/compose%20up%20db%20and%20backend.JPG)
@@ -319,12 +317,12 @@ Create backend-flask Repo
   --image-tag-mutability MUTABLE
   ```
 
-Set URL of backend-flask Repo
+## Set URL of backend-flask Repo
 
 `export ECR_BACKEND_FLASK_URL="$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/backend-flask"`
 `echo $ECR_BACKEND_FLASK_URL`
 
-#Make sure to be in backend-flask directory
+<bold> Make sure to be in backend-flask directory </bold>
 Build Image
 `docker build -t backend-flask .`
 
@@ -334,17 +332,17 @@ Tag Image
 Push Image
 `docker push $ECR_BACKEND_FLASK_URL:latest`
 
-To create ECS task we should create tasks first
+## To create ECS task we should create tasks first
 ** task role is execution permissions while executionrole are used in execution
 
-Create Parameters in parameter store
+## Create Parameters in parameter store
 run:
 `export OTEL_EXPORTER_OTLP_HEADERS="x-honeycomb-team=${HONEYCOMB_API_KEY}"`
 `echo $OTEL_EXPORTER_OTLP_HEADERS`
 
 ![Confirm on console that parameters were saved](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/Confirm%20saved%20parameters.JPG)
 
-Create ExecutionRole then policy
+## Create ExecutionRole then policy
 ROLE
 ```aws iam create-role \    
 --role-name CruddurServiceExecutionPolicy  \   
@@ -400,7 +398,7 @@ Create the service-execution-policy file under the path aws/policies/service-exe
 }
 ```
 
-Create the service execution policy then role then
+## Create the service execution policy then role then
 * replace POLICY_ARN
 `aws iam attach-role-policy --policy-arn POLICY_ARN --role-name CruddurServiceExecutionRole`
 then
@@ -409,7 +407,7 @@ then
 
 Confirm on console: Full cloudwatch access to CruddurServiceExecutionRole
 
-Register Task Definitions
+## Register Task Definitions
 Passing Senstive Data to Task Definition
 ```aws ssm put-parameter --type "SecureString" --name "/cruddur/backend-flask/AWS_ACCESS_KEY_ID" --value $AWS_ACCESS_KEY_ID
 aws ssm put-parameter --type "SecureString" --name "/cruddur/backend-flask/AWS_SECRET_ACCESS_KEY" --value $AWS_SECRET_ACCESS_KEY
@@ -417,10 +415,10 @@ aws ssm put-parameter --type "SecureString" --name "/cruddur/backend-flask/CONNE
 aws ssm put-parameter --type "SecureString" --name "/cruddur/backend-flask/ROLLBAR_ACCESS_TOKEN" --value $ROLLBAR_ACCESS_TOKEN
 aws ssm put-parameter --type "SecureString" --name "/cruddur/backend-flask/OTEL_EXPORTER_OTLP_HEADERS" --value "x-honeycomb-team=$HONEYCOMB_API_KEY"
 ```
-Confirm parameters have been saved
+## Confirm parameters have been saved
 ![Saved parameters on console ](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/Confirm%20saved%20paramters.JPG)
 
-Create the taskrole
+## Create the taskrole
 ```aws iam create-role \
     --role-name CruddurTaskRole \
     --assume-role-policy-document "{
@@ -457,26 +455,25 @@ aws iam put-role-policy \
 
 ![Test SSM connection to frontend](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/part%202/ssm%20to%20frontend.JPG)
 
-give the cruddurtaskrole access to cloudwatch
+## Give the cruddurtaskrole access to cloudwatch
 `aws iam attach-role-policy --policy-arn arn:aws:iam::aws:policy/CloudWatchFullAccess --role-name CruddurTaskRole`
 
-attach a policy to write to the xraydaemon
+## Attach a policy to write to the xraydaemon
 `aws iam attach-role-policy --policy-arn arn:aws:iam::aws:policy/AWSXRayDaemonWriteAccess --role-name CruddurTaskRole`
 
-Create backend task definitions
-For backend then register: 
+## Create backend task definitions then register: 
 `aws ecs register-task-definition --cli-input-json file://aws/task-definitions/backend-flask.json`
 
 
 *** Edit the default vpc, security group, subnets, in the task definition
 
-Create service
+## Create backend service
 `aws ecs create-service --cli-input-json file://aws/json/service-backend-flask.json`
 
-Connect to the backend-flask container
+## Connect to the backend-flask container
 *** Session manager must have been installed
 
-# Edit the task number below to connect to the backend flask service
+## Edit the task number below to connect to the backend flask service
 ```aws ecs execute-command \
 --region $AWS_DEFAULT_REGION \
 --cluster cruddur \
@@ -527,12 +524,12 @@ aws ecs execute-command  \
 
 *check <bold><i>health checks</i></bold>
 
--> Backend
+##  Backend
 Run `./bin/flaskhealth-check`
 
 ![Healthcheck confirmation backend](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/backend%20health%20check%20running.JPG)
 
--> Frontend
+##  Frontend
 ![Healthcheck confirmation on browser](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/working%20health%20check%20docker%20image.JPG)
 
 
@@ -550,7 +547,8 @@ add the following code on your service-backend-flask.json
     ],
 ```
 
-create the frontend task definition called frontend-react-js.json under /aws/task-definition
+## create the frontend task definition called frontend-react-js.json 
+it is under /aws/task-definition
 
 ```
 {
@@ -608,7 +606,7 @@ create the frontend task definition called frontend-react-js.json under /aws/tas
 
 * Create dockerfile.prod in frontend
 
-Create front end repo
+## Create front end repo
 ```aws ecr create-repository \
   --repository-name frontend-react-js \
   --image-tag-mutability MUTABLE
@@ -626,10 +624,10 @@ Build backend and map port
 .
 ```
 
-Tag Image
+## Tag Frontend Image
 `docker tag frontend-react-js:latest $ECR_FRONTEND_REACT_URL:latest`
 
-Push it
+## Push Frontend image
 `docker push $ECR_FRONTEND_REACT_URL:latest`
 
 If you want to run and test it
@@ -638,7 +636,7 @@ If you want to run and test it
 
 <Bold> Part 2 </Bold>
 
-Create frontend service if not already running:
+## Create frontend service if not already running:
 
 `aws ecs create-service --cli-input-json file://aws/json/service-frontend-react-js.json`
 
@@ -653,7 +651,7 @@ Build frontend image locally - must be in front end react folder
 -f Dockerfile.prod \
 .
 ```
-Build frontend image in prod: 
+## Build frontend image in prod: 
 ![build frontend image in prod](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/npm%20run%20build%20on%20frontend.JPG)
 
 If you want to run and test the image locally
@@ -664,7 +662,7 @@ If you want to run and test the image locally
 
 `docker inspect --to get <container id>`
 
-Register Task Definition
+## Register Frontend Task Definition
 `aws ecs register-task-definition --cli-input-json file://aws/task-definitions/frontend-react-js.json`
 
 # Connecting to the frontend container once running: 
@@ -800,7 +798,7 @@ docker build \
 
 ![Working load balancer](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/part%202/working%20load%20balancer.JPG)
 
-create the repo for the frontend ECR:
+## Create the repo for the frontend ECR:
 
 ``` aws ecr create-repository \
   --repository-name frontend-react-js \
@@ -813,7 +811,7 @@ and set the environment variables:
 echo $ECR_FRONTEND_REACT_URL
 ```
 
-tag the production image:
+## Tag the production image:
 
 `docker tag frontend-react-js:latest $ECR_FRONTEND_REACT_URL:latest`
 
