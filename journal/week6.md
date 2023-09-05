@@ -33,27 +33,27 @@ This was technically the seventh week of the Bootcamp.
 
 |    | Table of contents - Steps taken to complete Week 6 assignments                                                                                                                                                                         |
 |----|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1  | []()                                  |
-| 2  | []()                                  |
-| 3  | []()                                  |
-| 4  | []()                                  |
-| 5  | []()                                  |
-| 6  | []()                                  |
-| 7  | []()                                  |
-| 8  | []()                                  |
-| 9  | []()                                  |
-| 10 | []()                                  |
-| 11 | []()                                  |
-| 12 | []()                                  |
-| 13 | []()                                  |
-| 14 | []()                                  |
-| 15 | []()                                  |
-| 16 | []()                                  |
-| 17 | []()                                  |
-| 18 | []()                                  |
-| 19 | []()                                  |
-| 20 | []()                                  |
-| 21 | []()                                  |
+| 1  | [Reinstalling AWS CLI](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#install-aws-cli)                                  |
+| 2  | [Healthy targets](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#healthy-target)                                  |
+| 3  | [Inspecting docker containers](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#inspecting-docker-container)                                  |
+| 4  | [Create ECS cluster](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#create-ecs-cluster)                                  |
+| 5  | [Create Cruddur-python ecr repo](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#create-cruddur-python-ecr-repo)                                  |
+| 6  | [Install session manager plugin](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#install-session-manager-plugin)                                  |
+| 7  | [Verify session manager is working](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#verify-session-manager-is-working)                                  |
+| 8  | [Login to ECR](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#login-to-ecr)                                  |
+| 9  | [Set URL of the Cruddur-python ecr repo created](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#set-url-of-the-cruddur-python-ecr-repo-created)                                  |
+| 10 | [Create the Cruddur services Security Group](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#create-the-cruddur-services-security-group)                                  |
+| 11 | [Pull Image of python:3.10-slim-buster](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#pull-image-of-python310-slim-buster)                                  |
+| 12 | [Confirm image pulled](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#confirm-image-pulled)                                  |
+| 13 | [Tag Image](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#tag-image)                                  |
+| 14 | [Push Image to ECR](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#push-image-to-ecr)                                  |
+| 15 | [Set URL of backend-flask Repo](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#set-url-of-backend-flask-repo)                                  |
+| 16 | [To create ECS task we should create tasks first](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#to-create-ecs-task-we-should-create-tasks-first)                                  |
+| 17 | [Create Parameters in parameter store](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#create-parameters-in-parameter-store)                                  |
+| 18 | [Create ExecutionRole then policy](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#create-executionrole-then-policy)                                  |
+| 19 | [Create the service execution policy](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#create-the-service-execution-policy-then-role-then)                                  |
+| 20 | [Register Task Definitions](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#register-task-definitions)                                  |
+| 21 | [Confirm parameters have been saved](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#confirm-parameters-have-been-saved)                                  |
 | 22 | []()                                  |
 | 23 | []()                                  |
 | 24 | []()                                  |
@@ -234,7 +234,7 @@ echo $DEFAULT_VPC_ID
 ## Push Image to ECR
 `docker push $ECR_PYTHON_URL:3.10-slim-buster`
 
-![Compose up db and backend](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/compose%20up%20db%20and%20backend.JPG)
+![Compose up db and backend to test setup](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/compose%20up%20db%20and%20backend.JPG)
 
 Or run `docker-compose up backend-flask db`
 
@@ -281,7 +281,7 @@ run:
 
 ![Confirm on console that parameters were saved](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/Confirm%20saved%20parameters.JPG)
 
-## Create ExecutionRole then policy
+## Create Execution Role then policy
 ROLE
 ```aws iam create-role \    
 --role-name CruddurServiceExecutionPolicy  \   
@@ -339,8 +339,11 @@ Create the service-execution-policy file under the path aws/policies/service-exe
 
 ## Create the service execution policy then role then
 * replace POLICY_ARN
+
 `aws iam attach-role-policy --policy-arn POLICY_ARN --role-name CruddurServiceExecutionRole`
+
 then
+
 `aws iam attach-role-policy --policy-arn arn:aws:iam::aws:policy/CloudWatchFullAccess --role-name CruddurTaskRole`
 `aws iam attach-role-policy --policy-arn arn:aws:iam::aws:policy/AWSXRayDaemonWriteAccess --role-name CruddurTaskRole`
 
