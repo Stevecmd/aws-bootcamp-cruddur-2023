@@ -1,0 +1,20 @@
+ #! /usr/bin/bash
+
+# docker build \
+# --build-arg REACT_APP_BACKEND_URL="https://${CODESPACE_NAME}-4567.${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN}" \
+# --build-arg REACT_APP_AWS_PROJECT_REGION="$AWS_DEFAULT_REGION" \
+# --build-arg REACT_APP_AWS_COGNITO_REGION="$AWS_DEFAULT_REGION" \
+# --build-arg REACT_APP_AWS_USER_POOLS_ID="${us-east-1_dt38CVOQA}" \
+# --build-arg REACT_APP_CLIENT_ID="4h80jb1ina643m4qmjs3hehvki" \
+# -t frontend-react-js \
+# -f Dockerfile.prod \
+# .
+# PARENT_DIR="$(dirname "$(dirname "$ABS_PATH")")"
+# ABS_PATH=$(readlink -f "$0" )
+
+ABS_PATH=$(readlink -f "$0")
+BUILD_PATH=$(dirname $ABS_PATH)
+DOCKER_PATH=$(dirname $BUILD_PATH)
+BIN_PATH=$(dirname $DOCKER_PATH)
+PROJECT_PATH=$(dirname $BIN_PATH)
+echo $PROJECT_PATH
