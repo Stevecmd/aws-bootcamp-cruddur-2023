@@ -155,11 +155,13 @@ Ensure the script is executable by running:
 `chmod u+x backend-flask/bin/db/test`
 
 Install AWS CLI
+
 `curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"`
 `unzip awscliv2.zip`
 `sudo ./aws/install`
 
-2. Create a health check at app level(app.py),  
+2. Create a health check at app level(app.py)
+
 ```@app.route('/api/health-check')
 def health_check():
   return {'success': True}, 200
@@ -170,8 +172,10 @@ Run the script: `bin/flask/health-check`
 
 3. Create a health check at flask container level
 `chmod u+x ./bin/flask/health-check`
+
 4. Create cloudwatch log groups:
 - App level log group
+
 `aws logs create-log-group --log-group-name "/cruddur"`
 `aws logs put-retention-policy --log-group-name "/cruddur" --retention-in-days 1`
 
@@ -193,6 +197,7 @@ Create Cruddur-python ecr repo
   ```
 
 Install session manager plugin
+
 `curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/ubuntu_64bit/session-manager-plugin.deb" -o "session-manager-plugin.deb" `
 `sudo dpkg -i session-manager-plugin.deb`
 
@@ -200,11 +205,13 @@ Verify session manager is working:
 `session-manager-plugin`
 
 Login to ECR
+
 ```aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin "$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com" ```
 
 After login, we can now push the containers.
 
 Set URL of the Cruddur-python ecr repo created
+
 `export ECR_PYTHON_URL="$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/cruddur-python"`
 `echo $ECR_PYTHON_URL`
 
@@ -277,9 +284,10 @@ Push Image to ECR
 Or run `docker-compose up backend-flask db`
 
 from the dockerfile of backend-fask change the following line
+
 ```FROM python:3.10-slim-buster
 
-ENV FLASK_ENV=development```
+  ENV FLASK_ENV=development```
 
 replace your AWS account number below
 ```FROM <AWS account number>.dkr.ecr.us-east-1.amazonaws.com/cruddur-python:3.10-slim-buster
@@ -287,12 +295,14 @@ replace your AWS account number below
 ENV PORT=4567 ```
 
 Create backend-flask Repo
+
 ```aws ecr create-repository \
   --repository-name backend-flask \
   --image-tag-mutability MUTABLE
   ```
 
 Set URL of backend-flask Repo
+
 `export ECR_BACKEND_FLASK_URL="$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/backend-flask"`
 `echo $ECR_BACKEND_FLASK_URL`
 
@@ -436,7 +446,7 @@ For backend then register:
 `aws ecs register-task-definition --cli-input-json file://aws/task-definitions/backend-flask.json`
 
 
-*** edit the default vpc, security group, subnets, in the task definition
+*** Edit the default vpc, security group, subnets, in the task definition
 
 Create service
 `aws ecs create-service --cli-input-json file://aws/json/service-backend-flask.json`
@@ -444,7 +454,7 @@ Create service
 Connect to the backend-flask container
 *** Session manager must have been installed
 
-# edit task number below to connect to the backend flask service
+# Edit the task number below to connect to the backend flask service
 ```aws ecs execute-command \
 --region $AWS_DEFAULT_REGION \
 --cluster cruddur \
@@ -490,22 +500,21 @@ aws ecs execute-command  \
     --interactive
 ```
 
-check health checks
+*check <bold><i>health checks</i></bold>
 
-Backend
+-> Backend
 Run `./bin/flaskhealth-check`
+
 ![Healthcheck confirmation backend](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/backend%20health%20check%20running.JPG)
 
-Frontend
+-> Frontend
 ![Healthcheck confirmation on browser](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/working%20health%20check%20docker%20image.JPG)
 
-create LB
-1st SG 
-create TG
 
-Create a load balancer
+# Create a load balancer
 
 add the following code on your service-backend-flask.json
+
 ```
     "loadBalancers": [
       {
@@ -517,6 +526,7 @@ add the following code on your service-backend-flask.json
 ```
 
 create the frontend task definition called frontend-react-js.json under /aws/task-definition
+
 ```
 {
     "family": "frontend-react-js",
@@ -562,11 +572,11 @@ create the frontend task definition called frontend-react-js.json under /aws/tas
   }
 ```
 
-create the frontend task definition
+* create the frontend task definition
 
 ` aws ecs register-task-definition --cli-input-json file://aws/task-definitions/frontend-react-js.json `
 
-Create frontend service
+* Create frontend service
 `aws ecs create-service --cli-input-json file://aws/json/service-frontend-react-js.json`
 
 * Create dockerfile.prod in frontend
@@ -599,8 +609,10 @@ If you want to run and test it
 
 `docker run --rm -p 3000:3000 -it frontend-react-js`
 
-Part 2
+<Bold> Part 2 </Bold>
+
 Create frontend service if not already running:
+
 `aws ecs create-service --cli-input-json file://aws/json/service-frontend-react-js.json`
 
 Build frontend image locally - must be in front end react folder
@@ -614,7 +626,7 @@ Build frontend image locally - must be in front end react folder
 -f Dockerfile.prod \
 .
 ```
-To build frontend image in prod
+Build frontend image in prod: 
 ![build frontend image in prod](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/npm%20run%20build%20on%20frontend.JPG)
 
 If you want to run and test the image locally
@@ -726,11 +738,11 @@ http {
 
 ```
 
-from the folder frontend-react-js run the command to build
+from the folder frontend-react-js run the command to build:
 
 `npm run build`
 
-run the following command to build the image pointing to the local env
+run the following command to build the image pointing to the local environment:
 
 ``` docker build \
 --build-arg REACT_APP_BACKEND_URL="https://${CODESPACE_NAME}-4567.${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN}" \
@@ -743,7 +755,7 @@ run the following command to build the image pointing to the local env
 .
 ```
 
-To point to the url of the load balancer
+To point to the url of the load balancer:
 
 ```
 docker build \
@@ -757,28 +769,28 @@ docker build \
 .
 ```
 
-create the repo for the frontend ECR
+create the repo for the frontend ECR:
 
 ``` aws ecr create-repository \
   --repository-name frontend-react-js \
   --image-tag-mutability MUTABLE
 ```
 
-and set the environment variables
+and set the environment variables:
 
 ```export ECR_FRONTEND_REACT_URL="$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/frontend-react-js"
 echo $ECR_FRONTEND_REACT_URL
 ```
 
-tag the production image
+tag the production image:
 
 `docker tag frontend-react-js:latest $ECR_FRONTEND_REACT_URL:latest`
 
-test locally
+test locally:
 
 `docker run --rm -p 3000:3000 -it frontend-react-js `
 
-push to the repo in ecr
+push to the repo in ecr:
 
 `docker push $ECR_FRONTEND_REACT_URL:latest`
 
@@ -787,8 +799,8 @@ push to the repo in ecr
 * Update name servers
 * Request public certificate under ACM
 * At previously created hosted zone, create CNAME records and point them to the load balancer
-port 3000 - frontend
-port 4567 - backend
+  `frontend - port 3000`
+  `backend - port 4567`
 
 In the task definition of the backend, edit the following line:
 ```
