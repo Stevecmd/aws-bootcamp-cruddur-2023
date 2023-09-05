@@ -67,13 +67,13 @@ This was technically the seventh week of the Bootcamp.
 | 10 | [Create front end repo](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#create-front-end-repo)                                  |
 | 10 | [Tag Frontend Image](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#tag-frontend-image)                                  |
 | 10 | [Push Frontend image](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#push-frontend-image)                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |                                                                                                                              
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
+| 10 | [Part 2](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#part-2)                                  |
+| 10 | [Create frontend service if not already running](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#create-frontend-service-if-not-already-running)                                  |
+| 10 | [Build frontend image in prod](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#build-frontend-image-in-prod)                                  |                                                                                                                              
+| 10 | [Register Frontend Task Definition](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#register-frontend-task-definition)                                  |
+| 10 | [Connecting to the frontend container once running](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#connecting-to-the-frontend-container-once-running)                                  |
+| 10 | [Connecting to the backend container once running](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#connecting-to-the-backend-container-once-running)                                  |
+| 10 | [Update dockerfile.prod with actual prod input](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#update-dockerfileprod-with-actual-prod-input)                                  |
 | 10 | []()                                  |
 | 10 | []()                                  |
 | 10 | []()                                  |
@@ -738,6 +738,7 @@ docker build \
 -f Dockerfile.prod \
 .
 ```
+## Working load Balancer
 
 ![Working load balancer](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/part%202/working%20load%20balancer.JPG)
 
@@ -773,6 +774,8 @@ push to the repo in ecr:
 * At previously created hosted zone, create CNAME records and point them to the load balancer
   `frontend - port 3000`
   `backend - port 4567`
+
+## Create records for backend link 
   ![Create records for backend link](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/part%202/Create%20records%20or%20backend%20link.JPG)
 
 In the task definition of the backend, edit the following line:
@@ -793,7 +796,11 @@ docker build \
 -f Dockerfile.prod \
 .
 ```
-
+## Confirm tasks are working
 ![Confirm tasks are working](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/part%202/Running%20tasks.JPG)
+
+## Confirm services are working
 ![Confirm services are working](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/part%202/Running%20services.JPG)
+
+## Website link is working
 ![Link is working](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/part%202/New%20link%20is%20up.JPG)
