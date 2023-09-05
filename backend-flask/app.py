@@ -126,6 +126,8 @@ cors = CORS(
 
 @app.route('/api/health-check')
 def health_check():
+  # hello = None
+  # hello()
   return {'success': True, 'ver': 1}, 200
 
 # RollBar test
