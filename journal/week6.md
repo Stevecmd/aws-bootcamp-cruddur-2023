@@ -74,6 +74,14 @@ This was technically the seventh week of the Bootcamp.
 | 10 | [Connecting to the frontend container once running](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#connecting-to-the-frontend-container-once-running)                                  |
 | 10 | [Connecting to the backend container once running](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#connecting-to-the-backend-container-once-running)                                  |
 | 10 | [Update dockerfile.prod with actual prod input](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#update-dockerfileprod-with-actual-prod-input)                                  |
+| 10 | [Working load Balancer](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#working-load-balancer)                                  |
+| 10 | [Create the repo for the frontend ECR](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#create-the-repo-for-the-frontend-ecr)                                  |
+| 10 | [Tag the production image](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#tag-the-production-image)                                  |
+| 10 | [Implement SSL and configure DNS from the Route 53 console](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#implement-ssl-and-configure-dns-from-the-route-53-console)                                  |
+| 10 | [Create records for backend link](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#create-records-for-backend-link)                                  |
+| 10 | [Confirm tasks are working](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#confirm-tasks-are-working)                                  |
+| 10 | [Confirm services are working](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#confirm-services-are-working)                                  |
+| 10 | [Website link is working](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#website-link-is-working)                                  |
 | 10 | []()                                  |
 | 10 | []()                                  |
 | 10 | []()                                  |
