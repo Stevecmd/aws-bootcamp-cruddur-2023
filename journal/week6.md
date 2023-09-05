@@ -170,14 +170,20 @@ Ensure the script is executable by running:
 `chmod u+x bin/flask/health-check`
 Run the script: `bin/flask/health-check`
 
+![Health check](journal/Week 6/backend health check running.JPG)
+
 3. Create a health check at flask container level
 `chmod u+x ./bin/flask/health-check`
+
+![Frontend health check](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/working%20health%20check%20docker%20image.JPG)
 
 4. Create cloudwatch log groups:
 - App level log group
 
 `aws logs create-log-group --log-group-name "/cruddur"`
 `aws logs put-retention-policy --log-group-name "/cruddur" --retention-in-days 1`
+
+![Logs after creation and use of the app](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/backend%20flask%20logs.JPG)
 
 - Fargate container log group
 `aws logs create-log-group --log-group-name "/cruddur/fargate-cluster"`
@@ -324,6 +330,8 @@ run:
 `export OTEL_EXPORTER_OTLP_HEADERS="x-honeycomb-team=${HONEYCOMB_API_KEY}"`
 `echo $OTEL_EXPORTER_OTLP_HEADERS`
 
+![Confirm on console that parameters were saved](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/Confirm%20saved%20parameters.JPG)
+
 Create ExecutionRole then policy
 ROLE
 ```aws iam create-role \    
@@ -463,6 +471,8 @@ Connect to the backend-flask container
 --command "/bin/bash" \
 --interactive
 ```
+
+![Connect to Backend flask through SSM](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/succesfull%20connection%20to%20task.JPG)
 
 Ensure to have the following script in your gitpod.yml file
 ```
@@ -667,6 +677,8 @@ COPY . ./frontend-react-js
 WORKDIR /frontend-react-js
 RUN npm install
 RUN npm run build
+
+![Build the frontend image](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/npm%20run%20build%20on%20frontend.JPG)
 
 # New Base Image ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 FROM nginx:1.23.3-alpine
