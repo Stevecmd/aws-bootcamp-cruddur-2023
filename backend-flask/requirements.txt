@@ -25,3 +25,5 @@ psycopg-pool
 jwt
 boto3
 momento
+
+python-dotenv
