@@ -60,9 +60,9 @@ This was technically the seventh week of the Bootcamp.
 | 25 | [Create backend task definitions then register](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#create-backend-task-definitions-then-register)                                  |
 | 26 | [Create backend service](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#create-backend-service)                                  |
 | 27 | [Connect to the backend-flask container](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#connect-to-the-backend-flask-container)                                  |
-| 28 | []()                                  |
-| 29 | []()                                  |
-| 30 | []()                                  |
+| 28 | [Backend Healthcheck](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#backend-healthcheck)                                  |
+| 29 | [Frontend Healthcheck](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#frontend-healthcheck)                                  |
+| 30 | [Create a load balancer](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#create-a-load-balancer)                                  |
 | 10 | []()                                  |
 | 10 | []()                                  |
 | 10 | []()                                  |
@@ -490,7 +490,7 @@ add the following code on your service-backend-flask.json
     ],
 ```
 
-## create the frontend task definition called frontend-react-js.json 
+## Create the frontend task definition: frontend-react-js.json 
 it is under /aws/task-definition
 
 ```
