@@ -166,6 +166,9 @@ Install AWS CLI
 def health_check():
   return {'success': True}, 200
   ```
+
+![Frontend healthcheck](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/part%202/Health-check%20container%20level%20frontend.JPG)
+
 Ensure the script is executable by running:
 `chmod u+x bin/flask/health-check`
 Run the script: `bin/flask/health-check`
@@ -176,6 +179,13 @@ Run the script: `bin/flask/health-check`
 `chmod u+x ./bin/flask/health-check`
 
 ![Frontend health check](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/working%20health%20check%20docker%20image.JPG)
+
+# Healthy target
+![Check target health in console](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/part%202/Healthy%20target.JPG)
+
+# Inspecting Docker container
+![Inspect using curl](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/part%202/Inspecting%20docker%20container%20locally%20curl.JPG)
+![Locally inspect using docker inspect](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/part%202/Inspecting%20docker%20container%20locally.JPG)
 
 4. Create cloudwatch log groups:
 - App level log group
@@ -272,6 +282,8 @@ Confirm settings:
 export DEFAULT_VPC_ID="vpc-<random id number of your vpc>"
 echo $DEFAULT_VPC_ID
 ```
+
+![Cruudur Services Security group](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/part%202/ALB%20security%20group%20crud.srv.sg.JPG)
 
 Pull Image of python:3.10-slim-buster
 `docker pull python:3.10-slim-buster`
@@ -443,6 +455,8 @@ aws iam put-role-policy \
 }
 ```
 
+![Test SSM connection to frontend](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/part%202/ssm%20to%20frontend.JPG)
+
 give the cruddurtaskrole access to cloudwatch
 `aws iam attach-role-policy --policy-arn arn:aws:iam::aws:policy/CloudWatchFullAccess --role-name CruddurTaskRole`
 
@@ -509,6 +523,7 @@ aws ecs execute-command  \
     --command "/bin/bash" \
     --interactive
 ```
+![Connect to frontend through created SSM files](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/part%202/ssm%20to%20frontend%20ls.JPG)
 
 *check <bold><i>health checks</i></bold>
 
@@ -585,6 +600,8 @@ create the frontend task definition called frontend-react-js.json under /aws/tas
 * create the frontend task definition
 
 ` aws ecs register-task-definition --cli-input-json file://aws/task-definitions/frontend-react-js.json `
+
+![register the frontend task definition](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/part%202/register%20frontend%20task%20def.JPG)
 
 * Create frontend service
 `aws ecs create-service --cli-input-json file://aws/json/service-frontend-react-js.json`
@@ -781,6 +798,8 @@ docker build \
 .
 ```
 
+![Working load balancer](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/part%202/working%20load%20balancer.JPG)
+
 create the repo for the frontend ECR:
 
 ``` aws ecr create-repository \
@@ -813,6 +832,7 @@ push to the repo in ecr:
 * At previously created hosted zone, create CNAME records and point them to the load balancer
   `frontend - port 3000`
   `backend - port 4567`
+  ![Create records for backend link](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/part%202/Create%20records%20or%20backend%20link.JPG)
 
 In the task definition of the backend, edit the following line:
 ```
@@ -832,3 +852,7 @@ docker build \
 -f Dockerfile.prod \
 .
 ```
+
+![Confirm tasks are working](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/part%202/Running%20tasks.JPG)
+![Confirm services are working](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/part%202/Running%20services.JPG)
+![Link is working](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%206/part%202/New%20link%20is%20up.JPG)
