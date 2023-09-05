@@ -63,10 +63,10 @@ This was technically the seventh week of the Bootcamp.
 | 28 | [Backend Healthcheck](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#backend-healthcheck)                                  |
 | 29 | [Frontend Healthcheck](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#frontend-healthcheck)                                  |
 | 30 | [Create a load balancer](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#create-a-load-balancer)                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
-| 10 | []()                                  |
+| 10 | [Create the frontend task definition: frontend-react-js.json](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#create-the-frontend-task-definition-frontend-react-jsjson)                                  |
+| 10 | [Create front end repo](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#create-front-end-repo)                                  |
+| 10 | [Tag Frontend Image](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#tag-frontend-image)                                  |
+| 10 | [Push Frontend image](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/week6.md#push-frontend-image)                                  |
 | 10 | []()                                  |
 | 10 | []()                                  |
 | 10 | []()                                  |                                                                                                                              
@@ -577,7 +577,7 @@ If you want to run and test it
 
 `docker run --rm -p 3000:3000 -it frontend-react-js`
 
-<Bold> Part 2 </Bold>
+# Part 2 
 
 ## Create frontend service if not already running:
 
