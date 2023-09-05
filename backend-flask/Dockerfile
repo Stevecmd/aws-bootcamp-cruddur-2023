@@ -24,7 +24,7 @@ COPY . .
 
 #Set environment variables
 #inside container and will remain set while the container runs
-ENV FLASK_DEBUG=1
+# ENV FLASK_DEBUG=1 # Having the flag "--debug" enables debugging
 
 EXPOSE ${PORT}
 
