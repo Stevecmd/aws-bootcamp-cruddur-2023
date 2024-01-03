@@ -439,7 +439,19 @@ https://github.com/100DaysOfCloud/challenge-dynamodb-local
 
 <hr/>
 
-![Create a table in DynamoDB-SQL](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/DynamoDB%20testSQL.JPG)
+## Create a table
+
+```sh
+aws dynamodb create-table \
+    --endpoint-url http://localhost:8000 \
+    --table-name Music \
+    --attribute-definitions \
+        AttributeName=Artist,AttributeType=S \
+        AttributeName=SongTitle,AttributeType=S \
+    --key-schema AttributeName=Artist,KeyType=HASH AttributeName=SongTitle,KeyType=RANGE \
+    --provisioned-throughput ReadCapacityUnits=1,WriteCapacityUnits=1 \
+    --table-class STANDARD
+```
 
 <hr/>
 
@@ -448,7 +460,14 @@ https://github.com/100DaysOfCloud/challenge-dynamodb-local
 <hr/>
 
 ![DynamoDB Create Item](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/createitem.JPG)
-
+```sh
+aws dynamodb put-item \
+    --endpoint-url http://localhost:8000 \
+    --table-name Music \
+    --item \
+        '{"Artist": {"S": "No One You Know"}, "SongTitle": {"S": "Call Me Today"}, "AlbumTitle": {"S": "Somewhat Famous"}}' \
+    --return-consumed-capacity TOTAL  
+```
 <hr/>
 
 ![DynamoDB Create Item in action](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/createitemMain.JPG)
@@ -457,18 +476,32 @@ https://github.com/100DaysOfCloud/challenge-dynamodb-local
 
 ![Code for DynamoDB List Tables](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/List%20tables.JPG)
 
-<hr/>
+## List Tables
 
+```sh
+aws dynamodb list-tables --endpoint-url http://localhost:8000
+```
+
+## Get Records
+
+```sh
+aws dynamodb scan --table-name cruddur_cruds --query "Items" --endpoint-url http://localhost:8000
+````
 ![DynamoDB List Tables in action](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/List%20Tables%20Main.JPG)
 
-<hr/>
 
-![DynamoDB List Tables backend](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/List%20tables.JPG)
 
 <hr/>
 
+```sh
+aws dynamodb scan --table-name cruddur_cruds --query "Items" --endpoint-url http://localhost:8000
+````
 ![Get Records](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/getRecordsMain.JPG)
 
+## References For DynamoDB local
+
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html
+https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tools.CLI.html
 <hr/>
 
 ## Volumes
