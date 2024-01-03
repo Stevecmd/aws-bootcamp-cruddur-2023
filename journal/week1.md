@@ -535,13 +535,38 @@ volumes:
 
 <hr/>
 
+### PostGres Install and configuration round 2 using SQLTool
+![PostGres DB configuration2](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/postgres%20local%20access%20using%20SQLTool.JPG)
+
+<hr/>
+
+### PostGres local access
+![PostGres local access](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/postgres%20local%20access.JPG)
+
+<hr/>
+
+![PostGres DB Success](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/postgresdbsuccessful%20connection.JPG)
+
+<hr/>
+
 #### Working App - Backend (Terminal)
 ![Working App - Backend (Terminal)](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Running%20app%20on%20terminal.JPG)
 
 <hr/>
 
+#### Open API integration
+![Open API](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/open%20api.JPG)
+![Open API confirmation](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/open%20api.JPG)
+
+<hr/>
+
 #### Working App - Backend
-![Working App - Backend](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/Working%20app%201.JPG)
+![Working App - Backend](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/open%20api%202.JPG)
+
+<hr/>
+
+#### Notifications Backend
+![Working App - Port 3000](https://github.com/Stevecmd/aws-bootcamp-cruddur-2023/blob/main/journal/Week%201/notifications%20backend.JPG)
 
 <hr/>
 
